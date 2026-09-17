@@ -5,7 +5,6 @@ import Script from "next/script"
 import './globals.css'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
-import { WhatsAppButton } from '@/components/whatsapp-button'
 import { LanguageProvider } from '@/lib/i18n'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
 import { CustomCursor } from '@/components/ui/custom-cursor'
@@ -116,7 +115,6 @@ const jsonLd = {
   "description": "Somos una agencia digital especializada en desarrollo web, aplicaciones móviles, tiendas online, marketing digital y agentes de IA para empresas en Argentina y Paraguay.",
   "url": "https://vektra.digital",
   "logo": "https://vektra.digital/logo.png",
-  "telephone": "+5493625528801",
   "email": "info@vektra.digital",
   "foundingDate": "2026",
   "numberOfEmployees": {
@@ -247,7 +245,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <Header />
           <main>{children}</main>
           <Footer />
-          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>

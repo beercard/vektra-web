@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import { allProjects, type Project } from "@/app/trabajos/data"
 import { useLanguage } from "@/lib/i18n"
 import { type Dictionary } from "@/lib/dictionaries"
@@ -176,12 +176,6 @@ export function Footer({ dict }: FooterProps) {
             
             {/* Contact Info */}
             <ul className="space-y-3">
-              <li>
-                <a href="tel:+5493625528801" className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#00DEC7] transition-colors" itemProp="telephone">
-                  <Phone className="h-4 w-4 text-[#00DEC7]" />
-                  +54 9 362 552-8801
-                </a>
-              </li>
               <li>
                 <a href="mailto:info@vektra.digital" className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#00DEC7] transition-colors" itemProp="email">
                   <Mail className="h-4 w-4 text-[#00DEC7]" />

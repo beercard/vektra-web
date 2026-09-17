@@ -15,7 +15,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { User, Mail, Phone, MessageSquare, ListFilter, CheckCircle } from "lucide-react"
+import { User, Mail, MessageSquare, ListFilter, CheckCircle } from "lucide-react"
 import { useLanguage } from "@/lib/i18n"
 import { Dictionary } from "@/lib/dictionaries"
 import { pushToDataLayer } from "@/lib/gtm"
@@ -41,7 +41,6 @@ export function ContactFormSection({ dict }: ContactFormSectionProps) {
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
-    telefono: "",
     servicio: "",
     mensaje: "",
     acepto: false,
@@ -85,7 +84,6 @@ export function ContactFormSection({ dict }: ContactFormSectionProps) {
       setFormData({
         nombre: "",
         email: "",
-        telefono: "",
         servicio: "",
         mensaje: "",
         acepto: false,
@@ -244,10 +242,6 @@ export function ContactFormSection({ dict }: ContactFormSectionProps) {
                 {t.rocket.text} <span className="font-semibold">{t.rocket.highlight}</span>
               </p>
               <p className="mt-2 text-gray-600 text-sm">
-                <a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">{t.rocket.subtext.call}</a>{t.rocket.subtext.or} 
-                <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">
-                  {" "}{t.rocket.subtext.whatsapp}
-                </a>{" "}
                 {t.rocket.subtext.form}{" "}
                 <span className="font-semibold">{t.rocket.subtext.response}</span>.
               </p>
@@ -319,29 +313,17 @@ export function ContactFormSection({ dict }: ContactFormSectionProps) {
                   />
                 </div>
 
-                {/* Email y Telefono */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                    <Input
-                      type="email"
-                      placeholder={t.form.email}
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="pl-10 py-6 border-gray-200 focus:border-[#00DEC7] focus:ring-[#00DEC7]"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                    <Input
-                      type="tel"
-                      placeholder={t.form.phone}
-                      value={formData.telefono}
-                      onChange={(e) => setFormData({ ...formData, telefono: e.target.value })}
-                      className="pl-10 py-6 border-gray-200 focus:border-[#00DEC7] focus:ring-[#00DEC7]"
-                    />
-                  </div>
+                {/* Email */}
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  <Input
+                    type="email"
+                    placeholder={t.form.email}
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="pl-10 py-6 border-gray-200 focus:border-[#00DEC7] focus:ring-[#00DEC7]"
+                  />
                 </div>
 
                 {/* Mensaje */}

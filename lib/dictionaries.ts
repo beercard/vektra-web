@@ -19,7 +19,6 @@ export const dictionaries = {
       about: "Sobre Nosotros",
       blog: "Blog",
       contact: "Contactar",
-      call: "Llámanos",
       budget: "Presupuesto",
       subtitle: "desarrollo web · apps · ia"
     },
@@ -80,7 +79,6 @@ export const dictionaries = {
       cta: {
         title: "Consúltanos",
         subtitle: "sin compromiso",
-        call: "Llámanos",
         budget: "Pedir Presupuesto",
         moreInfo: "Más info"
       }
@@ -205,7 +203,6 @@ export const dictionaries = {
         title: "¿Tenés alguna otra duda?",
         text: "Contactá con nosotros",
         highlight: "sin compromiso",
-        call: "Llámanos",
         email: "Escribinos"
       }
     },
@@ -288,10 +285,7 @@ export const dictionaries = {
         text: "Consúltanos",
         highlight: "sin compromiso",
         subtext: {
-          call: "Llámanos",
-          or: ",",
-          whatsapp: "escribinos un WhatsApp",
-          form: "o envíanos el siguiente formulario y",
+          form: "Envíanos el siguiente formulario y",
           response: "te responderemos en menos de 24 horas"
         }
       },
@@ -309,7 +303,6 @@ export const dictionaries = {
         },
         name: "Nombre *",
         email: "Email *",
-        phone: "Teléfono",
         message: "Mensaje *",
         privacy: {
           text: "He leído y acepto la",
@@ -358,7 +351,7 @@ export const dictionaries = {
       title: "¿Listo para impulsar tu negocio?",
       subtitle: "Contanos tu proyecto y diseñamos una propuesta clara para hacerlo crecer.",
       proposal: "Quiero mi propuesta",
-      whatsapp: "Hablemos por WhatsApp",
+      whatsapp: "Escríbenos por email",
       response: "Respondemos en menos de 24 horas"
     },
     footer: {
@@ -392,7 +385,6 @@ export const dictionaries = {
       about: "About Us",
       blog: "Blog",
       contact: "Contact",
-      call: "Call Us",
       budget: "Get Quote",
       subtitle: "web dev · apps · ai"
     },
@@ -453,7 +445,6 @@ export const dictionaries = {
       cta: {
         title: "Consult us",
         subtitle: "without obligation",
-        call: "Call Us",
         budget: "Get Quote",
         moreInfo: "More info"
       }
@@ -578,7 +569,6 @@ export const dictionaries = {
         title: "Do you have any other questions?",
         text: "Contact us",
         highlight: "without obligation",
-        call: "Call Us",
         email: "Write us"
       }
     },
@@ -661,10 +651,7 @@ export const dictionaries = {
         text: "Consult us",
         highlight: "without obligation",
         subtext: {
-          call: "Call Us",
-          or: ",",
-          whatsapp: "write us on WhatsApp",
-          form: "or send us the following form and",
+          form: "Send us the following form and",
           response: "we will respond in less than 24 hours"
         }
       },
@@ -682,7 +669,6 @@ export const dictionaries = {
         },
         name: "Name *",
         email: "Email *",
-        phone: "Phone",
         message: "Message *",
         privacy: {
           text: "I have read and accept the",
@@ -731,7 +717,7 @@ export const dictionaries = {
       title: "Ready to boost your business?",
       subtitle: "Tell us about your project and we'll design a clear proposal to make it grow.",
       proposal: "I want my proposal",
-      whatsapp: "Let's talk on WhatsApp",
+      whatsapp: "Email us",
       response: "We respond in less than 24 hours"
     },
     footer: {

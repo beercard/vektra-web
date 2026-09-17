@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { LatestWorks } from "@/components/sections/latest-works"
 import { 
-  ArrowRight, Check, Phone, Mail, User, MessageSquare, 
+  ArrowRight, Check, Mail, User, MessageSquare,
   Search, FileText, Link2, MapPin, BarChart3, Settings,
   Bot, Sparkles, Globe, TrendingUp, ShoppingCart
 } from "lucide-react"
@@ -236,7 +236,6 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
     const data = {
       nombre: formData.get("nombre") as string,
       email: formData.get("email") as string,
-      telefono: formData.get("telefono") as string,
       mensaje: formData.get("mensaje") as string,
       servicio: "SEO y Posicionamiento Web",
       website: formData.get("website") as string,
@@ -302,15 +301,9 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-[#00DEC7] text-black hover:bg-[#00DEC7]/90 font-semibold" asChild>
                   <Link href="#contacto">
-                    <Phone className="mr-2 h-4 w-4" />
+                    <Search className="mr-2 h-4 w-4" />
                     Auditoría SEO Gratuita
                   </Link>
-                </Button>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent" asChild>
-                  <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer">
-                    WhatsApp
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
                 </Button>
               </div>
             </div>
@@ -429,12 +422,6 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
                 en Google y buscadores de IA. Sin sorpresas ni costos ocultos.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-black text-white hover:bg-black/90" asChild>
-                  <Link href="#contacto">
-                    <Phone className="mr-2 h-4 w-4" />
-                    Llámanos
-                  </Link>
-                </Button>
                 <Button size="lg" variant="outline" className="border-black text-black hover:bg-black/10 bg-transparent" asChild>
                   <Link href="#contacto">
                     Solicitar Presupuesto
@@ -610,14 +597,8 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button className="bg-[#00DEC7] text-black hover:bg-[#00DEC7]/90" asChild>
-                    <Link href="#contacto">
-                      <Phone className="mr-2 h-4 w-4" />
-                      Llámanos
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="border-black bg-transparent" asChild>
-                    <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer">
-                      WhatsApp
+                    <a href="mailto:info@vektra.digital">
+                      Escribinos
                     </a>
                   </Button>
                 </div>
@@ -687,16 +668,6 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
                       className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00DEC7] transition-colors"
                     />
                   </div>
-                </div>
-
-                <div className="relative">
-                  <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <input
-                    type="tel"
-                    name="telefono"
-                    placeholder="Teléfono"
-                    className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00DEC7] transition-colors"
-                  />
                 </div>
 
                 <div className="relative">

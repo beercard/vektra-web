@@ -184,7 +184,6 @@ export default function MantenimientoWebClient({ projects, testimonials }: Mante
           <div className="mt-16 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-black">Consúltanos <span className="font-normal">sin compromiso</span></h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8"><Link href="tel:+5493625528801">Llámanos</Link></Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent"><Link href="/contacto">Presupuesto</Link></Button>
             </div>
           </div>
@@ -246,7 +245,6 @@ export default function MantenimientoWebClient({ projects, testimonials }: Mante
           <div className="mt-16 text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">¿Tenés alguna otra duda?</h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100 rounded-full px-8"><Link href="tel:+5493625528801">Llámanos</Link></Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent"><Link href="/contacto">Escribinos</Link></Button>
             </div>
           </div>
@@ -267,7 +265,7 @@ export default function MantenimientoWebClient({ projects, testimonials }: Mante
             <div>
               <div className="bg-[#00DEC7] rounded-2xl px-6 py-4 mb-6"><h3 className="text-xl md:text-2xl font-bold text-black text-center">¿Querés mantener tu web protegida?</h3></div>
               <p className="text-center text-gray-600 mb-2">Consúltanos <span className="font-semibold text-black">sin compromiso</span></p>
-              <p className="text-center text-gray-600 text-sm mb-8"><a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Llámanos</a>, escribinos por <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">WhatsApp</a> o envíanos el formulario.</p>
+              <p className="text-center text-gray-600 text-sm mb-8">Escribinos a <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a> o envíanos el formulario.</p>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Nombre *" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00DEC7]" />
                 <div className="grid md:grid-cols-2 gap-4">

@@ -86,7 +86,7 @@ const webFaqs = [
   { question: "Can I edit and manage my web once finished?", answer: "Yes, we deliver the web with an intuitive administration panel and we provide you with training so you can update content, images and texts autonomously." },
   { question: "Do you include SEO optimization for Google?", answer: "Yes, all websites include basic On Page SEO: titles, descriptions, H1-H3 header structure, image optimization and sending the sitemap to Google for indexing." },
   { question: "Do you offer web maintenance after delivery?", answer: "Yes, we include technical support during the first month. Then we offer monthly maintenance plans that include updates, backups, security control and continuous support." },
-  { question: "Do you work with international clients?", answer: "Yes, we work with clients from all over the world. Meetings are held by video call and communication is fluid thanks to digital tools like WhatsApp, Zoom and email." },
+  { question: "Do you work with international clients?", answer: "Yes, we work with clients from all over the world. Meetings are held by video call and communication is fluid thanks to digital tools like Zoom and email." },
 ]
 
 const complementos = [
@@ -115,7 +115,7 @@ const complementos = [
 
 const DisenoWebClient = ({ testimonials }: WebDesignClientProps) => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "", privacy: false })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "", privacy: false })
   const webStatsRefs = useMemo(() => webStats.map(() => createRef<HTMLDivElement>()), [])
   const [webStatsCounts, setWebStatsCounts] = useState(() => webStats.map(() => 0))
   const [webStatsVisible, setWebStatsVisible] = useState(() => webStats.map(() => false))
@@ -307,9 +307,6 @@ const DisenoWebClient = ({ testimonials }: WebDesignClientProps) => {
               If you need a <strong className="text-black">professional web development team</strong>, we can help you give visibility to your business.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8">
-                <Link href="tel:+5493625528801" className="flex items-center gap-2">Call us</Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent">
                 <Link href="/en/contact">Budget</Link>
               </Button>
@@ -447,9 +444,6 @@ const DisenoWebClient = ({ testimonials }: WebDesignClientProps) => {
             <h3 className="text-2xl md:text-3xl font-bold text-white">Do you have any other questions?</h3>
             <p className="mt-2 text-gray-400">Contact us <span className="text-white font-semibold">without obligation</span></p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8">
-                <Link href="tel:+5493625528801">Call us</Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent">
                 <Link href="/en/contact">Write to us</Link>
               </Button>
@@ -488,8 +482,8 @@ const DisenoWebClient = ({ testimonials }: WebDesignClientProps) => {
               
               <p className="text-center text-black font-semibold mb-2">Consult us without obligation</p>
               <p className="text-center text-gray-600 text-sm mb-6">
-                <a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Call us</a>, write to us on{" "}
-                <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">WhatsApp</a>{" "}
+                Write to us at{" "}
+                <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a>{" "}
                 or send us the following form and <span className="font-semibold">we will respond in less than 24 hours</span>.
               </p>
 
@@ -501,22 +495,13 @@ const DisenoWebClient = ({ testimonials }: WebDesignClientProps) => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
-                <div className="grid gap-4 md:grid-cols-2">
-                  <input
-                    type="email"
-                    placeholder="Email *"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  />
-                </div>
+                <input
+                  type="email"
+                  placeholder="Email *"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                />
                 <textarea
                   placeholder="Message *"
                   rows={4}

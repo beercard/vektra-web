@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown, Phone, Calculator, Globe } from "lucide-react"
+import { Menu, X, ChevronDown, Calculator, Globe } from "lucide-react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -147,19 +147,9 @@ export function Header({ dict, lang }: HeaderProps) {
               {currentLang === "es" ? "EN" : "ES"}
             </Link>
           </Button>
-          <Button 
-            asChild 
-            variant="outline" 
-            className="border-[#00DEC7] text-[#00DEC7] hover:bg-[#00DEC7] hover:text-black rounded-full px-5 bg-transparent"
-          >
-            <Link href="tel:+5493625528801" className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              {t.header.call}
-            </Link>
-          </Button>
-          <Button 
-            asChild 
-            variant="outline" 
+          <Button
+            asChild
+            variant="outline"
             className="border-[#00DEC7] text-[#00DEC7] hover:bg-[#00DEC7] hover:text-black rounded-full px-5 bg-transparent"
           >
             <Link href={currentLang === "en" ? "/en/contacto?asunto=Budget" : "/contacto?asunto=Presupuesto"} className="flex items-center gap-2">
@@ -243,19 +233,9 @@ export function Header({ dict, lang }: HeaderProps) {
               )
             })}
             <div className="flex flex-col gap-3 pt-4 px-3">
-              <Button 
-                asChild 
-                variant="outline" 
-                className="border-[#00DEC7] text-[#00DEC7] hover:bg-[#00DEC7] hover:text-black rounded-full w-full bg-transparent"
-              >
-                <Link href="tel:+5493625528801" className="flex items-center justify-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  {t.header.call}
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
+              <Button
+                asChild
+                variant="outline"
                 className="border-[#00DEC7] text-[#00DEC7] hover:bg-[#00DEC7] hover:text-black rounded-full w-full bg-transparent"
               >
                 <Link href={currentLang === "en" ? "/en/contacto?asunto=Budget" : "/contacto?asunto=Presupuesto"} className="flex items-center justify-center gap-2">

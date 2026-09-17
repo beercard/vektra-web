@@ -475,7 +475,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Want to automate your attention?",
         paragraphs: [
-          "We can help you implement WhatsApp Business API, integrate your CRM, and get flows ready to convert more. [Contact us](/en/contact) and we'll build a plan, or [write to us on WhatsApp](https://wa.me/5493625528801).",
+          "We can help you implement WhatsApp Business API, integrate your CRM, and get flows ready to convert more. [Contact us](/en/contact) and we'll build a plan, or [email us](mailto:info@vektra.digital).",
         ],
       },
       {

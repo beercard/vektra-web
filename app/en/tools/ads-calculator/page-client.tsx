@@ -4,9 +4,9 @@
 import { useState, useEffect, useMemo } from "react"
 import Link from "next/link"
 import { 
-  Calculator, DollarSign, CreditCard, Wallet, Smartphone, 
+  Calculator, DollarSign, CreditCard, Wallet, Smartphone,
   TrendingUp, ArrowRight, CheckCircle2, HelpCircle,
-  Facebook, Instagram, MessageCircle, RefreshCw
+  Facebook, Instagram, Mail, RefreshCw
 } from "lucide-react"
 
 // IIBB Tax Rates by Argentine Province
@@ -565,12 +565,11 @@ export default function AdsCalculatorClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://wa.me/5493625528801"
-              target="_blank"
+              href="mailto:info@vektra.digital"
               className="inline-flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors"
             >
-              <MessageCircle className="h-5 w-5" />
-              Write to us on WhatsApp
+              <Mail className="h-5 w-5" />
+              Email us
             </Link>
             <Link
               href="/en/services/digital-marketing"

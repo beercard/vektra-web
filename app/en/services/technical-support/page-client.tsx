@@ -18,8 +18,8 @@ const marqueeItems = [
   { text: "we solve without you moving" },
   { text: "Team of Experts", highlight: true },
   { text: "more than 10 years of experience" },
-  { text: "Multichannel Support", highlight: true },
-  { text: "email, WhatsApp and phone" },
+  { text: "Email Support", highlight: true },
+  { text: "personalized attention" },
 ]
 
 const servicesIncluded = [
@@ -36,7 +36,7 @@ const servicesIncluded = [
 ]
 
 const processSteps = [
-  { step: "01", title: "Contact", subtitle: "and diagnosis", description: "You contact us via email, WhatsApp, or phone. We analyze the problem and give you an initial diagnosis.", highlight: "Response in less than 24 hours." },
+  { step: "01", title: "Contact", subtitle: "and diagnosis", description: "You contact us via email. We analyze the problem and give you an initial diagnosis.", highlight: "Response in less than 24 hours." },
   { step: "02", title: "Quote", subtitle: "and approval", description: "We send you a clear quote with the estimated resolution time. Once approved, we start working.", highlight: null },
   { step: "03", title: "Resolution", subtitle: "of the problem", description: "We work on solving the problem with remote access to your server or control panel.", highlight: null },
   { step: "04", title: "Verification", subtitle: "and delivery", description: "We verify that everything works correctly and inform you of the actions taken.", highlight: "Solution guarantee." },
@@ -59,7 +59,7 @@ const faqs = [
   { question: "What happens if you can't solve the problem?", answer: "If for any reason we cannot solve the problem, we refund your money or find an alternative solution. We guarantee resolution or refund." },
   { question: "Do you work with any platform?", answer: "Yes, we work with WordPress, WooCommerce, Shopify, Next.js, React, PHP, and practically any modern web technology." },
   { question: "Do you work with companies in Argentina and Paraguay?", answer: "Yes, we work mainly with companies in Argentina and Paraguay. We offer billing in local currency and understand regional needs." },
-  { question: "How do I keep informed of progress?", answer: "We keep you informed through the channel you prefer: email, WhatsApp, or call. You always know what state your problem resolution is in." },
+  { question: "How do I keep informed of progress?", answer: "We keep you informed by email. You always know what state your problem resolution is in." },
 ]
 
 const complementaryServices = [
@@ -153,7 +153,7 @@ export default function TechnicalSupportClient({ projects, testimonials }: Techn
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><Wrench className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Resolution</p><p className="text-gray-400 text-sm">of errors</p></div>
                     <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><Monitor className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Assistance</p><p className="text-gray-400 text-sm">Remote</p></div>
-                    <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><MessageCircle className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Multichannel</p><p className="text-gray-400 text-sm">WhatsApp/Email</p></div>
+                    <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><MessageCircle className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Contact</p><p className="text-gray-400 text-sm">Email</p></div>
                     <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><Clock className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Response</p><p className="text-gray-400 text-sm">Fast</p></div>
                   </div>
                 </div>
@@ -184,8 +184,7 @@ export default function TechnicalSupportClient({ projects, testimonials }: Techn
           <div className="mt-16 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-black">Do you have an urgent problem?</h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8"><Link href="tel:+5493625528801">Call us now</Link></Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent"><Link href="https://wa.me/5493625528801">WhatsApp</Link></Button>
+              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8"><a href="mailto:info@vektra.digital">Email us</a></Button>
             </div>
           </div>
         </div>
@@ -246,7 +245,6 @@ export default function TechnicalSupportClient({ projects, testimonials }: Techn
           <div className="mt-16 text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Do you have any other questions?</h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100 rounded-full px-8"><Link href="tel:+5493625528801">Call us</Link></Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent"><Link href="/en/contact">Write to us</Link></Button>
             </div>
           </div>
@@ -267,7 +265,7 @@ export default function TechnicalSupportClient({ projects, testimonials }: Techn
             <div>
               <div className="bg-[#00DEC7] rounded-2xl px-6 py-4 mb-6"><h3 className="text-xl md:text-2xl font-bold text-black text-center">Do you have a problem with your website?</h3></div>
               <p className="text-center text-gray-600 mb-2">Tell us what is happening <span className="font-semibold text-black">and we will help you</span></p>
-              <p className="text-center text-gray-600 text-sm mb-8"><a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Call us</a>, write to us via <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">WhatsApp</a> or describe your problem.</p>
+              <p className="text-center text-gray-600 text-sm mb-8">Write to us at <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a> or describe your problem.</p>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name *" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00DEC7]" />
                 <div className="grid md:grid-cols-2 gap-4">

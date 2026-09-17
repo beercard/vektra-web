@@ -184,7 +184,6 @@ export default function WebMaintenanceClient({ projects, testimonials }: WebMain
           <div className="mt-16 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-black">Consult us <span className="font-normal">without commitment</span></h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8"><Link href="tel:+5493625528801">Call us</Link></Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent"><Link href="/en/contact">Get a quote</Link></Button>
             </div>
           </div>
@@ -246,7 +245,6 @@ export default function WebMaintenanceClient({ projects, testimonials }: WebMain
           <div className="mt-16 text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Do you have any other questions?</h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100 rounded-full px-8"><Link href="tel:+5493625528801">Call us</Link></Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent"><Link href="/en/contact">Write to us</Link></Button>
             </div>
           </div>
@@ -267,7 +265,7 @@ export default function WebMaintenanceClient({ projects, testimonials }: WebMain
             <div>
               <div className="bg-[#00DEC7] rounded-2xl px-6 py-4 mb-6"><h3 className="text-xl md:text-2xl font-bold text-black text-center">Do you want to keep your web protected?</h3></div>
               <p className="text-center text-gray-600 mb-2">Consult us <span className="font-semibold text-black">without commitment</span></p>
-              <p className="text-center text-gray-600 text-sm mb-8"><a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Call us</a>, write to us via <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">WhatsApp</a> or send the form.</p>
+              <p className="text-center text-gray-600 text-sm mb-8">Write to us at <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a> or send the form.</p>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name *" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00DEC7]" />
                 <div className="grid md:grid-cols-2 gap-4">

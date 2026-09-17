@@ -110,7 +110,7 @@ export default function DisenoWebLayout({
         "name": "¿Trabajan con clientes de Argentina y Paraguay?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como WhatsApp, Zoom y email."
+          "text": "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email."
         }
       }
     ]

@@ -20,7 +20,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Mail, Phone, MessageCircle, User, MessageSquare, ListFilter, CheckCircle, Star, ChevronLeft, ChevronRight, Instagram, Linkedin } from "lucide-react"
+import { Mail, User, MessageSquare, ListFilter, CheckCircle, Star, ChevronLeft, ChevronRight, Instagram, Linkedin } from "lucide-react"
 import { pushToDataLayer } from "@/lib/gtm"
 
 const servicios = [
@@ -102,7 +102,7 @@ const faqs = [
   },
   {
     question: "Trabajan con clientes de otros países?",
-    answer: "Sí, trabajamos principalmente con clientes de Argentina y Paraguay, pero también atendemos proyectos de otros países de Latinoamérica. La comunicación se realiza por videollamada, WhatsApp y email.",
+    answer: "Sí, trabajamos principalmente con clientes de Argentina y Paraguay, pero también atendemos proyectos de otros países de Latinoamérica. La comunicación se realiza por videollamada y email.",
   },
   {
     question: "Qué formas de pago aceptan?",
@@ -145,7 +145,6 @@ export default function ContactoClient() {
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
-    telefono: "",
     servicio: "",
     mensaje: "",
     acepto: false,
@@ -206,7 +205,6 @@ export default function ContactoClient() {
       setFormData({
         nombre: "",
         email: "",
-        telefono: "",
         servicio: "",
         mensaje: "",
         acepto: false,
@@ -245,21 +243,7 @@ export default function ContactoClient() {
       <section className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-5xl px-4 py-8">
           <div className="grid grid-cols-2 md:flex md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-8 lg:gap-12">
-            <a href="tel:+5493625528801" className="group flex flex-col md:flex-row items-center justify-center gap-3 p-4 md:p-0 rounded-2xl bg-gray-50 md:bg-transparent text-black hover:text-[#00DEC7] transition-all hover:shadow-sm md:hover:shadow-none col-span-2 sm:col-span-1 md:col-span-auto">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#00DEC7] bg-white group-hover:scale-110 transition-transform">
-                <Phone className="h-5 w-5 text-[#00DEC7]" />
-              </div>
-              <span className="font-medium text-sm md:text-base">+54 9 362 552-8801</span>
-            </a>
-            
-            <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="group flex flex-col md:flex-row items-center justify-center gap-3 p-4 md:p-0 rounded-2xl bg-gray-50 md:bg-transparent text-black hover:text-[#00DEC7] transition-all hover:shadow-sm md:hover:shadow-none">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#00DEC7] bg-white group-hover:scale-110 transition-transform">
-                <MessageCircle className="h-5 w-5 text-[#00DEC7]" />
-              </div>
-              <span className="font-medium text-sm md:text-base">WhatsApp</span>
-            </a>
-
-            <a href="mailto:info@vektra.digital" className="group flex flex-col md:flex-row items-center justify-center gap-3 p-4 md:p-0 rounded-2xl bg-gray-50 md:bg-transparent text-black hover:text-[#00DEC7] transition-all hover:shadow-sm md:hover:shadow-none">
+            <a href="mailto:info@vektra.digital" className="group flex flex-col md:flex-row items-center justify-center gap-3 p-4 md:p-0 rounded-2xl bg-gray-50 md:bg-transparent text-black hover:text-[#00DEC7] transition-all hover:shadow-sm md:hover:shadow-none col-span-2 sm:col-span-1 md:col-span-auto">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#00DEC7] bg-white group-hover:scale-110 transition-transform">
                 <Mail className="h-5 w-5 text-[#00DEC7]" />
               </div>
@@ -292,11 +276,8 @@ export default function ContactoClient() {
           {/* CTA Text */}
           <div className="text-center mb-8">
             <p className="text-gray-700 text-lg">
-              <a href="tel:+5493625528801" className="underline font-semibold text-black hover:text-[#00DEC7]">Llámanos</a>, 
-              {" "}escribinos un{" "}
-              <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-semibold text-black hover:text-[#00DEC7]">
-                WhatsApp
-              </a>{" "}
+              Escribinos a{" "}
+              <a href="mailto:info@vektra.digital" className="underline font-semibold text-black hover:text-[#00DEC7]">info@vektra.digital</a>{" "}
               o envíanos el siguiente formulario y te responderemos en la mayor brevedad posible
             </p>
           </div>
@@ -357,29 +338,17 @@ export default function ContactoClient() {
                 />
               </div>
 
-              {/* Email y Telefono */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <Input
-                    type="email"
-                    placeholder="Email *"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="pl-10 py-6 border-gray-200 focus:border-[#00DEC7] focus:ring-[#00DEC7]"
-                  />
-                </div>
-                <div className="relative">
-                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <Input
-                    type="tel"
-                    placeholder="Teléfono"
-                    value={formData.telefono}
-                    onChange={(e) => setFormData({ ...formData, telefono: e.target.value })}
-                    className="pl-10 py-6 border-gray-200 focus:border-[#00DEC7] focus:ring-[#00DEC7]"
-                  />
-                </div>
+              {/* Email */}
+              <div className="relative">
+                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <Input
+                  type="email"
+                  placeholder="Email *"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="pl-10 py-6 border-gray-200 focus:border-[#00DEC7] focus:ring-[#00DEC7]"
+                />
               </div>
 
               {/* Mensaje */}
@@ -603,15 +572,9 @@ export default function ContactoClient() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button asChild className="bg-[#00DEC7] hover:bg-[#00C4B0] text-black font-semibold px-8 rounded-full">
-                <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  WhatsApp
-                </a>
-              </Button>
-              <Button asChild variant="outline" className="bg-transparent border-black hover:bg-black hover:text-white font-semibold px-8 rounded-full">
-                <a href="tel:+5493625528801">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Llámanos
+                <a href="mailto:info@vektra.digital">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Escribinos
                 </a>
               </Button>
             </div>

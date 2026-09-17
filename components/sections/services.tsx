@@ -3,7 +3,7 @@
 import React from "react"
 
 import Link from "next/link"
-import { ArrowRight, Phone, FileText } from "lucide-react"
+import { ArrowRight, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useRef, useState } from "react"
 import { useLanguage } from "@/lib/i18n"
@@ -229,17 +229,7 @@ export function Services({ dict }: ServicesProps) {
             <span className="font-extrabold">{t.cta.title}</span> {t.cta.subtitle}
           </h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-black text-white hover:bg-black/90 rounded-full px-8 h-12"
-            >
-              <Link href="tel:+5493625528801">
-                <Phone className="mr-2 h-4 w-4" />
-                {t.cta.call}
-              </Link>
-            </Button>
-            <Button 
+            <Button
               asChild 
               size="lg" 
               variant="outline"

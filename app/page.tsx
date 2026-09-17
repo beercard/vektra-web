@@ -36,7 +36,6 @@ const localBusinessSchema = {
   "@id": "https://vektra.digital/#localbusiness",
   "name": "Vektra Digital",
   "image": "https://vektra.digital/logo/logo-vektra-digital.png",
-  "telephone": "+54-9-362-464-6669",
   "email": "info@vektra.digital",
   "url": "https://vektra.digital",
   "priceRange": "$$",

@@ -72,7 +72,7 @@ const webFaqs = [
   { question: "Puedo editar y gestionar mi web una vez terminada?", answer: "Sí, te entregamos la web con un panel de administración intuitivo y te brindamos capacitación para que puedas actualizar contenido, imágenes y textos de forma autónoma." },
   { question: "Incluyes optimización SEO para Google?", answer: "Sí, todas las webs incluyen SEO On Page básico: títulos, descripciones, estructura de encabezados H1-H3, optimización de imágenes y envío del sitemap a Google para indexación." },
   { question: "Ofrecen mantenimiento web después de la entrega?", answer: "Sí, incluimos soporte técnico durante el primer mes. Luego ofrecemos planes de mantenimiento mensual que incluyen actualizaciones, copias de seguridad, control de seguridad y soporte continuo." },
-  { question: "Trabajan con clientes de Argentina y Paraguay?", answer: "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como WhatsApp, Zoom y email." },
+  { question: "Trabajan con clientes de Argentina y Paraguay?", answer: "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email." },
 ]
 
 const complementos = [
@@ -106,7 +106,7 @@ interface DisenoWebClientProps {
 
 const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "", privacy: false })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "", privacy: false })
   const webStatsRefs = useMemo(() => webStats.map(() => createRef<HTMLDivElement>()), [])
   const [webStatsCounts, setWebStatsCounts] = useState(() => webStats.map(() => 0))
   const [webStatsVisible, setWebStatsVisible] = useState(() => webStats.map(() => false))
@@ -305,9 +305,6 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
               Si necesitas un <strong className="text-black">equipo de desarrollo web profesional</strong>, podemos ayudarte a dar visibilidad a tu negocio.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8">
-                <Link href="tel:+5493625528801" className="flex items-center gap-2">Llámanos</Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent">
                 <Link href="/contacto">Presupuesto</Link>
               </Button>
@@ -418,9 +415,6 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
             <h3 className="text-2xl md:text-3xl font-bold text-white">¿Tenés alguna otra duda?</h3>
             <p className="mt-2 text-gray-400">Contactá con nosotros <span className="text-white font-semibold">sin compromiso</span></p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8">
-                <Link href="tel:+5493625528801">Llámanos</Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent">
                 <Link href="/contacto">Escribinos</Link>
               </Button>
@@ -459,8 +453,8 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
               
               <p className="text-center text-black font-semibold mb-2">Consúltanos sin compromiso</p>
               <p className="text-center text-gray-600 text-sm mb-6">
-                <a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Llámanos</a>, escribinos un{" "}
-                <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">WhatsApp</a>{" "}
+                Escribinos a{" "}
+                <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a>{" "}
                 o envíanos el siguiente formulario y <span className="font-semibold">te responderemos en menos de 24 horas</span>.
               </p>
 
@@ -472,22 +466,13 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
-                <div className="grid gap-4 md:grid-cols-2">
-                  <input
-                    type="email"
-                    placeholder="Email *"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Teléfono"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  />
-                </div>
+                <input
+                  type="email"
+                  placeholder="Email *"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                />
                 <textarea
                   placeholder="Mensaje *"
                   rows={4}

@@ -70,7 +70,7 @@ const serviceSchema = {
     "logo": "https://vektra.digital/logo/logo-vektra-digital.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+54-9-362-464-6669",
+      "email": "info@vektra.digital",
       "contactType": "sales",
       "availableLanguage": ["Spanish"]
     }
@@ -171,7 +171,7 @@ const faqSchema = {
       "name": "¿Trabajan con clientes de Argentina y Paraguay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como WhatsApp, Zoom y email."
+        "text": "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email."
       }
     }
   ]

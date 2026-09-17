@@ -108,7 +108,7 @@ interface TiendaOnlineClientProps {
 
 export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "", privacy: false })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "", privacy: false })
   const ecommerceStatsRefs = useMemo(() => ecommerceStats.map(() => createRef<HTMLDivElement>()), [])
   const [ecommerceStatsCounts, setEcommerceStatsCounts] = useState(() => ecommerceStats.map(() => 0))
   const [ecommerceStatsVisible, setEcommerceStatsVisible] = useState(() => ecommerceStats.map(() => false))
@@ -331,14 +331,6 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
               Si querés <strong className="text-black">vender online en Argentina o Paraguay</strong>, podemos ayudarte a crear la tienda perfecta para tu negocio.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8">
-                <Link href="tel:+5493625528801" className="flex items-center gap-2">
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                  </svg>
-                  Llámanos
-                </Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent">
                 <Link href="/contacto" className="flex items-center gap-2">
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -467,14 +459,6 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
               Contactá con nosotros <span className="font-semibold text-white">sin compromiso</span>
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8">
-                <Link href="tel:+5493625528801" className="flex items-center gap-2">
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                  </svg>
-                  Llámanos
-                </Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent">
                 <Link href="/contacto" className="flex items-center gap-2">
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -519,11 +503,8 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
                 Consúltanos <span className="font-semibold text-black">sin compromiso</span>
               </p>
               <p className="text-center text-gray-500 text-sm mb-8">
-                <a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Llámanos</a>, 
-                escribinos por{" "}
-                <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">
-                  WhatsApp
-                </a>{" "}
+                Escribinos a{" "}
+                <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a>{" "}
                 o envíanos el siguiente formulario y <span className="font-semibold">te responderemos en menos de 24 horas</span>.
               </p>
 
@@ -547,37 +528,21 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
                   </div>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div className="relative">
-                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="3" y="4" width="18" height="16" rx="2"/>
-                        <path d="M3 8l9 6 9-6"/>
-                      </svg>
-                    </span>
-                    <input
-                      type="email"
-                      placeholder="Email *"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                      required
-                    />
-                  </div>
-                  <div className="relative">
-                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M22 16.92v3a2 2 0 0 0-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                      </svg>
-                    </span>
-                    <input
-                      type="tel"
-                      placeholder="Teléfono"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    />
-                  </div>
+                <div className="relative">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="3" y="4" width="18" height="16" rx="2"/>
+                      <path d="M3 8l9 6 9-6"/>
+                    </svg>
+                  </span>
+                  <input
+                    type="email"
+                    placeholder="Email *"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
+                    required
+                  />
                 </div>
 
                 <div className="relative">

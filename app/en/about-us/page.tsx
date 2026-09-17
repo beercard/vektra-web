@@ -2,10 +2,9 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { 
-  GraduationCap, 
-  Award, 
-  Phone, 
-  Mail, 
+  GraduationCap,
+  Award,
+  Mail,
   MapPin,
   Linkedin,
   Globe
@@ -166,10 +165,6 @@ export default function AboutUs() {
               At Vektra, we merge <strong>high-level software engineering</strong> with <strong>digital marketing strategies</strong>, creating visual narratives and technological products that drive your brand&apos;s success. We are two brothers passionate about technology and entrepreneurship, committed to helping companies <strong>worldwide</strong> grow in the digital world.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <div className="flex items-center gap-2 text-gray-500">
-                <Phone className="h-4 w-4 text-[#00DEC7]" />
-                <span>+54 9 362 552-8801</span>
-              </div>
               <div className="flex items-center gap-2 text-gray-500">
                 <Mail className="h-4 w-4 text-[#00DEC7]" />
                 <span>info@vektra.digital</span>

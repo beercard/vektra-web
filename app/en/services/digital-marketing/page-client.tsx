@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Check, ChevronLeft, ChevronRight, Plus, Minus, Phone, Mail, User, MessageSquare, Monitor, ShoppingCart, Bot, ArrowRight } from "lucide-react"
+import { Check, ChevronLeft, ChevronRight, Plus, Minus, Mail, User, MessageSquare, Monitor, ShoppingCart, Bot, ArrowRight } from "lucide-react"
 import { pushToDataLayer } from "@/lib/gtm"
 import { Testimonials } from "@/components/sections/testimonials"
 import { Testimonial } from "@/app/testimonials/data"
@@ -157,7 +157,7 @@ export default function DigitalMarketingClient({ testimonials }: DigitalMarketin
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [animatedStats, setAnimatedStats] = useState(stats.map(() => 0))
   const statsRef = useRef<HTMLDivElement>(null)
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [acceptedPolicy, setAcceptedPolicy] = useState(false)
 
   // Animate stats on scroll
@@ -325,12 +325,6 @@ export default function DigitalMarketingClient({ testimonials }: DigitalMarketin
 
               {/* CTA Buttons */}
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-[#00DEC7] text-black hover:bg-[#00DEC7]/90 rounded-full px-8">
-                  <Link href="tel:+5493625528801" className="flex items-center gap-2">
-                    <Phone className="h-4 w-4" />
-                    Call us
-                  </Link>
-                </Button>
                 <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent">
                   <Link href="#form" className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
@@ -558,12 +552,6 @@ export default function DigitalMarketingClient({ testimonials }: DigitalMarketin
               Contact us <span className="text-white font-semibold">without obligation</span>
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8">
-                <Link href="tel:+5493625528801" className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  Call us
-                </Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent">
                 <Link href="#form" className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
@@ -611,11 +599,8 @@ export default function DigitalMarketingClient({ testimonials }: DigitalMarketin
 
               <p className="text-center mb-2 font-semibold text-black">Consult us without obligation</p>
               <p className="text-center text-gray-600 text-sm mb-8">
-                <a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Call us</a>, 
-                write to us on{" "}
-                <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">
-                  WhatsApp
-                </a>{" "}
+                Write to us at{" "}
+                <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a>{" "}
                 or send us the following form and{" "}
                 <span className="font-semibold">we will respond in less than 24 hours</span>.
               </p>
@@ -633,28 +618,16 @@ export default function DigitalMarketingClient({ testimonials }: DigitalMarketin
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                    <input
-                      type="email"
-                      placeholder="Email *"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                      required
-                    />
-                  </div>
-                  <div className="relative">
-                    <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                    <input
-                      type="tel"
-                      placeholder="Phone"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    />
-                  </div>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  <input
+                    type="email"
+                    placeholder="Email *"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
+                    required
+                  />
                 </div>
 
                 <div className="relative">

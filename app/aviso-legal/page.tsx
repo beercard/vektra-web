@@ -194,7 +194,6 @@ export default function AvisoLegalPage() {
             </p>
             <div className="bg-[#00DEC7]/10 border border-[#00DEC7]/30 rounded-xl p-6">
               <p className="text-gray-700 mb-2"><strong>Email:</strong> info@vektra.digital</p>
-              <p className="text-gray-700 mb-2"><strong>WhatsApp:</strong> +54 9 362 552-8801</p>
               <p className="text-gray-700"><strong>Web:</strong> https://vektra.digital/contacto</p>
             </div>
 

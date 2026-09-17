@@ -46,7 +46,6 @@ const contactPageSchema = {
     "@id": "https://vektra.digital/#organization",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+54-9-362-464-6669",
       "contactType": "sales",
       "email": "info@vektra.digital",
       "availableLanguage": ["Spanish", "English"],

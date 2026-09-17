@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Phone, Mail, ChevronDown } from "lucide-react"
+import { Mail, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useLanguage } from "@/lib/i18n"
@@ -102,15 +102,6 @@ export function FAQ({ dict }: FAQProps) {
             {t.cta.text} <span className="font-semibold text-white">{t.cta.highlight}</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              className="bg-white hover:bg-gray-100 text-black rounded-full px-8 py-6 text-base font-medium"
-            >
-              <Link href="tel:+5493625528801">
-                <Phone className="w-4 h-4 mr-2" />
-                {t.cta.call}
-              </Link>
-            </Button>
             <Button
               asChild
               variant="outline"

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Calendar, MessageCircle } from "lucide-react"
+import { Calendar, Mail } from "lucide-react"
 import { useLanguage } from "@/lib/i18n"
 import { type Dictionary } from "@/lib/dictionaries"
 
@@ -42,8 +42,8 @@ export function CTA({ dict }: CTAProps) {
               variant="outline"
               className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 bg-transparent transition-transform hover:-translate-y-0.5"
             >
-              <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
+              <a href="mailto:info@vektra.digital">
+                <Mail className="mr-2 h-5 w-5" />
                 {t.cta.whatsapp}
               </a>
             </Button>

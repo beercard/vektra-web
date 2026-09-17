@@ -18,8 +18,8 @@ const marqueeItems = [
   { text: "solucionamos sin que te muevas" },
   { text: "Equipo de Expertos", highlight: true },
   { text: "más de 10 años de experiencia" },
-  { text: "Soporte Multicanal", highlight: true },
-  { text: "email, WhatsApp y teléfono" },
+  { text: "Soporte por Email", highlight: true },
+  { text: "atención personalizada" },
 ]
 
 const servicesIncluded = [
@@ -36,7 +36,7 @@ const servicesIncluded = [
 ]
 
 const processSteps = [
-  { step: "01", title: "Contacto", subtitle: "y diagnóstico", description: "Nos contactás por email, WhatsApp o teléfono. Analizamos el problema y te damos un diagnóstico inicial.", highlight: "Respuesta en menos de 24 horas." },
+  { step: "01", title: "Contacto", subtitle: "y diagnóstico", description: "Nos contactás por email. Analizamos el problema y te damos un diagnóstico inicial.", highlight: "Respuesta en menos de 24 horas." },
   { step: "02", title: "Presupuesto", subtitle: "y aprobación", description: "Te enviamos un presupuesto claro con el tiempo estimado de resolución. Una vez aprobado, comenzamos a trabajar.", highlight: null },
   { step: "03", title: "Resolución", subtitle: "del problema", description: "Trabajamos en la solución del problema con acceso remoto a tu servidor o panel de control.", highlight: null },
   { step: "04", title: "Verificación", subtitle: "y entrega", description: "Verificamos que todo funcione correctamente y te informamos de las acciones realizadas.", highlight: "Garantía de solución." },
@@ -59,7 +59,7 @@ const faqs = [
   { question: "¿Qué pasa si no pueden resolver el problema?", answer: "Si por alguna razón no podemos resolver el problema, te devolvemos el dinero o buscamos una solución alternativa. Garantizamos la resolución o reembolso." },
   { question: "¿Trabajan con cualquier plataforma?", answer: "Sí, trabajamos con WordPress, WooCommerce, Shopify, Next.js, React, PHP, y prácticamente cualquier tecnología web moderna." },
   { question: "¿Trabajan con empresas de Argentina y Paraguay?", answer: "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Ofrecemos facturación en moneda local y entendemos las necesidades regionales." },
-  { question: "¿Cómo me mantengo informado del progreso?", answer: "Te mantenemos informado por el canal que prefieras: email, WhatsApp o llamada. Siempre sabés en qué estado está la resolución de tu problema." },
+  { question: "¿Cómo me mantengo informado del progreso?", answer: "Te mantenemos informado por email. Siempre sabés en qué estado está la resolución de tu problema." },
 ]
 
 const complementaryServices = [
@@ -153,7 +153,7 @@ export default function SoporteTecnicoClient({ projects, testimonials }: Soporte
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><Wrench className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Resolución</p><p className="text-gray-400 text-sm">de errores</p></div>
                     <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><Monitor className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Asistencia</p><p className="text-gray-400 text-sm">Remota</p></div>
-                    <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><MessageCircle className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Multicanal</p><p className="text-gray-400 text-sm">WhatsApp/Email</p></div>
+                    <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><MessageCircle className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Contacto</p><p className="text-gray-400 text-sm">Email</p></div>
                     <div className="bg-black/50 rounded-2xl p-6 border border-[#00DEC7]/20"><Clock className="h-10 w-10 text-[#00DEC7] mb-3" /><p className="text-white font-medium">Respuesta</p><p className="text-gray-400 text-sm">Rápida</p></div>
                   </div>
                 </div>
@@ -184,8 +184,7 @@ export default function SoporteTecnicoClient({ projects, testimonials }: Soporte
           <div className="mt-16 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-black">¿Tenés un problema urgente?</h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8"><Link href="tel:+5493625528801">Llámanos ahora</Link></Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent"><Link href="https://wa.me/5493625528801">WhatsApp</Link></Button>
+              <Button asChild size="lg" className="bg-black text-white hover:bg-black/90 rounded-full px-8"><a href="mailto:info@vektra.digital">Escribinos</a></Button>
             </div>
           </div>
         </div>
@@ -246,7 +245,6 @@ export default function SoporteTecnicoClient({ projects, testimonials }: Soporte
           <div className="mt-16 text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">¿Tenés alguna otra duda?</h3>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100 rounded-full px-8"><Link href="tel:+5493625528801">Llámanos</Link></Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black rounded-full px-8 bg-transparent"><Link href="/contacto">Escribinos</Link></Button>
             </div>
           </div>
@@ -267,7 +265,7 @@ export default function SoporteTecnicoClient({ projects, testimonials }: Soporte
             <div>
               <div className="bg-[#00DEC7] rounded-2xl px-6 py-4 mb-6"><h3 className="text-xl md:text-2xl font-bold text-black text-center">¿Tenés un problema con tu web?</h3></div>
               <p className="text-center text-gray-600 mb-2">Contanos qué está pasando <span className="font-semibold text-black">y te ayudamos</span></p>
-              <p className="text-center text-gray-600 text-sm mb-8"><a href="tel:+5493625528801" className="underline font-medium hover:text-[#00DEC7]">Llámanos</a>, escribinos por <a href="https://wa.me/5493625528801" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-[#00DEC7]">WhatsApp</a> o describí tu problema.</p>
+              <p className="text-center text-gray-600 text-sm mb-8">Escribinos a <a href="mailto:info@vektra.digital" className="underline font-medium hover:text-[#00DEC7]">info@vektra.digital</a> o describí tu problema.</p>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Nombre *" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00DEC7]" />
                 <div className="grid md:grid-cols-2 gap-4">

@@ -31,7 +31,6 @@ export function ContactForm() {
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
-    telefono: "",
     empresa: "",
     servicio: "",
     mensaje: "",
@@ -59,7 +58,6 @@ export function ContactForm() {
         body: JSON.stringify({
           nombre: formData.nombre,
           email: formData.email,
-          telefono: formData.telefono,
           servicio: formData.servicio || "Consulta general",
           mensaje: formData.empresa 
             ? `Empresa: ${formData.empresa}\n\n${formData.mensaje}`
@@ -103,7 +101,6 @@ export function ContactForm() {
             setFormData({
               nombre: "",
               email: "",
-              telefono: "",
               empresa: "",
               servicio: "",
               mensaje: "",
@@ -162,28 +159,15 @@ export function ContactForm() {
         </div>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2">
-        <div className="space-y-2">
-          <Label htmlFor="phone">Telefono</Label>
-          <Input
-            id="phone"
-            name="phone"
-            type="tel"
-            placeholder="+54 9 XXX XXX-XXXX"
-            value={formData.telefono}
-            onChange={(e) => setFormData({ ...formData, telefono: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="company">Empresa</Label>
-          <Input
-            id="company"
-            name="company"
-            placeholder="Nombre de tu empresa"
-            value={formData.empresa}
-            onChange={(e) => setFormData({ ...formData, empresa: e.target.value })}
-          />
-        </div>
+      <div className="space-y-2">
+        <Label htmlFor="company">Empresa</Label>
+        <Input
+          id="company"
+          name="company"
+          placeholder="Nombre de tu empresa"
+          value={formData.empresa}
+          onChange={(e) => setFormData({ ...formData, empresa: e.target.value })}
+        />
       </div>
 
       <div className="space-y-2">

@@ -7,7 +7,6 @@ const MINIMUM_SUBMISSION_TIME = 3000 // 3 seconds minimum to fill form
 interface ContactFormData {
   nombre: string
   email: string
-  telefono?: string
   servicio: string
   mensaje: string
   honeypot?: string
@@ -87,17 +86,10 @@ function generateEmailTemplate(data: ContactFormData): string {
               
               <table role="presentation" style="width: 100%; border-collapse: collapse;">
                 <tr>
-                  <td style="width: 50%; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
+                  <td style="padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
                     <p style="margin: 0; color: #666666; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Email</p>
                     <p style="margin: 5px 0 0; color: #000000; font-size: 14px; font-weight: 500;">
                       <a href="mailto:${data.email}" style="color: #00DEC7; text-decoration: none;">${data.email}</a>
-                    </p>
-                  </td>
-                  <td style="width: 10px;"></td>
-                  <td style="width: 50%; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
-                    <p style="margin: 0; color: #666666; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Telefono</p>
-                    <p style="margin: 5px 0 0; color: #000000; font-size: 14px; font-weight: 500;">
-                      ${data.telefono ? `<a href="tel:${data.telefono}" style="color: #00DEC7; text-decoration: none;">${data.telefono}</a>` : 'No proporcionado'}
                     </p>
                   </td>
                 </tr>
@@ -123,14 +115,9 @@ function generateEmailTemplate(data: ContactFormData): string {
               <table role="presentation" style="width: 100%;">
                 <tr>
                   <td style="text-align: center;">
-                    <a href="mailto:${data.email}" style="display: inline-block; padding: 14px 28px; background-color: #00DEC7; color: #000000; text-decoration: none; font-weight: 600; border-radius: 50px; margin-right: 10px;">
+                    <a href="mailto:${data.email}" style="display: inline-block; padding: 14px 28px; background-color: #00DEC7; color: #000000; text-decoration: none; font-weight: 600; border-radius: 50px;">
                       Responder por Email
                     </a>
-                    ${data.telefono ? `
-                    <a href="https://wa.me/${data.telefono.replace(/[^0-9]/g, '')}" style="display: inline-block; padding: 14px 28px; background-color: #25D366; color: #ffffff; text-decoration: none; font-weight: 600; border-radius: 50px;">
-                      WhatsApp
-                    </a>
-                    ` : ''}
                   </td>
                 </tr>
               </table>
@@ -161,7 +148,7 @@ function generateEmailTemplate(data: ContactFormData): string {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { nombre, email, telefono, servicio, mensaje, honeypot, timestamp, token } = body as ContactFormData
+    const { nombre, email, servicio, mensaje, honeypot, timestamp, token } = body as ContactFormData
 
     // Anti-spam: Check honeypot field (should be empty)
     if (honeypot) {
@@ -209,7 +196,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate email HTML
-    const emailHtml = generateEmailTemplate({ nombre, email, telefono, servicio, mensaje })
+    const emailHtml = generateEmailTemplate({ nombre, email, servicio, mensaje })
 
     // Send email using Nodemailer
     if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {

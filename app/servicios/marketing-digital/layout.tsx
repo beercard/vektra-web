@@ -48,7 +48,6 @@ export default function MarketingDigitalLayout({
     },
     "areaServed": ["Argentina", "Paraguay"],
     "priceRange": "$$",
-    "telephone": "+5493625528801",
     "url": "https://vektra.digital/servicios/marketing-digital"
   }
 

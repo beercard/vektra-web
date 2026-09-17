@@ -15,10 +15,9 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { 
-  ChevronLeft, 
-  ChevronRight, 
+  ChevronLeft,
+  ChevronRight,
   Star,
-  Phone,
   Mail,
   MapPin,
   Linkedin,
@@ -292,10 +291,6 @@ export default function SobreNosotrosClient() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 text-gray-500">
-                <Phone className="h-4 w-4 text-[#00DEC7]" />
-                <span>+54 9 362 552-8801</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-500">
                 <Mail className="h-4 w-4 text-[#00DEC7]" />
                 <span>info@vektra.digital</span>
               </div>
@@ -502,12 +497,6 @@ export default function SobreNosotrosClient() {
               <div className="mt-8 flex flex-col gap-4">
                 <div className="flex items-center gap-3 text-black">
                   <div className="w-10 h-10 rounded-full bg-black/10 flex items-center justify-center">
-                    <Phone className="h-5 w-5" />
-                  </div>
-                  <span className="font-medium">+54 9 362 464-6669</span>
-                </div>
-                <div className="flex items-center gap-3 text-black">
-                  <div className="w-10 h-10 rounded-full bg-black/10 flex items-center justify-center">
                     <Mail className="h-5 w-5" />
                   </div>
                   <span className="font-medium">info@vektra.digital</span>
@@ -518,15 +507,9 @@ export default function SobreNosotrosClient() {
             {/* Contact Form */}
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div>
-                    <Label htmlFor="nombre" className="text-black font-medium">Nombre *</Label>
-                    <Input id="nombre" placeholder="Tu nombre" className="mt-1" required />
-                  </div>
-                  <div>
-                    <Label htmlFor="telefono" className="text-black font-medium">Teléfono *</Label>
-                    <Input id="telefono" type="tel" placeholder="+54 9 ..." className="mt-1" required />
-                  </div>
+                <div>
+                  <Label htmlFor="nombre" className="text-black font-medium">Nombre *</Label>
+                  <Input id="nombre" placeholder="Tu nombre" className="mt-1" required />
                 </div>
                 <div>
                   <Label htmlFor="email" className="text-black font-medium">Email *</Label>

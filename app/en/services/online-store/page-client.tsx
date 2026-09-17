@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Check, ChevronLeft, ChevronRight, Plus, Minus, ShoppingCart, CreditCard, Truck, Smartphone, Monitor, ShieldCheck, TrendingUp, ArrowRight, User, Mail, Phone, MessageSquare } from "lucide-react"
+import { Check, ChevronLeft, ChevronRight, Plus, Minus, ShoppingCart, CreditCard, Truck, Smartphone, Monitor, ShieldCheck, TrendingUp, ArrowRight, User, Mail, MessageSquare } from "lucide-react"
 import { Testimonials } from "@/components/sections/testimonials"
 import { Testimonial } from "@/app/testimonials/data"
 
@@ -163,7 +163,7 @@ export default function OnlineStoreClient({ testimonials }: OnlineStoreClientPro
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [animatedStats, setAnimatedStats] = useState(stats.map(() => 0))
   const statsRef = useRef<HTMLDivElement>(null)
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [acceptedPolicy, setAcceptedPolicy] = useState(false)
 
   // Animate stats on scroll
@@ -484,28 +484,16 @@ export default function OnlineStoreClient({ testimonials }: OnlineStoreClientPro
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                    <input
-                      type="email"
-                      placeholder="Email *"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                      required
-                    />
-                  </div>
-                  <div className="relative">
-                    <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                    <input
-                      type="tel"
-                      placeholder="Phone"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
-                    />
-                  </div>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                  <input
+                    type="email"
+                    placeholder="Email *"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#00DEC7]"
+                    required
+                  />
                 </div>
 
                 <div className="relative">

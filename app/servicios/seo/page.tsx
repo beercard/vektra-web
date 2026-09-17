@@ -67,7 +67,7 @@ const serviceSchema = {
     "logo": "https://vektra.digital/logo/logo-vektra-digital.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+54-9-362-464-6669",
+      "email": "info@vektra.digital",
       "contactType": "sales",
       "availableLanguage": ["Spanish"]
     }
