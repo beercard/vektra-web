@@ -39,6 +39,8 @@ export default function AvisoLegalPage() {
             <div className="bg-gray-50 rounded-xl p-6 mb-8">
               <ul className="space-y-2 text-gray-700">
                 <li><strong>Denominación:</strong> Vektra - Agencia Digital</li>
+                <li><strong>Razón Social:</strong> Vektra Digital Solutions S.A.S.</li>
+                <li><strong>CUIT:</strong> 30-71955290-7</li>
                 <li><strong>Actividad:</strong> Servicios de desarrollo web, aplicaciones móviles, marketing digital, e-commerce y soluciones de inteligencia artificial</li>
                 <li><strong>Email:</strong> info@vektra.digital</li>
                 <li><strong>Sitio web:</strong> https://vektra.digital</li>

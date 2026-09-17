@@ -40,6 +40,8 @@ export default function LegalNoticePage() {
             <div className="bg-gray-50 rounded-xl p-6 mb-8">
               <ul className="space-y-2 text-gray-700">
                 <li><strong>Denomination:</strong> Vektra - Digital Agency</li>
+                <li><strong>Legal Name:</strong> Vektra Digital Solutions S.A.S.</li>
+                <li><strong>Tax ID (CUIT):</strong> 30-71955290-7</li>
                 <li><strong>Activity:</strong> Web development, mobile applications, digital marketing, e-commerce, and artificial intelligence solutions</li>
                 <li><strong>Email:</strong> info@vektra.digital</li>
                 <li><strong>Website:</strong> https://vektra.digital</li>
