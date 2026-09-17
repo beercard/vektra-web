@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Agentes IA y Chatbots en Argentina y Paraguay | Vektra",
-  description: "Automatiza tu atención al cliente con Agentes IA y Chatbots para WhatsApp. Soluciones de inteligencia artificial para empresas en Argentina y Paraguay.",
+  title: "Agentes IA y Chatbots | Vektra",
+  description: "Automatiza tu atención al cliente con Agentes IA y Chatbots para WhatsApp. Soluciones de inteligencia artificial para empresas de todo el mundo.",
   keywords: [
     "agentes ia",
     "chatbots",
@@ -10,14 +10,12 @@ export const metadata: Metadata = {
     "inteligencia artificial",
     "automatización",
     "chatgpt empresas",
-    "argentina",
-    "paraguay",
     "bot whatsapp",
     "atención al cliente automatizada"
   ],
   openGraph: {
-    title: "Agentes IA y Chatbots en Argentina y Paraguay | Vektra",
-    description: "Soluciones de inteligencia artificial y chatbots para automatizar tu negocio en Argentina y Paraguay.",
+    title: "Agentes IA y Chatbots | Vektra",
+    description: "Soluciones de inteligencia artificial y chatbots para automatizar tu negocio en todo el mundo.",
   },
 }
 
@@ -34,7 +32,7 @@ export default function AgentesIALayout({
       "@type": "Organization",
       "name": "Vektra"
     },
-    "areaServed": ["Argentina", "Paraguay"],
+    "areaServed": "Worldwide",
     "description": "Desarrollo de agentes de inteligencia artificial y chatbots para WhatsApp.",
     "url": "https://vektra.digital/servicios/agentes-ia"
   }
@@ -64,7 +62,7 @@ export default function AgentesIALayout({
         "name": "¿Pueden hacer un bot para WhatsApp Business?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, desarrollamos chatbots para WhatsApp Business usando la API oficial de Meta. El bot puede responder mensajes automáticamente, enviar catálogos, procesar pedidos, agendar citas y más. Funciona tanto en Argentina como en Paraguay y cualquier país."
+          "text": "Sí, desarrollamos chatbots para WhatsApp Business usando la API oficial de Meta. El bot puede responder mensajes automáticamente, enviar catálogos, procesar pedidos, agendar citas y más. Funciona en cualquier país."
         }
       },
       {
@@ -112,15 +110,15 @@ export default function AgentesIALayout({
         "name": "¿El bot funciona en varios idiomas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, nuestros bots pueden comunicarse en español, inglés, portugués y otros idiomas. Es ideal si tenés clientes en Argentina, Paraguay, Brasil u otros países de la región."
+          "text": "Sí, nuestros bots pueden comunicarse en español, inglés, portugués y otros idiomas. Es ideal si tenés clientes en distintos países."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Trabajan con empresas de Argentina y Paraguay?",
+        "name": "¿Trabajan con empresas de otros países?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Entendemos el mercado local, los medios de pago (MercadoPago, transferencias), las plataformas de envío y las particularidades de cada país."
+          "text": "Sí, trabajamos con empresas de todo el mundo. Nos adaptamos a los medios de pago, las plataformas de envío y las particularidades de cada mercado."
         }
       }
     ]

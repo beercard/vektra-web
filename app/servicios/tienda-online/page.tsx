@@ -5,36 +5,28 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Diseño de Tiendas Online en Argentina y Paraguay | E-commerce Profesional | Vektra",
-  description: "Desarrollo de tiendas online y e-commerce profesional en Argentina y Paraguay. WooCommerce, Shopify y Tiendanube. Pasarelas de pago MercadoPago, gestión de envíos y venta 24/7.",
+  title: "Diseño de Tiendas Online | E-commerce Profesional | Vektra",
+  description: "Desarrollo de tiendas online y e-commerce profesional para empresas de todo el mundo. WooCommerce, Shopify y Tiendanube. Pasarelas de pago MercadoPago, gestión de envíos y venta 24/7.",
   keywords: [
     // Keywords principales
-    "tienda online argentina",
-    "tienda online paraguay",
-    "ecommerce argentina",
-    "ecommerce paraguay",
+    "tienda online",
+    "ecommerce",
     // Long tail keywords
-    "cuánto cuesta crear una tienda online argentina",
+    "cuánto cuesta crear una tienda online",
     "crear tienda online woocommerce precio",
     "desarrollo ecommerce profesional",
     "tienda online con mercadopago",
-    "hacer tienda online shopify argentina",
+    "hacer tienda online shopify",
     "tiendanube desarrollo personalizado",
     "tienda online para vender ropa",
-    "ecommerce para pymes argentina",
+    "ecommerce para pymes",
     "tienda online con carrito de compras",
     "diseño tienda online responsive",
     "tienda online con pasarela de pagos",
-    "desarrollo woocommerce argentina",
-    // Ciudades
-    "tienda online buenos aires",
-    "tienda online córdoba",
-    "tienda online rosario",
-    "tienda online asunción",
-    "tienda online ciudad del este",
+    "desarrollo woocommerce",
   ],
   openGraph: {
-    title: "Tiendas Online Profesionales en Argentina y Paraguay | Vektra",
+    title: "Tiendas Online Profesionales | Vektra",
     description: "Vende tus productos 24/7 con una tienda online profesional. WooCommerce, Shopify y Tiendanube con MercadoPago integrado.",
     type: "website",
     locale: "es_AR",
@@ -42,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tiendas Online | Vektra",
-    description: "Desarrollo de e-commerce profesional en Argentina y Paraguay.",
+    description: "Desarrollo de e-commerce profesional para empresas de todo el mundo.",
   },
   alternates: {
     canonical: "https://vektra.digital/servicios/tienda-online",
@@ -70,10 +62,7 @@ const serviceSchema = {
       "availableLanguage": ["Spanish"]
     }
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "E-commerce Development",
   "offers": {
     "@type": "Offer",
@@ -106,7 +95,7 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta crear una tienda online en Argentina?",
+      "name": "¿Cuánto cuesta crear una tienda online?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Los precios varían según la complejidad. Una tienda online básica con hasta 50 productos comienza desde $450.000 ARS. Tiendas más grandes con funcionalidades avanzadas tienen presupuestos personalizados. Contáctanos para una cotización sin compromiso."
@@ -117,7 +106,7 @@ const faqSchema = {
       "name": "¿Qué plataforma usan para crear tiendas online?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trabajamos con WooCommerce (WordPress) por su flexibilidad, Shopify para soluciones rápidas y escalables, y Tiendanube que es la plataforma líder en Argentina y Latinoamérica. Te asesoramos sobre la mejor opción según tu negocio, presupuesto y objetivos."
+        "text": "Trabajamos con WooCommerce (WordPress) por su flexibilidad, Shopify para soluciones rápidas y escalables, y Tiendanube que es la plataforma líder en Latinoamérica. Te asesoramos sobre la mejor opción según tu negocio, presupuesto y objetivos."
       }
     },
     {

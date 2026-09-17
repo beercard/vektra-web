@@ -6,17 +6,17 @@ export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: "Portfolio de Trabajos | Casos de Éxito en Desarrollo Web y Marketing",
-  description: "Descubrí nuestro portfolio de desarrollo web, tiendas online, apps móviles y marketing digital. Casos de éxito reales de empresas en Argentina y Paraguay.",
+  description: "Descubrí nuestro portfolio de desarrollo web, tiendas online, apps móviles y marketing digital. Casos de éxito reales de empresas de todo el mundo.",
   keywords: [
-    "portfolio desarrollo web argentina",
+    "portfolio desarrollo web",
     "casos de éxito marketing digital",
     "ejemplos tiendas online woocommerce",
     "portfolio apps móviles",
     "trabajos diseño web profesional",
-    "proyectos ecommerce argentina",
+    "proyectos ecommerce",
     "ejemplos webs corporativas",
     "portfolio agencia digital",
-    "casos éxito seo argentina",
+    "casos éxito seo",
     "trabajos chatbots whatsapp"
   ],
   openGraph: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Portfolio | Vektra",
-    description: "Casos de éxito reales de empresas en Argentina y Paraguay.",
+    description: "Casos de éxito reales de empresas de todo el mundo.",
   },
   alternates: {
     canonical: "https://vektra.digital/trabajos",

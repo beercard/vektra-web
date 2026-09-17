@@ -1,13 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Diseño y Desarrollo Web en Argentina y Paraguay | Next.js, React y WordPress",
-  description: "Agencia de diseño web profesional en Argentina y Paraguay. Sitios rápidos con Next.js, React y WordPress para Buenos Aires, Córdoba, Rosario, Asunción y Ciudad del Este.",
+  title: "Diseño y Desarrollo Web | Next.js, React y WordPress",
+  description: "Agencia de diseño web profesional para empresas de todo el mundo. Sitios rápidos con Next.js, React y WordPress.",
   keywords: [
-    "diseño web argentina",
-    "desarrollo web argentina",
-    "diseño web paraguay",
-    "desarrollo web paraguay",
+    "diseño web",
+    "desarrollo web",
     "agencia diseño web",
     "pagina web profesional",
     "landing page",
@@ -15,15 +13,10 @@ export const metadata: Metadata = {
     "next.js",
     "react",
     "wordpress",
-    "diseño web buenos aires",
-    "diseño web córdoba",
-    "diseño web rosario",
-    "diseño web asunción",
-    "diseño web ciudad del este",
   ],
   openGraph: {
-    title: "Diseño y Desarrollo Web en Argentina y Paraguay | Vektra",
-    description: "Sitios web profesionales con Next.js, React y WordPress para empresas en Argentina y Paraguay.",
+    title: "Diseño y Desarrollo Web | Vektra",
+    description: "Sitios web profesionales con Next.js, React y WordPress para empresas de todo el mundo.",
   },
 }
 
@@ -40,7 +33,7 @@ export default function DisenoWebLayout({
       "@type": "Organization",
       "name": "Vektra"
     },
-    "areaServed": ["Argentina", "Paraguay"],
+    "areaServed": "Worldwide",
     "description": "Diseño y desarrollo de sitios web profesionales con Next.js, React y WordPress.",
     "url": "https://vektra.digital/servicios/diseno-web"
   }
@@ -107,10 +100,10 @@ export default function DisenoWebLayout({
       },
       {
         "@type": "Question",
-        "name": "¿Trabajan con clientes de Argentina y Paraguay?",
+        "name": "¿Trabajan con clientes de otros países?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email."
+          "text": "Sí, trabajamos con clientes de todo el mundo. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email."
         }
       }
     ]

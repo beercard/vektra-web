@@ -126,17 +126,17 @@ const buildExpandedContent = (post: BlogPost) => {
       heading: "Introducción",
       paragraphs: [
         post.description,
-        `En este artículo repasamos cómo abordar ${post.title.toLowerCase()} con foco en ${category.toLowerCase()}, priorizando ${profile.focus} para el mercado argentino y paraguayo.`,
+        `En este artículo repasamos cómo abordar ${post.title.toLowerCase()} con foco en ${category.toLowerCase()}, priorizando ${profile.focus} para empresas de todo el mundo.`,
       ],
     },
     {
-      heading: "Panorama y contexto local",
+      heading: "Panorama y contexto global",
       paragraphs: [
-        "El comportamiento de los usuarios en Argentina y Paraguay exige claridad en precios, medios de pago confiables y tiempos de respuesta rápidos.",
+        "El comportamiento de los usuarios a nivel global exige claridad en precios, medios de pago confiables y tiempos de respuesta rápidos.",
         "Alinear mensaje, propuesta y experiencia evita fricciones y mejora la captación de clientes desde el primer contacto.",
       ],
       bullets: [
-        "Preferencias de pago locales y cuotas",
+        "Preferencias de pago según el mercado",
         "Expectativas de respuesta en WhatsApp",
         "Competencia creciente en canales digitales",
       ],

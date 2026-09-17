@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Sobre Nosotros | Agencia de Desarrollo Web y Marketing Digital",
-  description: "Conocé al equipo de Vektra. Más de 8 años de experiencia en desarrollo web, marketing digital y agentes de IA. Trabajamos con empresas de Argentina y Paraguay.",
+  description: "Conocé al equipo de Vektra. Más de 8 años de experiencia en desarrollo web, marketing digital y agentes de IA. Trabajamos con empresas de todo el mundo.",
   keywords: [
     "sobre vektra",
     "equipo vektra",

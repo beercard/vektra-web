@@ -58,7 +58,7 @@ const faqs = [
   { question: "Do you work only with WordPress?", answer: "Mainly WordPress and WooCommerce, but we also offer maintenance for websites with Next.js, React, and other technologies." },
   { question: "What happens if I need urgent support?", answer: "Professional and Enterprise plans include priority support. The Enterprise plan has 24/7 coverage for emergencies." },
   { question: "How do I know what updates were made?", answer: "We send detailed monthly reports with all updates, security scans, and speed metrics." },
-  { question: "Do you work with companies in Argentina and Paraguay?", answer: "Yes, we work mainly with companies in Argentina and Paraguay. We offer billing in local currency." },
+  { question: "Do you work with companies in other countries?", answer: "Yes, we work with companies all over the world. Communication is smooth thanks to digital tools." },
   { question: "Can I cancel the service whenever I want?", answer: "Yes, our plans are monthly with no long-term contract. You can cancel at any time." },
 ]
 
@@ -122,7 +122,7 @@ export default function WebMaintenanceClient({ projects, testimonials }: WebMain
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Your web <span className="relative inline-block"><span className="relative z-10">always</span><span className="absolute bottom-1 left-0 w-full h-3 bg-[#00DEC7] -z-0 opacity-60" /></span> updated, <span className="font-extrabold">secure and fast</span>
-                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">in Argentina and Paraguay</span>
+                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">worldwide</span>
               </h1>
               <p className="mt-6 text-base sm:text-lg text-gray-300 leading-relaxed">
                 We take care of the <strong className="text-white">technical maintenance</strong> of your website. <strong className="text-white">Updates, security, backups</strong> and <strong className="text-white">speed optimization</strong> so you can focus on your business.

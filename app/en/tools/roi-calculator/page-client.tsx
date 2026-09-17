@@ -361,7 +361,7 @@ export default function ROICalculatorClient() {
             <div className="bg-[#00DEC7] rounded-2xl p-8 text-center">
               <h2 className="text-2xl font-bold text-black mb-4">Need to improve your business profitability?</h2>
               <p className="text-black/80 mb-6">
-                At Vektra, we specialize in high-performance strategies to maximize your ROI in Argentina and Paraguay.
+                At Vektra, we specialize in high-performance strategies to maximize your ROI, wherever your business operates.
               </p>
               <Link href="/en/contact">
                 <Button size="lg" className="bg-black text-white hover:bg-black/90 rounded-full border-none">

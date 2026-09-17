@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Política de Cookies | Vektra - Agencia Digital Argentina y Paraguay",
+  title: "Política de Cookies | Vektra - Agencia Digital",
   description: "Política de cookies de Vektra. Información sobre el uso de cookies y tecnologías similares en nuestro sitio web.",
   robots: "noindex, follow",
 }
@@ -207,8 +207,8 @@ export default function CookiesPage() {
               Esta política de cookies se rige por:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li><strong>Argentina:</strong> Ley 25.326 de Protección de Datos Personales y disposiciones de la AAIP sobre consentimiento informado</li>
-              <li><strong>Paraguay:</strong> Ley 1682/2001 y normativas sobre protección de la privacidad en línea</li>
+              <li><strong>Argentina:</strong> Ley 25.326 de Protección de Datos Personales y disposiciones de la AAIP sobre consentimiento informado, aplicable como legislación del domicilio de Vektra</li>
+              <li>Para clientes de otros países, aplicamos además los estándares internacionales de consentimiento y privacidad en línea que resulten pertinentes</li>
               <li>Adicionalmente, seguimos las mejores prácticas internacionales basadas en el RGPD europeo</li>
             </ul>
 

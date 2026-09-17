@@ -5,13 +5,13 @@ import { readStorage } from "@/lib/storage";
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Agentes de IA y Chatbots para WhatsApp en Argentina y Paraguay | Vektra",
-  description: "Desarrollo de agentes de inteligencia artificial y chatbots para WhatsApp Business. Automatiza atención al cliente 24/7, toma pedidos y agenda citas con IA en Argentina y Paraguay.",
+  title: "Agentes de IA y Chatbots para WhatsApp | Vektra",
+  description: "Desarrollo de agentes de inteligencia artificial y chatbots para WhatsApp Business. Automatiza atención al cliente 24/7, toma pedidos y agenda citas con IA para empresas de todo el mundo.",
   keywords: [
     // Keywords principales
-    "agentes de ia argentina",
-    "chatbots whatsapp argentina",
-    "bots ia paraguay",
+    "agentes de ia",
+    "chatbots whatsapp",
+    "bots ia",
     "asistentes virtuales empresas",
     // Long tail keywords
     "chatbot para whatsapp business precio",
@@ -26,12 +26,6 @@ export const metadata: Metadata = {
     "bot ia para atención 24 horas",
     "chatbot con base de conocimiento",
     "integración chatbot crm",
-    // Ciudades
-    "chatbots buenos aires",
-    "chatbots córdoba",
-    "chatbots rosario",
-    "chatbots asunción",
-    "chatbots ciudad del este",
   ],
   openGraph: {
     title: "Agentes de IA y Chatbots WhatsApp | Vektra",
@@ -42,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Chatbots e IA para Empresas | Vektra",
-    description: "Desarrollo de agentes de IA y chatbots para WhatsApp en Argentina y Paraguay.",
+    description: "Desarrollo de agentes de IA y chatbots para WhatsApp para empresas de todo el mundo.",
   },
   alternates: {
     canonical: "https://vektra.digital/servicios/agentes-ia",
@@ -70,10 +64,7 @@ const serviceSchema = {
       "availableLanguage": ["Spanish"]
     }
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "AI Chatbot Development",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -113,7 +104,7 @@ const faqSchema = {
       "name": "¿Pueden hacer un bot para WhatsApp Business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, desarrollamos chatbots para WhatsApp Business usando la API oficial de Meta. El bot puede responder mensajes automáticamente, enviar catálogos, procesar pedidos, agendar citas y más. Funciona tanto en Argentina como en Paraguay y cualquier país."
+        "text": "Sí, desarrollamos chatbots para WhatsApp Business usando la API oficial de Meta. El bot puede responder mensajes automáticamente, enviar catálogos, procesar pedidos, agendar citas y más. Funciona en cualquier país."
       }
     },
     {
@@ -161,15 +152,15 @@ const faqSchema = {
       "name": "¿El bot funciona en varios idiomas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, nuestros bots pueden comunicarse en español, inglés, portugués y otros idiomas. Es ideal si tenés clientes en Argentina, Paraguay, Brasil u otros países de la región."
+        "text": "Sí, nuestros bots pueden comunicarse en español, inglés, portugués y otros idiomas. Es ideal si tenés clientes en distintos países."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Trabajan con empresas de Argentina y Paraguay?",
+      "name": "¿Trabajan con empresas de otros países?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Entendemos el mercado local, los medios de pago (MercadoPago, transferencias), las plataformas de envío y las particularidades de cada país."
+        "text": "Sí, trabajamos con empresas de todo el mundo. Nos adaptamos a los medios de pago, las plataformas de envío y las particularidades de cada mercado."
       }
     }
   ]

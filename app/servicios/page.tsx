@@ -5,25 +5,24 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Monitor, ShoppingCart, TrendingUp, Search, Check, Smartphone, Bot, Wrench, Palette, Workflow, Headset } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Servicios Digitales en Argentina y Paraguay | Desarrollo Web, SEO, Apps y Marketing",
-  description: "Agencia digital en Argentina y Paraguay. Servicios de diseño web profesional, tiendas online, apps móviles, posicionamiento SEO, marketing digital con Google Ads, chatbots IA, automatización y soporte técnico para empresas y pymes.",
+  title: "Servicios Digitales | Desarrollo Web, SEO, Apps y Marketing",
+  description: "Agencia digital para empresas de todo el mundo. Servicios de diseño web profesional, tiendas online, apps móviles, posicionamiento SEO, marketing digital con Google Ads, chatbots IA, automatización y soporte técnico para empresas y pymes.",
   keywords: [
-    "servicios digitales argentina",
-    "servicios digitales paraguay",
+    "servicios digitales",
     "agencia desarrollo web",
     "servicios marketing digital",
     "desarrollo tiendas online",
     "servicios seo profesional",
     "desarrollo apps móviles",
     "servicios automatización",
-    "diseño ui ux argentina",
+    "diseño ui ux",
     "soporte técnico web",
     "agencia google ads",
     "servicios chatbots ia"
   ],
   openGraph: {
-    title: "Servicios Digitales | Vektra - Agencia Digital Argentina",
-    description: "Desarrollo web, tiendas online, apps, SEO, marketing digital y más para empresas en Argentina y Paraguay.",
+    title: "Servicios Digitales | Vektra - Agencia Digital",
+    description: "Desarrollo web, tiendas online, apps, SEO, marketing digital y más para empresas de todo el mundo.",
     type: "website",
     locale: "es_AR",
   },
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Diseño Web Profesional",
-    description: "Páginas web a medida con Next.js, React y WordPress. Diseño responsive, rápido y optimizado para SEO en Argentina y Paraguay.",
+    description: "Páginas web a medida con Next.js, React y WordPress. Diseño responsive, rápido y optimizado para SEO en todo el mundo.",
     icon: Monitor,
     href: "/servicios/diseno-web",
     features: [
@@ -73,7 +72,7 @@ const services = [
   },
   {
     title: "Marketing Digital",
-    description: "Campañas en Google Ads, Meta Ads y TikTok Ads. Estrategias de publicidad online y posicionamiento para pymes en Argentina y Paraguay.",
+    description: "Campañas en Google Ads, Meta Ads y TikTok Ads. Estrategias de publicidad online y posicionamiento para pymes de todo el mundo.",
     icon: TrendingUp,
     href: "/servicios/marketing-digital",
     features: [
@@ -197,7 +196,7 @@ const servicesListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Servicios Digitales de Vektra",
-  "description": "Lista completa de servicios digitales ofrecidos por Vektra en Argentina y Paraguay",
+  "description": "Lista completa de servicios digitales ofrecidos por Vektra para empresas de todo el mundo",
   "url": "https://vektra.digital/servicios",
   "numberOfItems": services.length,
   "itemListElement": services.map((service, index) => ({
@@ -234,7 +233,7 @@ export default function ServiciosPage() {
             Nuestros <span className="text-[#00DEC7]">Servicios</span>
           </h1>
           <p className="text-white/80 text-lg max-w-3xl mx-auto">
-            Desarrollo web, tiendas online, apps móviles, marketing digital, posicionamiento SEO y agentes IA para hacer crecer tu negocio en Argentina y Paraguay. Soluciones digitales a medida para empresas y pymes.
+            Desarrollo web, tiendas online, apps móviles, marketing digital, posicionamiento SEO y agentes IA para hacer crecer tu negocio en cualquier parte del mundo. Soluciones digitales a medida para empresas y pymes.
           </p>
         </div>
       </section>

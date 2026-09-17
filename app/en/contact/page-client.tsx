@@ -37,7 +37,7 @@ const stats = [
   { number: "+8", label: "Years of experience" },
   { number: "+150", label: "Completed projects" },
   { number: "+45", label: "5-star reviews" },
-  { number: "100%", label: "Clients Worldwide" },
+  { number: "2", label: "Languages Supported" },
 ]
 
 const faqs = [

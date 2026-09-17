@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Aviso Legal y Términos de Uso | Vektra - Agencia Digital Argentina y Paraguay",
+  title: "Aviso Legal y Términos de Uso | Vektra - Agencia Digital",
   description: "Términos y condiciones de uso del sitio web de Vektra. Condiciones generales de contratación de servicios de desarrollo web, apps y marketing digital.",
   robots: "noindex, follow",
 }
@@ -44,7 +44,7 @@ export default function AvisoLegalPage() {
                 <li><strong>Actividad:</strong> Servicios de desarrollo web, aplicaciones móviles, marketing digital, e-commerce y soluciones de inteligencia artificial</li>
                 <li><strong>Email:</strong> info@vektra.digital</li>
                 <li><strong>Sitio web:</strong> https://vektra.digital</li>
-                <li><strong>Ámbito de operación:</strong> República Argentina y República del Paraguay</li>
+                <li><strong>Ámbito de operación:</strong> Clientes de todo el mundo</li>
               </ul>
             </div>
 
@@ -129,7 +129,7 @@ export default function AvisoLegalPage() {
 
             <h2 className="text-2xl font-bold text-black mb-4">6. Propiedad Intelectual</h2>
             <p className="text-gray-700 mb-4">
-              El contenido del Sitio Web, incluyendo pero no limitado a textos, gráficos, imágenes, logotipos, iconos, software y código fuente, está protegido por las leyes de propiedad intelectual de Argentina (Ley 11.723) y Paraguay (Ley 1328/98).
+              El contenido del Sitio Web, incluyendo pero no limitado a textos, gráficos, imágenes, logotipos, iconos, software y código fuente, está protegido por las leyes de propiedad intelectual de la República Argentina (Ley 11.723) y por los tratados internacionales de propiedad intelectual aplicables.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
               <li>El cliente adquiere los derechos de uso del trabajo final una vez abonado el precio total</li>
@@ -182,7 +182,7 @@ export default function AvisoLegalPage() {
 
             <h2 className="text-2xl font-bold text-black mb-4">12. Legislación y Jurisdicción</h2>
             <p className="text-gray-700 mb-8">
-              Las presentes condiciones se rigen por la legislación argentina y paraguaya según corresponda al domicilio del cliente. Para la resolución de cualquier controversia, las partes se someten a los tribunales ordinarios competentes, renunciando a cualquier otro fuero que pudiera corresponderles.
+              Las presentes condiciones se rigen por la legislación de la República Argentina, domicilio legal de Vektra. Para la resolución de cualquier controversia, las partes se someten a los tribunales ordinarios competentes de Argentina, renunciando a cualquier otro fuero que pudiera corresponderles.
             </p>
 
             <h2 className="text-2xl font-bold text-black mb-4">13. Modificaciones</h2>

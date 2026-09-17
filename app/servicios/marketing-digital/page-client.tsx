@@ -12,9 +12,7 @@ import { Testimonial } from "@/app/testimonials/data"
 // Marquee items for marketing digital
 const marqueeItems = [
   { text: "Agencia de Marketing Digital", highlight: true },
-  { text: "Argentina: estrategia y segmentación local" },
-  { text: "Agencia de Marketing Digital", highlight: true },
-  { text: "Paraguay: campañas por ciudad y región" },
+  { text: "estrategia y segmentación para todo el mundo" },
   { text: "Google Ads", highlight: true },
   { text: "expertos en búsqueda y performance" },
   { text: "Meta Ads", highlight: true },
@@ -33,7 +31,7 @@ const marqueeItems = [
 const servicesIncluded = [
   {
     title: "Google Ads",
-    description: "Consigue más visitas a tu tienda o negocio, recibe más llamadas y aumenta las visitas a tu página web. Muestra tus anuncios en los primeros puestos de las búsquedas en Google. Necesario para dar a conocer tu negocio en Argentina y Paraguay.",
+    description: "Consigue más visitas a tu tienda o negocio, recibe más llamadas y aumenta las visitas a tu página web. Muestra tus anuncios en los primeros puestos de las búsquedas en Google. Necesario para dar a conocer tu negocio en todo el mundo.",
   },
   {
     title: "Meta Ads",
@@ -41,11 +39,11 @@ const servicesIncluded = [
   },
   {
     title: "TikTok Ads",
-    description: "Llega a la generación Z y millennials con anuncios creativos en video. TikTok es la plataforma de mayor crecimiento en Argentina y Paraguay, ideal para marcas que buscan conectar con audiencias jóvenes.",
+    description: "Llega a la generación Z y millennials con anuncios creativos en video. TikTok es la plataforma de mayor crecimiento a nivel mundial, ideal para marcas que buscan conectar con audiencias jóvenes.",
   },
   {
     title: "Posicionamiento SEO",
-    description: "Escala puestos de forma orgánica en los resultados de búsqueda de Google mediante acciones tanto dentro como fuera de la web. Estrategias de SEO local para Argentina y Paraguay.",
+    description: "Escala puestos de forma orgánica en los resultados de búsqueda de Google mediante acciones tanto dentro como fuera de la web. Estrategias de SEO local para empresas de todo el mundo.",
   },
   {
     title: "Google My Business",
@@ -68,7 +66,7 @@ const processSteps = [
     step: "01", 
     title: "Análisis", 
     subtitle: "de tu negocio", 
-    description: "Estudiamos tu negocio, competencia y mercado en Argentina y Paraguay para definir la estrategia más efectiva.",
+    description: "Estudiamos tu negocio, competencia y mercado para definir la estrategia más efectiva.",
     highlight: "Definimos objetivos claros y medibles."
   },
   { 
@@ -116,14 +114,14 @@ const stats = [
 
 // FAQs for marketing digital
 const faqs = [
-  { question: "Qué es el marketing digital y por qué lo necesito?", answer: "El marketing digital reúne estrategias de promoción en buscadores, plataformas de anuncios y email. Es esencial porque tu público está online. En Argentina y Paraguay, más del 80% de las personas buscan productos y servicios en internet antes de comprar." },
-  { question: "Cuánto cuesta una campaña de Google Ads en Argentina?", answer: "El presupuesto de Google Ads es flexible y lo defines tú. Recomendamos empezar con un mínimo de $50.000 ARS mensuales para ver resultados. A esto se suma nuestra gestión que incluye creación de anuncios, seguimiento y optimización constante." },
+  { question: "Qué es el marketing digital y por qué lo necesito?", answer: "El marketing digital reúne estrategias de promoción en buscadores, plataformas de anuncios y email. Es esencial porque tu público está online: más del 80% de las personas buscan productos y servicios en internet antes de comprar." },
+  { question: "Cuánto cuesta una campaña de Google Ads?", answer: "El presupuesto de Google Ads es flexible y lo defines tú. Recomendamos empezar con un mínimo de $50.000 ARS mensuales para ver resultados. A esto se suma nuestra gestión que incluye creación de anuncios, seguimiento y optimización constante." },
   { question: "Qué diferencia hay entre Google Ads y Meta Ads?", answer: "Google Ads capta intención de compra en el momento exacto de búsqueda. Meta Ads trabaja con segmentación por intereses, comportamientos y audiencias para generar demanda. La combinación suele potenciar resultados." },
   { question: "Sirve TikTok Ads para tu negocio?", answer: "TikTok es ideal si tu público objetivo tiene entre 16-35 años. Es la plataforma de mayor crecimiento y ofrece costos por clic muy competitivos. Funciona muy bien para moda, gastronomía, entretenimiento y marcas que quieran una imagen fresca y moderna." },
   { question: "Cuánto tiempo tarda el SEO en dar resultados?", answer: "El SEO es una estrategia a mediano-largo plazo. Generalmente se empiezan a ver resultados entre 3-6 meses, dependiendo de la competencia del sector. Sin embargo, los resultados son duraderos y el tráfico orgánico no tiene costo por clic." },
-  { question: "Qué es Google Business Profile y por qué es importante?", answer: "Google Business Profile es la ficha de tu negocio que aparece en Google y Google Maps. Es gratuito y fundamental para negocios locales en Argentina y Paraguay. Permite que tus clientes te encuentren, vean tus horarios, fotos, reseñas y te contacten directamente." },
+  { question: "Qué es Google Business Profile y por qué es importante?", answer: "Google Business Profile es la ficha de tu negocio que aparece en Google y Google Maps. Es gratuito y fundamental para negocios locales en cualquier parte del mundo. Permite que tus clientes te encuentren, vean tus horarios, fotos, reseñas y te contacten directamente." },
   { question: "Cómo miden los resultados de las campañas?", answer: "Utilizamos Google Analytics, Meta Business Suite y las herramientas nativas de cada plataforma. Te enviamos reportes mensuales con métricas clave: impresiones, clics, conversiones, costo por resultado y ROI. Todo transparente y medible." },
-  { question: "Trabajan con empresas de Paraguay?", answer: "Sí, trabajamos con clientes en toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida. Tenemos experiencia en campañas para ambos países con segmentación geográfica específica." },
+  { question: "Trabajan con empresas de otros países?", answer: "Sí, trabajamos con clientes de todo el mundo. Las reuniones se realizan por videollamada y la comunicación es fluida. Tenemos experiencia en campañas con segmentación geográfica específica para cada mercado." },
   { question: "Qué plataformas de email marketing utilizan?", answer: "Trabajamos principalmente con Mailchimp y Omnisend, que son las más populares y efectivas. Configuramos automatizaciones, secuencias de bienvenida, carritos abandonados y campañas promocionales para maximizar tus conversiones." },
 ]
 
@@ -218,9 +216,8 @@ export default function MarketingDigitalClient({ testimonials }: MarketingDigita
                   <span className="relative z-10 uppercase">Agencia de marketing digital</span>
                   <span className="absolute bottom-1 left-0 w-full h-3 bg-[#00DEC7] -z-0 opacity-60" />
                 </span>
-                {" "}en{" "}
-                <span className="font-extrabold">Argentina</span> y en{" "}
-                <span className="font-extrabold">Paraguay</span>
+                {" "}para{" "}
+                <span className="font-extrabold">todo el mundo</span>
               </h1>
 
               <p className="mt-6 text-base sm:text-lg text-white/80 leading-relaxed max-w-xl">
@@ -235,7 +232,7 @@ export default function MarketingDigitalClient({ testimonials }: MarketingDigita
               </p>
 
               <p className="mt-4 text-white/80 max-w-xl">
-                Brindamos servicio en <strong className="text-white">Argentina</strong> o en <strong className="text-white">Paraguay</strong>, con segmentación y estrategia específica para cada país.
+                Brindamos servicio a <strong className="text-white">clientes de todo el mundo</strong>, con segmentación y estrategia específica para cada mercado.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -468,7 +465,7 @@ export default function MarketingDigitalClient({ testimonials }: MarketingDigita
             </h2>
             <p className="mt-6 text-white/90 text-lg md:text-xl leading-relaxed">
               <strong className="text-white font-bold">Aumentar tu visibilidad online y generar ventas</strong>. 4 pasos para crear una estrategia de marketing digital que genere{" "}
-              <strong className="text-white font-bold">resultados reales para tu negocio en Argentina y Paraguay</strong>.
+              <strong className="text-white font-bold">resultados reales para tu negocio en todo el mundo</strong>.
             </p>
           </div>
 
@@ -536,7 +533,7 @@ export default function MarketingDigitalClient({ testimonials }: MarketingDigita
             </h2>
             <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed">
               A lo largo de estos años como <span className="text-white">equipo especialista en marketing digital</span>, 
-              hemos trabajado con clientes en <span className="text-white">Argentina y Paraguay</span> que avalan nuestra experiencia y compromiso. 
+              hemos trabajado con clientes de <span className="text-white">todo el mundo</span> que avalan nuestra experiencia y compromiso.
               Los siguientes datos reflejan el <span className="text-white">crecimiento</span> y la confianza 
               que nuestros clientes han depositado en nosotros.
             </p>

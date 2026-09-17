@@ -3,7 +3,7 @@ import CalculadoraROIClient from "./page-client"
 
 export const metadata: Metadata = {
   title: "Calculadora de ROI Marketing y Publicidad | Fórmula Rentabilidad 2026",
-  description: "Calcula el Retorno de Inversión (ROI) de tus campañas de marketing y publicidad. Herramienta gratuita para medir la rentabilidad de tu negocio en Argentina y Paraguay.",
+  description: "Calcula el Retorno de Inversión (ROI) de tus campañas de marketing y publicidad. Herramienta gratuita para medir la rentabilidad de tu negocio en cualquier parte del mundo.",
   keywords: [
     "calculadora roi marketing",
     "formula roi",

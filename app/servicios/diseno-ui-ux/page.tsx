@@ -5,22 +5,22 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Diseño UI/UX Profesional en Argentina y Paraguay | Vektra",
+  title: "Diseño UI/UX Profesional | Vektra",
   description: "Servicio de diseño de interfaces y experiencia de usuario. Creamos diseños intuitivos, atractivos y centrados en el usuario con investigación UX, prototipado y Design Systems.",
   keywords: [
     // Keywords principales
-    "diseño ui argentina",
-    "diseño ux paraguay",
+    "diseño ui",
+    "diseño ux",
     "diseño interfaces",
     "experiencia de usuario",
     // Long tail keywords
     "diseño ui ux profesional",
     "diseñador de interfaces web",
-    "diseño experiencia de usuario argentina",
+    "diseño experiencia de usuario",
     "prototipado interactivo figma",
     "design system para empresas",
     "rediseño de sitio web ux",
-    "user interface design argentina",
+    "user interface design",
     "investigación de usuarios ux",
     "wireframes y prototipos web",
     "diseño de aplicaciones móviles ui",
@@ -57,10 +57,7 @@ const serviceSchema = {
     "name": "Vektra Digital",
     "url": "https://vektra.digital"
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "UI/UX Design",
   "offers": [
     {

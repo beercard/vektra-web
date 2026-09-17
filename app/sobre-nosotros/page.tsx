@@ -2,30 +2,28 @@ import type { Metadata } from "next"
 import SobreNosotrosClient from "./page-client"
 
 export const metadata: Metadata = {
-  title: "Sobre Nosotros | Agencia de Desarrollo Web y Marketing Digital en Argentina",
-  description: "Conocé al equipo de Vektra: expertos en desarrollo web, marketing digital, apps móviles y agentes IA en Argentina y Paraguay. Más de 8 años de experiencia y +150 proyectos completados.",
+  title: "Sobre Nosotros | Agencia de Desarrollo Web y Marketing Digital",
+  description: "Conocé al equipo de Vektra: expertos en desarrollo web, marketing digital, apps móviles y agentes IA para empresas de todo el mundo. Más de 8 años de experiencia y +150 proyectos completados.",
   keywords: [
-    "agencia digital argentina",
+    "agencia digital",
     "agencia desarrollo web",
     "equipo vektra",
-    "agencia marketing digital argentina",
-    "agencia marketing digital paraguay",
-    "desarrolladores web argentina",
-    "expertos google ads argentina",
+    "agencia marketing digital",
+    "desarrolladores web",
+    "expertos google ads",
     "agencia chatbots ia",
-    "desarrollo web resistencia chaco",
-    "agencia digital asunción",
+    "agencia digital global",
   ],
   openGraph: {
-    title: "Sobre Nosotros | Vektra - Agencia Digital Argentina",
-    description: "Somos Vektra: expertos en desarrollo web, marketing digital y agentes IA para empresas en Argentina y Paraguay.",
+    title: "Sobre Nosotros | Vektra - Agencia Digital",
+    description: "Somos Vektra: expertos en desarrollo web, marketing digital y agentes IA para empresas de todo el mundo.",
     type: "website",
     locale: "es_AR",
   },
   twitter: {
     card: "summary_large_image",
     title: "Sobre Nosotros | Vektra",
-    description: "Equipo de expertos en desarrollo web, marketing digital e IA en Argentina y Paraguay.",
+    description: "Equipo de expertos en desarrollo web, marketing digital e IA para empresas de todo el mundo.",
   },
   alternates: {
     canonical: "https://vektra.digital/sobre-nosotros",
@@ -40,7 +38,7 @@ const aboutSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": "Sobre Nosotros - Vektra Digital",
-  "description": "Agencia digital especializada en desarrollo web, marketing digital, apps móviles y agentes IA en Argentina y Paraguay.",
+  "description": "Agencia digital especializada en desarrollo web, marketing digital, apps móviles y agentes IA para empresas de todo el mundo.",
   "url": "https://vektra.digital/sobre-nosotros",
   "mainEntity": {
     "@type": "Organization",
@@ -71,10 +69,7 @@ const aboutSchema = {
         "worksFor": { "@type": "Organization", "name": "Vektra Digital" },
       },
     ],
-    "areaServed": [
-      { "@type": "Country", "name": "Argentina" },
-      { "@type": "Country", "name": "Paraguay" },
-    ],
+    "areaServed": "Worldwide",
   },
 }
 

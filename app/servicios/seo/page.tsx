@@ -5,45 +5,36 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "SEO y Posicionamiento Web en Argentina y Paraguay | Agencia SEO | Vektra",
-  description: "Agencia SEO profesional en Argentina y Paraguay. Posicionamiento web en Google, SEO local, SEO para e-commerce y optimización para buscadores de IA como ChatGPT y Perplexity.",
+  title: "SEO y Posicionamiento Web | Agencia SEO | Vektra",
+  description: "Agencia SEO profesional para empresas de todo el mundo. Posicionamiento web en Google, SEO local, SEO para e-commerce y optimización para buscadores de IA como ChatGPT y Perplexity.",
   keywords: [
     // Keywords principales
-    "seo argentina",
-    "seo paraguay",
-    "posicionamiento web argentina",
-    "agencia seo argentina",
+    "seo",
+    "posicionamiento web",
+    "agencia seo",
     // Long tail keywords
-    "cuánto cuesta el seo en argentina",
-    "agencia seo profesional buenos aires",
+    "cuánto cuesta el seo",
+    "agencia seo profesional",
     "posicionamiento google mi negocio",
     "seo para tiendas online",
     "seo local para negocios",
-    "consultoría seo argentina",
+    "consultoría seo",
     "auditoría seo gratuita",
     "seo para chatgpt y perplexity",
     "posicionamiento en buscadores ia",
-    "linkbuilding argentina",
+    "linkbuilding",
     "seo on page y off page",
     "optimización velocidad web",
-    // Ciudades
-    "seo buenos aires",
-    "seo córdoba",
-    "seo rosario",
-    "seo mendoza",
-    "seo resistencia",
-    "seo asunción",
-    "seo ciudad del este",
   ],
   openGraph: {
-    title: "SEO y Posicionamiento Web | Agencia SEO Argentina y Paraguay | Vektra",
+    title: "SEO y Posicionamiento Web | Agencia SEO | Vektra",
     description: "Posicionamos tu negocio en Google y buscadores de IA. SEO local, SEO e-commerce y estrategias a medida.",
     type: "website",
     locale: "es_AR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agencia SEO en Argentina y Paraguay | Vektra",
+    title: "Agencia SEO | Vektra",
     description: "Posicionamiento web profesional y SEO para buscadores de IA.",
   },
   alternates: {
@@ -72,10 +63,7 @@ const serviceSchema = {
       "availableLanguage": ["Spanish"]
     }
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "SEO & Web Positioning",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -113,10 +101,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta el servicio de SEO en Argentina?",
+      "name": "¿Cuánto cuesta el servicio de SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El costo del SEO en Argentina varía según el tamaño del sitio, la competencia del sector y los objetivos. Ofrecemos planes desde servicios básicos hasta estrategias completas. Contactanos para una cotización personalizada basada en tus necesidades específicas."
+        "text": "El costo del SEO varía según el tamaño del sitio, la competencia del sector y los objetivos. Ofrecemos planes desde servicios básicos hasta estrategias completas. Contactanos para una cotización personalizada basada en tus necesidades específicas."
       }
     },
     {
@@ -124,7 +112,7 @@ const faqSchema = {
       "name": "¿Hacen SEO para tiendas online y e-commerce?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, tenemos amplia experiencia en SEO para e-commerce en Argentina y Paraguay. Optimizamos tiendas en WooCommerce, Shopify y Tiendanube. Trabajamos categorías, productos, fichas técnicas, y estrategias específicas para aumentar las ventas orgánicas."
+        "text": "Sí, tenemos amplia experiencia en SEO para e-commerce en todo el mundo. Optimizamos tiendas en WooCommerce, Shopify y Tiendanube. Trabajamos categorías, productos, fichas técnicas, y estrategias específicas para aumentar las ventas orgánicas."
       }
     },
     {
@@ -137,10 +125,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "¿Trabajan con empresas de Paraguay?",
+      "name": "¿Trabajan con empresas de otros países?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, brindamos servicios de SEO tanto en Argentina como en Paraguay. Tenemos clientes en Asunción, Ciudad del Este, Encarnación y otras ciudades. Trabajamos de forma 100% remota con reuniones por videollamada."
+        "text": "Sí, brindamos servicios de SEO a empresas de todo el mundo. Trabajamos de forma 100% remota con reuniones por videollamada."
       }
     },
     {

@@ -90,7 +90,7 @@ const buildContent = (title: string, category: string, description: string): Blo
     heading: "Introducción",
     paragraphs: [
       description,
-      `En este artículo exploramos los puntos clave de ${title.toLowerCase()} con foco en ${category.toLowerCase()}, para que puedas aplicar estrategias efectivas en Argentina y Paraguay.`,
+      `En este artículo exploramos los puntos clave de ${title.toLowerCase()} con foco en ${category.toLowerCase()}, para que puedas aplicar estrategias efectivas sin importar en qué país te encuentres.`,
     ],
   },
   {

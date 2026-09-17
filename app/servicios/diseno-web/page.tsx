@@ -5,41 +5,29 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Diseño Web Profesional en Argentina y Paraguay | Vektra",
-  description: "Diseño de páginas web modernas y responsivas en Argentina y Paraguay. Desarrollo web a medida con Next.js, React y WordPress. Sitios rápidos, optimizados para SEO y con soporte técnico incluido.",
+  title: "Diseño Web Profesional | Vektra",
+  description: "Diseño de páginas web modernas y responsivas para empresas de todo el mundo. Desarrollo web a medida con Next.js, React y WordPress. Sitios rápidos, optimizados para SEO y con soporte técnico incluido.",
   keywords: [
     // Keywords principales
-    "diseño web argentina",
-    "diseño web paraguay",
+    "diseño web",
     "desarrollo web a medida",
     "páginas web profesionales",
     // Long tail keywords
-    "cuánto cuesta una página web en argentina",
-    "empresa de diseño web en buenos aires",
-    "diseño web para pymes argentina",
+    "cuánto cuesta una página web",
+    "empresa de diseño web",
+    "diseño web para pymes",
     "crear página web profesional precio",
-    "agencia de diseño web en asunción",
-    "desarrollo web next.js argentina",
-    "diseño web wordpress argentina",
+    "agencia de diseño web",
+    "desarrollo web next.js",
+    "diseño web wordpress",
     "diseño web react profesional",
-    "páginas web para empresas argentina",
+    "páginas web para empresas",
     "diseño web responsive móvil",
     "diseño web seo optimizado",
-    "diseñador web freelance argentina",
-    // Ciudades Argentina
-    "diseño web buenos aires",
-    "diseño web córdoba",
-    "diseño web rosario",
-    "diseño web mendoza",
-    "diseño web resistencia",
-    "diseño web corrientes",
-    // Ciudades Paraguay
-    "diseño web asunción",
-    "diseño web ciudad del este",
-    "diseño web encarnación",
+    "diseñador web freelance",
   ],
   openGraph: {
-    title: "Diseño Web Profesional en Argentina y Paraguay | Vektra",
+    title: "Diseño Web Profesional | Vektra",
     description: "Creamos páginas web modernas, rápidas y optimizadas para SEO. Desarrollo con Next.js, React y WordPress.",
     type: "website",
     locale: "es_AR",
@@ -47,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Diseño Web Profesional | Vektra",
-    description: "Diseño y desarrollo web a medida en Argentina y Paraguay.",
+    description: "Diseño y desarrollo web a medida para empresas de todo el mundo.",
   },
   alternates: {
     canonical: "https://vektra.digital/servicios/diseno-web",
@@ -75,10 +63,7 @@ const serviceSchema = {
       "availableLanguage": ["Spanish"]
     }
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "Web Design and Development",
   "offers": {
     "@type": "Offer",
@@ -168,10 +153,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "¿Trabajan con clientes de Argentina y Paraguay?",
+      "name": "¿Trabajan con clientes de otros países?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email."
+        "text": "Sí, trabajamos con clientes de todo el mundo. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email."
       }
     }
   ]

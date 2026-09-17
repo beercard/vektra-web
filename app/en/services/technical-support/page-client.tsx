@@ -58,7 +58,7 @@ const faqs = [
   { question: "Can I cancel whenever I want?", answer: "The monthly plan can be canceled at any time. The Hours Pack does not expire but is non-refundable once purchased." },
   { question: "What happens if you can't solve the problem?", answer: "If for any reason we cannot solve the problem, we refund your money or find an alternative solution. We guarantee resolution or refund." },
   { question: "Do you work with any platform?", answer: "Yes, we work with WordPress, WooCommerce, Shopify, Next.js, React, PHP, and practically any modern web technology." },
-  { question: "Do you work with companies in Argentina and Paraguay?", answer: "Yes, we work mainly with companies in Argentina and Paraguay. We offer billing in local currency and understand regional needs." },
+  { question: "Do you work with companies in other countries?", answer: "Yes, we work with companies all over the world. Communication is smooth thanks to digital tools." },
   { question: "How do I keep informed of progress?", answer: "We keep you informed by email. You always know what state your problem resolution is in." },
 ]
 
@@ -122,7 +122,7 @@ export default function TechnicalSupportClient({ projects, testimonials }: Techn
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Problems with your web? <span className="relative inline-block"><span className="relative z-10">We solve them</span><span className="absolute bottom-1 left-0 w-full h-3 bg-[#00DEC7] -z-0 opacity-60" /></span>
-                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">in Argentina and Paraguay</span>
+                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">worldwide</span>
               </h1>
               <p className="mt-6 text-base sm:text-lg text-gray-300 leading-relaxed">
                 Team of experts available to <strong className="text-white">solve any technical problem</strong> of your website. <strong className="text-white">Fast response</strong>, <strong className="text-white">effective solutions</strong> and multichannel support.

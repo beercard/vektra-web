@@ -18,30 +18,21 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://vektra.digital'),
   title: {
-    default: 'Vektra | Desarrollo Web, Apps y Agentes IA en Argentina y Paraguay',
-    template: '%s | Vektra - Agencia Digital Argentina'
+    default: 'Vektra | Desarrollo Web, Apps y Agentes IA a Nivel Mundial',
+    template: '%s | Vektra - Agencia Digital'
   },
-  description: 'Vektra: Agencia de desarrollo web, tiendas online, aplicaciones móviles, marketing digital y agentes de IA en Argentina (Buenos Aires, Córdoba, Rosario, Resistencia, Corrientes) y Paraguay (Asunción, Ciudad del Este, Encarnación). Fusionamos ingeniería de software con estrategias de marketing digital.',
+  description: 'Vektra: Agencia digital de desarrollo web, tiendas online, aplicaciones móviles, marketing digital y agentes de IA para empresas de todo el mundo. Fusionamos ingeniería de software con estrategias de marketing digital.',
   keywords: [
-    'vektra', 'agencia digital argentina', 'agencia digital paraguay',
-    'desarrollo web argentina', 'desarrollo web paraguay', 'diseño web profesional',
-    'tienda online argentina', 'tienda online paraguay', 'ecommerce argentina',
-    'marketing digital argentina', 'marketing digital paraguay', 'publicidad digital',
+    'vektra', 'agencia digital', 'agencia digital global',
+    'desarrollo web', 'diseño web profesional', 'desarrollo web internacional',
+    'tienda online', 'ecommerce', 'marketing digital', 'publicidad digital',
     'agentes ia', 'chatbots whatsapp', 'bots inteligencia artificial',
-    'desarrollo de apps', 'aplicaciones móviles argentina', 'apps android ios',
+    'desarrollo de apps', 'aplicaciones móviles', 'apps android ios',
     'automatización de procesos', 'chatgpt para empresas', 'asistentes virtuales',
     'página web profesional', 'sitio web corporativo', 'landing page',
     'WooCommerce', 'WordPress', 'Tiendanube', 'Shopify', 'Next.js', 'React',
-    'posicionamiento web', 'SEO argentina', 'SEO paraguay', 'SEO para IA',
-    'Google Ads argentina', 'Google Ads paraguay', 'Facebook Ads', 'Instagram Ads', 'Meta Ads',
-    'agencia digital buenos aires', 'agencia digital asuncion',
-    'desarrollo web buenos aires', 'desarrollo web cordoba', 'desarrollo web rosario',
-    'desarrollo web resistencia', 'desarrollo web corrientes', 'desarrollo web mendoza',
-    'desarrollo web tucuman', 'desarrollo web salta', 'desarrollo web santa fe',
-    'desarrollo web mar del plata', 'desarrollo web asuncion', 'desarrollo web ciudad del este',
-    'tienda online buenos aires', 'tienda online cordoba', 'tienda online asuncion',
-    'tienda online ciudad del este', 'marketing digital buenos aires', 'marketing digital asuncion',
-    'seo local argentina', 'seo local paraguay', 'agencia seo argentina', 'agencia seo paraguay',
+    'posicionamiento web', 'SEO internacional', 'SEO para IA',
+    'Google Ads', 'Facebook Ads', 'Instagram Ads', 'Meta Ads',
     'consultoría digital', 'transformación digital'
   ],
   authors: [{ name: 'Vektra', url: 'https://vektra.digital' }],
@@ -60,7 +51,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Vektra | Desarrollo Web, Apps y Agentes IA',
-    description: 'Agencia digital especializada en desarrollo web, aplicaciones, tiendas online y agentes de IA para empresas en Argentina y Paraguay.',
+    description: 'Agencia digital especializada en desarrollo web, aplicaciones, tiendas online y agentes de IA para empresas de todo el mundo.',
     type: 'website',
     locale: 'es_AR',
     siteName: 'Vektra - Agencia Digital',
@@ -68,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vektra | Desarrollo Web, Apps y Agentes IA',
-    description: 'Agencia digital: desarrollo web, apps móviles, tiendas online y agentes de IA para Argentina y Paraguay.',
+    description: 'Agencia digital: desarrollo web, apps móviles, tiendas online y agentes de IA para empresas de todo el mundo.',
     creator: '@vektradigital',
   },
   alternates: {
@@ -113,7 +104,7 @@ const jsonLd = {
   "alternateName": "Vektra Digital",
   "legalName": "Vektra Digital Solutions S.A.S.",
   "taxID": "30-71955290-7",
-  "description": "Somos una agencia digital especializada en desarrollo web, aplicaciones móviles, tiendas online, marketing digital y agentes de IA para empresas en Argentina y Paraguay.",
+  "description": "Somos una agencia digital especializada en desarrollo web, aplicaciones móviles, tiendas online, marketing digital y agentes de IA para empresas de todo el mundo.",
   "url": "https://vektra.digital",
   "logo": "https://vektra.digital/logo.png",
   "email": "info@vektra.digital",
@@ -129,16 +120,7 @@ const jsonLd = {
     "@type": "PostalAddress",
     "addressCountry": "AR"
   },
-  "areaServed": [
-    {
-      "@type": "Country",
-      "name": "Argentina"
-    },
-    {
-      "@type": "Country", 
-      "name": "Paraguay"
-    }
-  ],
+  "areaServed": "Worldwide",
   "priceRange": "$$",
   "openingHours": "Mo-Fr 09:00-18:00",
   "sameAs": [

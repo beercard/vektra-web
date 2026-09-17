@@ -16,9 +16,9 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "https://vektra.digital/#website",
-  "name": "Vektra - Agencia Digital Argentina",
+  "name": "Vektra - Agencia Digital",
   "url": "https://vektra.digital",
-  "description": "Agencia de desarrollo web, tiendas online, apps móviles, marketing digital y agentes de IA en Argentina y Paraguay.",
+  "description": "Agencia de desarrollo web, tiendas online, apps móviles, marketing digital y agentes de IA para empresas de todo el mundo.",
   "publisher": {
     "@id": "https://vektra.digital/#organization"
   },
@@ -27,7 +27,7 @@ const websiteSchema = {
     "target": "https://vektra.digital/trabajos?q={search_term_string}",
     "query-input": "required name=search_term_string"
   },
-  "inLanguage": ["es-AR", "es-PY", "en"]
+  "inLanguage": ["es", "en"]
 }
 
 const localBusinessSchema = {
@@ -56,10 +56,7 @@ const localBusinessSchema = {
     "opens": "09:00",
     "closes": "18:00"
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",

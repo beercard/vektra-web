@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Legal Notice and Terms of Use | Vektra - Digital Agency Argentina and Paraguay",
+  title: "Legal Notice and Terms of Use | Vektra - Digital Agency",
   description: "Terms and conditions of use of the Vektra website. General contracting conditions for web development, apps, and digital marketing services.",
   robots: "noindex, follow",
 }
@@ -45,7 +45,7 @@ export default function LegalNoticePage() {
                 <li><strong>Activity:</strong> Web development, mobile applications, digital marketing, e-commerce, and artificial intelligence solutions</li>
                 <li><strong>Email:</strong> info@vektra.digital</li>
                 <li><strong>Website:</strong> https://vektra.digital</li>
-                <li><strong>Area of operation:</strong> Argentine Republic and Republic of Paraguay</li>
+                <li><strong>Area of operation:</strong> Clients worldwide</li>
               </ul>
             </div>
 
@@ -130,7 +130,7 @@ export default function LegalNoticePage() {
 
             <h2 className="text-2xl font-bold text-black mb-4">6. Intellectual Property</h2>
             <p className="text-gray-700 mb-4">
-              The content of the Website, including but not limited to texts, graphics, images, logos, icons, software, and source code, is protected by intellectual property laws of Argentina (Law 11.723) and Paraguay (Law 1328/98).
+              The content of the Website, including but not limited to texts, graphics, images, logos, icons, software, and source code, is protected by the intellectual property laws of the Argentine Republic (Law 11.723) and by applicable international intellectual property treaties.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
               <li>The client acquires usage rights of the final work once the total price is paid</li>
@@ -183,7 +183,7 @@ export default function LegalNoticePage() {
 
             <h2 className="text-2xl font-bold text-black mb-4">12. Legislation and Jurisdiction</h2>
             <p className="text-gray-700 mb-8">
-              These conditions are governed by Argentine and Paraguayan legislation as applicable to the client&apos;s domicile. For the resolution of any dispute, the parties submit to the competent ordinary courts, waiving any other jurisdiction that may correspond to them.
+              These conditions are governed by the legislation of the Argentine Republic, Vektra&apos;s legal domicile. For the resolution of any dispute, the parties submit to the competent ordinary courts of Argentina, waiving any other jurisdiction that may correspond to them.
             </p>
 
             <h2 className="text-2xl font-bold text-black mb-4">13. Modifications</h2>

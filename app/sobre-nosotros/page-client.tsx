@@ -19,7 +19,6 @@ import {
   ChevronRight,
   Star,
   Mail,
-  MapPin,
   Linkedin,
   Instagram,
   Code,
@@ -75,7 +74,7 @@ const stats = [
   { value: "+8", label: "Años de experiencia" },
   { value: "+150", label: "Proyectos completados" },
   { value: "+45", label: "Reseñas 5 estrellas" },
-  { value: "2", label: "Países atendidos" },
+  { value: "2", label: "Idiomas de atención" },
 ]
 
 export default function SobreNosotrosClient() {
@@ -147,7 +146,7 @@ export default function SobreNosotrosClient() {
       <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
         <Image
           src="/images/hero1.webp"
-          alt="Vektra - Agencia de desarrollo web, apps y agentes IA en Argentina y Paraguay"
+          alt="Vektra - Agencia de desarrollo web, apps y agentes IA para todo el mundo"
           fill
           className="object-cover"
           priority
@@ -158,7 +157,7 @@ export default function SobreNosotrosClient() {
             Sobre <span className="text-[#00DEC7]">Nosotros</span>
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-            Conocé al equipo detrás de Vektra: expertos en desarrollo web, marketing digital e inteligencia artificial en Argentina y Paraguay
+            Conocé al equipo detrás de Vektra: expertos en desarrollo web, marketing digital e inteligencia artificial para empresas de todo el mundo
           </p>
         </div>
       </section>
@@ -218,7 +217,7 @@ export default function SobreNosotrosClient() {
               </div>
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-gray-600 leading-relaxed">
-                  Martin es el cerebro estratégico detrás de las campañas de marketing digital de Vektra. Con su licenciatura en Marketing Digital y años de experiencia gestionando publicidad en <strong>Google Ads, Meta Ads y TikTok Ads</strong>, ha ayudado a decenas de empresas en <strong>Argentina y Paraguay</strong> a aumentar sus ventas online.
+                  Martin es el cerebro estratégico detrás de las campañas de marketing digital de Vektra. Con su licenciatura en Marketing Digital y años de experiencia gestionando publicidad en <strong>Google Ads, Meta Ads y TikTok Ads</strong>, ha ayudado a decenas de empresas de <strong>todo el mundo</strong> a aumentar sus ventas online.
                 </p>
                 <p className="text-gray-600 leading-relaxed mt-4">
                   Además, forma parte del equipo de expertos en <strong>diseño web con WordPress, WooCommerce, Tiendanube y Shopify</strong>, creando tiendas online optimizadas para conversión y posicionamiento en buscadores. Su conocimiento profundo del ecosistema de Google (Analytics, Search Console, Tag Manager, My Business) permite ofrecer estrategias integrales de marketing digital.
@@ -272,7 +271,7 @@ export default function SobreNosotrosClient() {
               </div>
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-gray-600 leading-relaxed">
-                  Matias es el experto técnico de Vektra, especializado en <strong>desarrollo web moderno con Next.js, React y Node.js</strong>. Como Analista en Sistemas, ha desarrollado soluciones tecnológicas avanzadas para empresas de <strong>Argentina y Paraguay</strong>, desde aplicaciones web hasta sistemas complejos.
+                  Matias es el experto técnico de Vektra, especializado en <strong>desarrollo web moderno con Next.js, React y Node.js</strong>. Como Analista en Sistemas, ha desarrollado soluciones tecnológicas avanzadas para empresas de <strong>todo el mundo</strong>, desde aplicaciones web hasta sistemas complejos.
                 </p>
                 <p className="text-gray-600 leading-relaxed mt-4">
                   Su pasión por la <strong>inteligencia artificial</strong> lo llevó a especializarse en el desarrollo de <strong>agentes y bots de IA, chatbots para WhatsApp</strong> y automatizaciones empresariales. También integra el equipo de expertos en <strong>desarrollo de aplicaciones móviles</strong> con React Native y Flutter, creando apps nativas para iOS y Android.
@@ -287,7 +286,7 @@ export default function SobreNosotrosClient() {
               Somos <span className="text-[#00DEC7]">Vektra</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              En Vektra fusionamos <strong>ingeniería de software de alto nivel</strong> con <strong>estrategias de marketing digital</strong>, creando narrativas visuales y productos tecnológicos que impulsan el éxito de tu marca. Somos dos hermanos apasionados por la tecnología y el emprendimiento, comprometidos en ayudar a empresas de <strong>Argentina y Paraguay</strong> a crecer en el mundo digital.
+              En Vektra fusionamos <strong>ingeniería de software de alto nivel</strong> con <strong>estrategias de marketing digital</strong>, creando narrativas visuales y productos tecnológicos que impulsan el éxito de tu marca. Somos dos hermanos apasionados por la tecnología y el emprendimiento, comprometidos en ayudar a empresas de <strong>todo el mundo</strong> a crecer en el mundo digital.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 text-gray-500">
@@ -295,8 +294,8 @@ export default function SobreNosotrosClient() {
                 <span>info@vektra.digital</span>
               </div>
               <div className="flex items-center gap-2 text-gray-500">
-                <MapPin className="h-4 w-4 text-[#00DEC7]" />
-                <span>Argentina</span>
+                <Globe className="h-4 w-4 text-[#00DEC7]" />
+                <span>Todo el mundo</span>
               </div>
             </div>
           </div>
@@ -312,7 +311,7 @@ export default function SobreNosotrosClient() {
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-64 h-64 bg-[#00DEC7]/10 rounded-full blur-3xl" />
         <div className="mx-auto max-w-5xl px-4 lg:px-8 text-center relative">
           <p className="text-xl md:text-2xl lg:text-3xl text-white italic leading-relaxed">
-            &ldquo;Nuestro objetivo es que nuestros clientes puedan poner en marcha su negocio o proyecto digital para que puedan <span className="text-[#00DEC7] font-semibold animate-pulse" style={{ animationDuration: '3s' }}>ofrecer sus servicios</span> o <span className="text-[#00DEC7] font-semibold animate-pulse" style={{ animationDuration: '3s', animationDelay: '1.5s' }}>vender sus productos online</span> en Argentina y Paraguay&rdquo;
+            &ldquo;Nuestro objetivo es que nuestros clientes puedan poner en marcha su negocio o proyecto digital para que puedan <span className="text-[#00DEC7] font-semibold animate-pulse" style={{ animationDuration: '3s' }}>ofrecer sus servicios</span> o <span className="text-[#00DEC7] font-semibold animate-pulse" style={{ animationDuration: '3s', animationDelay: '1.5s' }}>vender sus productos online</span> en cualquier parte del mundo&rdquo;
           </p>
         </div>
       </section>
@@ -327,10 +326,10 @@ export default function SobreNosotrosClient() {
                 <span className="text-[#00DEC7]">Emprender</span>
               </h2>
               <p className="mt-6 text-gray-600 leading-relaxed">
-                Argentina y Paraguay están viviendo un momento histórico para el emprendimiento digital. Con el crecimiento exponencial del comercio electrónico post-pandemia, más del <strong>70% de los consumidores</strong> en ambos países ahora prefieren comprar online. Las barreras de entrada nunca fueron tan bajas.
+                El mundo está viviendo un momento histórico para el emprendimiento digital. Con el crecimiento exponencial del comercio electrónico post-pandemia, cada vez más consumidores prefieren comprar online sin importar el país. Las barreras de entrada nunca fueron tan bajas.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                En Argentina, a pesar de los desafíos económicos, el <strong>e-commerce creció un 124%</strong> en los últimos años. Paraguay se consolida como uno de los mercados digitales de mayor expansión en Latinoamérica. Es el momento perfecto para digitalizar tu negocio y llegar a miles de clientes potenciales.
+                El e-commerce a nivel global no deja de crecer, y cada vez son más los mercados digitales que se consolidan como motores de esta expansión. Es el momento perfecto para digitalizar tu negocio y llegar a miles de clientes potenciales en cualquier parte del mundo.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed italic">
                 &ldquo;Afrontamos cada proyecto con gran ilusión y muchas ganas de demostrar nuestra profesionalidad, con trabajos atractivos y efectivos para que vos como cliente obtengas <strong className="text-black">más contactos, más ventas y consigas tus metas</strong>.&rdquo;
@@ -339,7 +338,7 @@ export default function SobreNosotrosClient() {
             <div className="relative">
               <Image
                 src="/images/about/emprender.jpg"
-                alt="Es hora de emprender en Argentina y Paraguay - Vektra agencia digital"
+                alt="Es hora de emprender a nivel mundial - Vektra agencia digital"
                 width={600}
                 height={400}
                 className="rounded-2xl"
@@ -358,7 +357,7 @@ export default function SobreNosotrosClient() {
               respaldada por resultados
             </h2>
             <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              A lo largo de estos años como agencia digital en Argentina y Paraguay, hemos trabajado con clientes y proyectos que avalan nuestra experiencia y compromiso. Los siguientes datos reflejan el crecimiento y la confianza que nuestros clientes han depositado en Vektra.
+              A lo largo de estos años como agencia digital para clientes de todo el mundo, hemos trabajado con proyectos que avalan nuestra experiencia y compromiso. Los siguientes datos reflejan el crecimiento y la confianza que nuestros clientes han depositado en Vektra.
             </p>
           </div>
 
@@ -397,7 +396,7 @@ export default function SobreNosotrosClient() {
                 <span className="text-[#00DEC7]">de nosotros</span>
               </h2>
               <p className="mt-4 text-gray-600">
-                Testimonios reales de clientes de Argentina y Paraguay que confiaron en Vektra para sus proyectos digitales.
+                Testimonios reales de clientes de todo el mundo que confiaron en Vektra para sus proyectos digitales.
               </p>
               
               {/* Google Reviews Badge */}

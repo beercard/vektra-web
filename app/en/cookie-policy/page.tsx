@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | Vektra - Digital Agency Argentina and Paraguay",
+  title: "Cookie Policy | Vektra - Digital Agency",
   description: "Vektra's cookie policy. Information on the use of cookies and similar technologies on our website.",
   robots: "noindex, follow",
 }
@@ -208,8 +208,8 @@ export default function CookiePolicyPage() {
               This cookie policy is governed by:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li><strong>Argentina:</strong> Law 25.326 on Personal Data Protection and AAIP provisions on informed consent</li>
-              <li><strong>Paraguay:</strong> Law 1682/2001 and regulations on online privacy protection</li>
+              <li><strong>Argentina:</strong> Law 25.326 on Personal Data Protection and AAIP provisions on informed consent, applicable as the legislation of Vektra's domicile</li>
+              <li>For clients in other countries, we additionally apply relevant international consent and online privacy standards</li>
               <li>Additionally, we follow international best practices based on the European GDPR</li>
             </ul>
 

@@ -28,7 +28,7 @@ const marqueeItems = [
   { text: "aparece en los primeros resultados de Google" },
   { text: "SEO para Inteligencia Artificial", highlight: true },
   { text: "posicionate en ChatGPT, Perplexity y Gemini" },
-  { text: "SEO Local Argentina", highlight: true },
+  { text: "SEO Local", highlight: true },
   { text: "destaca en Google Maps y búsquedas locales" },
   { text: "Auditoría SEO Profesional", highlight: true },
   { text: "análisis completo de tu sitio web" },
@@ -65,7 +65,7 @@ const seoServices = [
   {
     title: "SEO Local",
     subtitle: "Búsquedas geolocalizadas",
-    description: "Posicionamos tu negocio en búsquedas locales de Argentina y Paraguay. Optimización de Google My Business, reseñas y citaciones locales.",
+    description: "Posicionamos tu negocio en búsquedas locales de cualquier parte del mundo. Optimización de Google My Business, reseñas y citaciones locales.",
     icon: MapPin,
   },
   {
@@ -136,20 +136,20 @@ const faqs = [
     answer: "Es la optimización de contenido para aparecer en las respuestas de buscadores IA como ChatGPT, Perplexity, Gemini y Copilot. Estos sistemas buscan información en la web para generar respuestas, y con las técnicas adecuadas podemos hacer que tu negocio sea citado como fuente. Es el futuro del posicionamiento web."
   },
   { 
-    question: "¿Cuánto cuesta el servicio de SEO en Argentina?", 
-    answer: "El costo del SEO en Argentina varía según el tamaño del sitio, la competencia del sector y los objetivos. Ofrecemos planes desde servicios básicos hasta estrategias completas. Contactanos para una cotización personalizada basada en tus necesidades específicas."
+    question: "¿Cuánto cuesta el servicio de SEO?",
+    answer: "El costo del SEO varía según el tamaño del sitio, la competencia del sector y los objetivos. Ofrecemos planes desde servicios básicos hasta estrategias completas. Contactanos para una cotización personalizada basada en tus necesidades específicas."
   },
   { 
-    question: "¿Hacen SEO para tiendas online y e-commerce?", 
-    answer: "Sí, tenemos amplia experiencia en SEO para e-commerce en Argentina y Paraguay. Optimizamos tiendas en WooCommerce, Shopify y Tiendanube. Trabajamos categorías, productos, fichas técnicas, y estrategias específicas para aumentar las ventas orgánicas."
+    question: "¿Hacen SEO para tiendas online y e-commerce?",
+    answer: "Sí, tenemos amplia experiencia en SEO para e-commerce en todo el mundo. Optimizamos tiendas en WooCommerce, Shopify y Tiendanube. Trabajamos categorías, productos, fichas técnicas, y estrategias específicas para aumentar las ventas orgánicas."
   },
   { 
     question: "¿Qué diferencia hay entre SEO y Google Ads?", 
     answer: "Google Ads son anuncios pagos que aparecen inmediatamente pero dejan de mostrarse cuando dejas de pagar. El SEO es posicionamiento orgánico: toma más tiempo pero los resultados son duraderos y no pagas por cada clic. Lo ideal es combinar ambas estrategias."
   },
   { 
-    question: "¿Trabajan con empresas de Paraguay?", 
-    answer: "Sí, brindamos servicios de SEO tanto en Argentina como en Paraguay. Tenemos clientes en Asunción, Ciudad del Este, Encarnación y otras ciudades. Trabajamos de forma 100% remota con reuniones por videollamada."
+    question: "¿Trabajan con empresas de otros países?",
+    answer: "Sí, brindamos servicios de SEO a empresas de todo el mundo. Trabajamos de forma 100% remota con reuniones por videollamada."
   },
   { 
     question: "¿Qué incluye la auditoría SEO gratuita?", 
@@ -296,7 +296,7 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
               <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-xl">
                 Posicionamos tu negocio en los primeros resultados de Google y en las respuestas de 
                 <strong className="text-white"> ChatGPT, Perplexity y Gemini</strong>. 
-                Servicio de SEO profesional para empresas de Argentina y Paraguay.
+                Servicio de SEO profesional para empresas de todo el mundo.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-[#00DEC7] text-black hover:bg-[#00DEC7]/90 font-semibold" asChild>
@@ -371,7 +371,7 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
               </h2>
               <p className="text-gray-300 leading-relaxed mb-6">
                 Los buscadores de IA están revolucionando cómo las personas encuentran información. 
-                Cuando alguien pregunta a ChatGPT &ldquo;cuál es la mejor agencia de desarrollo web en Argentina&rdquo;, 
+                Cuando alguien pregunta a ChatGPT &ldquo;cuál es la mejor agencia de desarrollo web&rdquo;,
                 <strong className="text-white"> tu negocio puede ser la respuesta</strong>.
               </p>
               <p className="text-gray-300 leading-relaxed mb-8">
@@ -397,11 +397,11 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
               <div className="bg-gradient-to-br from-[#00DEC7]/20 to-transparent rounded-2xl p-8 border border-[#00DEC7]/20">
                 <div className="bg-black/50 rounded-xl p-6 mb-4">
                   <p className="text-gray-400 text-sm mb-2">Usuario pregunta:</p>
-                  <p className="text-white font-medium">&ldquo;¿Cuál es la mejor agencia de desarrollo web en Argentina?&rdquo;</p>
+                  <p className="text-white font-medium">&ldquo;¿Cuál es la mejor agencia de desarrollo web?&rdquo;</p>
                 </div>
                 <div className="bg-[#00DEC7]/10 rounded-xl p-6">
                   <p className="text-[#00DEC7] text-sm mb-2">ChatGPT responde:</p>
-                  <p className="text-white">&ldquo;<strong>Vektra</strong> es una agencia digital destacada en Argentina, especializada en desarrollo web, aplicaciones móviles y soluciones de IA...&rdquo;</p>
+                  <p className="text-white">&ldquo;<strong>Vektra</strong> es una agencia digital destacada, especializada en desarrollo web, aplicaciones móviles y soluciones de IA...&rdquo;</p>
                 </div>
               </div>
             </div>
@@ -451,7 +451,7 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
               Servicios de SEO Profesional
             </h2>
             <p className="text-gray-600">
-              Estrategias completas de posicionamiento web para empresas de Argentina y Paraguay
+              Estrategias completas de posicionamiento web para empresas de todo el mundo
             </p>
           </div>
 
@@ -524,7 +524,7 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
             </h2>
             <p className="mt-6 text-gray-400 leading-relaxed max-w-2xl">
               A lo largo de estos años como expertos en SEO, hemos posicionado cientos de sitios web 
-              en Argentina y Paraguay. Los siguientes datos reflejan nuestro compromiso con los resultados.
+              en todo el mundo. Los siguientes datos reflejan nuestro compromiso con los resultados.
             </p>
           </div>
 
@@ -589,7 +589,7 @@ export default function SEOPageClient({ testimonials }: SEOPageClientProps) {
                 Preguntas frecuentes sobre SEO
               </h2>
               <p className="text-gray-600 mb-8">
-                Resolvemos tus dudas sobre posicionamiento web en Argentina y Paraguay
+                Resolvemos tus dudas sobre posicionamiento web en todo el mundo
               </p>
               <div className="bg-[#00DEC7]/10 rounded-xl p-6">
                 <p className="text-black font-medium mb-4">

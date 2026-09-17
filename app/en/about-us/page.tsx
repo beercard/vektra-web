@@ -5,7 +5,6 @@ import {
   GraduationCap,
   Award,
   Mail,
-  MapPin,
   Linkedin,
   Globe
 } from "lucide-react"
@@ -170,8 +169,8 @@ export default function AboutUs() {
                 <span>info@vektra.digital</span>
               </div>
               <div className="flex items-center gap-2 text-gray-500">
-                <MapPin className="h-4 w-4 text-[#00DEC7]" />
-                <span>Argentina</span>
+                <Globe className="h-4 w-4 text-[#00DEC7]" />
+                <span>Worldwide</span>
               </div>
             </div>
           </div>

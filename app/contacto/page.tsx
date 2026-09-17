@@ -3,7 +3,7 @@ import ContactoClient from "./page-client"
 
 export const metadata: Metadata = {
   title: "Contacto | Solicita Presupuesto Gratis para tu Proyecto Web",
-  description: "Contacta con Vektra para tu próximo proyecto digital. Presupuesto sin compromiso para diseño web, tiendas online, apps, marketing digital y agentes IA en Argentina y Paraguay.",
+  description: "Contacta con Vektra para tu próximo proyecto digital. Presupuesto sin compromiso para diseño web, tiendas online, apps, marketing digital y agentes IA para empresas de todo el mundo.",
   keywords: [
     "contacto vektra",
     "presupuesto diseño web",
@@ -49,7 +49,7 @@ const contactPageSchema = {
       "contactType": "sales",
       "email": "info@vektra.digital",
       "availableLanguage": ["Spanish", "English"],
-      "areaServed": ["AR", "PY"]
+      "areaServed": "Worldwide"
     }
   }
 }

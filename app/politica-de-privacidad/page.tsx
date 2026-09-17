@@ -3,8 +3,8 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | Vektra - Agencia Digital Argentina y Paraguay",
-  description: "Política de privacidad de Vektra. Conocé cómo protegemos y tratamos tus datos personales en cumplimiento con la legislación de Argentina y Paraguay.",
+  title: "Política de Privacidad | Vektra - Agencia Digital",
+  description: "Política de privacidad de Vektra. Conocé cómo protegemos y tratamos tus datos personales en cumplimiento con la legislación argentina de protección de datos.",
   robots: "noindex, follow",
 }
 
@@ -42,7 +42,7 @@ export default function PrivacidadPage() {
                 <li><strong>Actividad:</strong> Desarrollo web, aplicaciones móviles, marketing digital y soluciones de inteligencia artificial</li>
                 <li><strong>Email de contacto:</strong> info@vektra.digital</li>
                 <li><strong>Sitio web:</strong> https://vektra.digital</li>
-                <li><strong>Ámbito de operación:</strong> Argentina y Paraguay</li>
+                <li><strong>Ámbito de operación:</strong> Clientes de todo el mundo</li>
               </ul>
             </div>
 
@@ -51,8 +51,8 @@ export default function PrivacidadPage() {
               Esta política de privacidad se rige por la siguiente normativa:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li><strong>Argentina:</strong> Ley 25.326 de Protección de Datos Personales y su Decreto Reglamentario 1558/2001, y disposiciones de la Agencia de Acceso a la Información Pública (AAIP).</li>
-              <li><strong>Paraguay:</strong> Ley 1682/2001 que reglamenta la información de carácter privado, Ley 6534/2020 de Protección de Datos Personales Crediticios, y disposiciones constitucionales sobre privacidad.</li>
+              <li><strong>Argentina:</strong> Ley 25.326 de Protección de Datos Personales y su Decreto Reglamentario 1558/2001, y disposiciones de la Agencia de Acceso a la Información Pública (AAIP), aplicable como legislación del domicilio de Vektra.</li>
+              <li>Para clientes de otros países, aplicamos además los principios y estándares internacionales de protección de datos que resulten pertinentes según su jurisdicción.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-black mb-4">3. Datos que Recopilamos</h2>
@@ -119,12 +119,12 @@ export default function PrivacidadPage() {
 
             <h2 className="text-2xl font-bold text-black mb-4">7. Transferencias Internacionales</h2>
             <p className="text-gray-700 mb-8">
-              Algunos de nuestros proveedores de servicios pueden estar ubicados fuera de Argentina y Paraguay. En estos casos, nos aseguramos de que cuenten con medidas de protección adecuadas para garantizar la seguridad de sus datos personales.
+              Al atender clientes de todo el mundo, algunos de nuestros proveedores de servicios pueden estar ubicados fuera de Argentina. En estos casos, nos aseguramos de que cuenten con medidas de protección adecuadas para garantizar la seguridad de sus datos personales.
             </p>
 
             <h2 className="text-2xl font-bold text-black mb-4">8. Plazo de Conservación</h2>
             <p className="text-gray-700 mb-8">
-              Conservaremos sus datos personales durante el tiempo necesario para cumplir con las finalidades descritas, y posteriormente durante los plazos legales de prescripción aplicables (generalmente 5 años para obligaciones contractuales en Argentina y Paraguay).
+              Conservaremos sus datos personales durante el tiempo necesario para cumplir con las finalidades descritas, y posteriormente durante los plazos legales de prescripción aplicables (generalmente 5 años para obligaciones contractuales bajo legislación argentina).
             </p>
 
             <h2 className="text-2xl font-bold text-black mb-4">9. Derechos del Titular</h2>
@@ -177,7 +177,7 @@ export default function PrivacidadPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
               <li><strong>Argentina:</strong> Agencia de Acceso a la Información Pública (AAIP) - www.argentina.gob.ar/aaip</li>
-              <li><strong>Paraguay:</strong> Defensoría del Pueblo o autoridad competente en materia de protección de datos</li>
+              <li>Clientes de otros países pueden además presentar su reclamación ante la autoridad de protección de datos que corresponda en su país de residencia.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-black mb-4">13. Modificaciones</h2>

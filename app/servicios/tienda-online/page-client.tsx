@@ -20,7 +20,7 @@ const marqueeItems = [
   { text: "Shopify", highlight: true },
   { text: "solución escalable para tu negocio online" },
   { text: "Tiendanube", highlight: true },
-  { text: "la plataforma líder de e-commerce en Argentina y Latinoamérica" },
+  { text: "la plataforma líder de e-commerce en Latinoamérica" },
   { text: "Pasarelas de pago", highlight: true },
   { text: "MercadoPago, PayPal, Stripe y más" },
   { text: "Gestión de inventario", highlight: true },
@@ -64,12 +64,12 @@ const ecommerceStats = [
   { value: 10, prefix: "+", suffix: "", label: "Años de experiencia en e-commerce" },
   { value: 50, prefix: "+", suffix: "", label: "Tiendas online creadas" },
   { value: 45, prefix: "+", suffix: "", label: "Reseñas 5 estrellas" },
-  { value: 2, prefix: "", suffix: "", label: "Países (Argentina y Paraguay)" },
+  { value: 100, prefix: "", suffix: "%", label: "Clientes en todo el mundo" },
 ]
 
 const ecommerceFaqs = [
-  { question: "¿Cuánto cuesta crear una tienda online en Argentina?", answer: "Los precios varían según la complejidad. Una tienda online básica con hasta 50 productos comienza desde $450.000 ARS. Tiendas más grandes con funcionalidades avanzadas tienen presupuestos personalizados. Contáctanos para una cotización sin compromiso." },
-  { question: "¿Qué plataforma usan para crear tiendas online?", answer: "Trabajamos con WooCommerce (WordPress) por su flexibilidad, Shopify para soluciones rápidas y escalables, y Tiendanube que es la plataforma líder en Argentina y Latinoamérica. Te asesoramos sobre la mejor opción según tu negocio, presupuesto y objetivos." },
+  { question: "¿Cuánto cuesta crear una tienda online?", answer: "Los precios varían según la complejidad. Una tienda online básica con hasta 50 productos comienza desde $450.000 ARS. Tiendas más grandes con funcionalidades avanzadas tienen presupuestos personalizados. Contáctanos para una cotización sin compromiso." },
+  { question: "¿Qué plataforma usan para crear tiendas online?", answer: "Trabajamos con WooCommerce (WordPress) por su flexibilidad, Shopify para soluciones rápidas y escalables, y Tiendanube que es la plataforma líder en Latinoamérica. Te asesoramos sobre la mejor opción según tu negocio, presupuesto y objetivos." },
   { question: "¿Cuánto tiempo tarda en estar lista mi tienda online?", answer: "Una tienda online básica puede estar lista en 3-4 semanas. Proyectos más complejos con muchos productos, integraciones especiales o diseño personalizado pueden tardar entre 6-10 semanas." },
   { question: "¿Qué pasarelas de pago puedo integrar?", answer: "Integramos MercadoPago (la más usada en Argentina), PayPal, Stripe, transferencia bancaria y pago contra entrega. Puedes ofrecer múltiples opciones de pago a tus clientes." },
   { question: "¿Cómo funciona la gestión de envíos?", answer: "Configuramos zonas de envío con tarifas por peso o precio. Integramos con Correo Argentino, Andreani, OCA y opción de retiro en local. Tus clientes ven el costo de envío antes de pagar." },
@@ -193,14 +193,14 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
                 <span className="font-extrabold">Shopify</span> y{" "}
                 <span className="font-extrabold">Tiendanube</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  en Argentina y Paraguay
+                  para todo el mundo
                 </span>
               </h1>
-              
+
               <p className="text-white/80 text-base sm:text-lg max-w-xl">
                 Desarrollamos tiendas online profesionales para que puedas{" "}
-                <strong className="text-white">vender tus productos 24/7</strong> en{" "}
-                <strong className="text-white">Argentina y Paraguay</strong>
+                <strong className="text-white">vender tus productos 24/7</strong> a{" "}
+                <strong className="text-white">clientes de todo el mundo</strong>
               </p>
 
               <p className="text-[#00DEC7] text-base sm:text-lg">
@@ -273,8 +273,8 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black leading-tight">
-              Tu tienda online en Argentina y Paraguay,<br />
-              lista para vender
+              Tu tienda online lista para vender<br />
+              en todo el mundo
             </h2>
             <p className="mt-6 text-black/80 text-base sm:text-lg">
               Tendrás una <strong className="text-black">tienda online profesional</strong> con todo lo necesario para{" "}
@@ -328,7 +328,7 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
               Consúltanos <span className="font-normal">sin compromiso</span>
             </h3>
             <p className="mt-2 text-black/70 max-w-xl mx-auto">
-              Si querés <strong className="text-black">vender online en Argentina o Paraguay</strong>, podemos ayudarte a crear la tienda perfecta para tu negocio.
+              Si querés <strong className="text-black">vender online a todo el mundo</strong>, podemos ayudarte a crear la tienda perfecta para tu negocio.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white rounded-full px-8 bg-transparent">
@@ -400,7 +400,7 @@ export default function TiendaOnlineClient({ testimonials }: TiendaOnlineClientP
             </h2>
             <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed">
               A lo largo de estos años como <span className="text-white">equipo experto en e-commerce</span>, 
-              hemos trabajado con clientes en <span className="text-white">Argentina y Paraguay</span> que avalan nuestra experiencia y compromiso. 
+              hemos trabajado con clientes de <span className="text-white">todo el mundo</span> que avalan nuestra experiencia y compromiso.
               Los siguientes datos reflejan el <span className="text-white">crecimiento</span> y la confianza 
               que nuestros clientes han depositado en nosotros.
             </p>

@@ -1,33 +1,23 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Agencia de Marketing Digital en Argentina y Paraguay | Google Ads y Meta Ads",
-  description: "Agencia de marketing digital en Argentina y Paraguay con campañas en Google Ads, Meta Ads y TikTok Ads para generar leads y ventas en Buenos Aires, Córdoba, Rosario, Asunción y Ciudad del Este.",
+  title: "Agencia de Marketing Digital | Google Ads y Meta Ads",
+  description: "Agencia de marketing digital con campañas en Google Ads, Meta Ads y TikTok Ads para generar leads y ventas para empresas de todo el mundo.",
   keywords: [
     "agencia de marketing digital",
-    "marketing digital argentina",
-    "marketing digital paraguay",
     "agencia google ads",
     "expertos en google ads",
-    "meta ads argentina",
-    "meta ads paraguay",
+    "meta ads",
     "especialistas en meta ads",
-    "tiktok ads argentina",
-    "tiktok ads paraguay",
-    "publicidad digital argentina",
-    "publicidad digital paraguay",
+    "tiktok ads",
+    "publicidad digital",
     "campañas google ads",
     "campañas meta ads",
     "agencia de anuncios",
-    "marketing digital buenos aires",
-    "marketing digital córdoba",
-    "marketing digital rosario",
-    "marketing digital asunción",
-    "marketing digital ciudad del este",
   ],
   openGraph: {
-    title: "Agencia de Marketing Digital en Argentina y Paraguay",
-    description: "Especialistas en Google Ads, Meta Ads y TikTok Ads con foco en resultados para Argentina y Paraguay.",
+    title: "Agencia de Marketing Digital",
+    description: "Especialistas en Google Ads, Meta Ads y TikTok Ads con foco en resultados para empresas de todo el mundo.",
   },
 }
 
@@ -41,12 +31,12 @@ export default function MarketingDigitalLayout({
     "@type": "ProfessionalService",
     "name": "Agencia de Marketing Digital Vektra",
     "image": "https://vektra.digital/images/og-marketing.jpg",
-    "description": "Agencia de marketing digital en Argentina y Paraguay con campañas en Google Ads, Meta Ads y TikTok Ads.",
+    "description": "Agencia de marketing digital con campañas en Google Ads, Meta Ads y TikTok Ads para empresas de todo el mundo.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "AR"
     },
-    "areaServed": ["Argentina", "Paraguay"],
+    "areaServed": "Worldwide",
     "priceRange": "$$",
     "url": "https://vektra.digital/servicios/marketing-digital"
   }
@@ -60,12 +50,12 @@ export default function MarketingDigitalLayout({
         "name": "Qué es el marketing digital y por qué lo necesito?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El marketing digital reúne estrategias de promoción en buscadores, plataformas de anuncios y email. Es esencial porque tu público está online. En Argentina y Paraguay, más del 80% de las personas buscan productos y servicios en internet antes de comprar."
+          "text": "El marketing digital reúne estrategias de promoción en buscadores, plataformas de anuncios y email. Es esencial porque tu público está online: más del 80% de las personas buscan productos y servicios en internet antes de comprar."
         }
       },
       {
         "@type": "Question",
-        "name": "Cuánto cuesta una campaña de Google Ads en Argentina?",
+        "name": "Cuánto cuesta una campaña de Google Ads?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "El presupuesto de Google Ads es flexible y lo defines tú. Recomendamos empezar con un mínimo de $50.000 ARS mensuales para ver resultados. A esto se suma nuestra gestión que incluye creación de anuncios, seguimiento y optimización constante."
@@ -100,7 +90,7 @@ export default function MarketingDigitalLayout({
         "name": "Qué es Google Business Profile y por qué es importante?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Google Business Profile es la ficha de tu negocio que aparece en Google y Google Maps. Es gratuito y fundamental para negocios locales en Argentina y Paraguay. Permite que tus clientes te encuentren, vean tus horarios, fotos, reseñas y te contacten directamente."
+          "text": "Google Business Profile es la ficha de tu negocio que aparece en Google y Google Maps. Es gratuito y fundamental para negocios locales en cualquier parte del mundo. Permite que tus clientes te encuentren, vean tus horarios, fotos, reseñas y te contacten directamente."
         }
       },
       {
@@ -113,10 +103,10 @@ export default function MarketingDigitalLayout({
       },
       {
         "@type": "Question",
-        "name": "Trabajan con empresas de Paraguay?",
+        "name": "Trabajan con empresas de otros países?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, trabajamos con clientes en toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida. Tenemos experiencia en campañas para ambos países con segmentación geográfica específica."
+          "text": "Sí, trabajamos con clientes de todo el mundo. Las reuniones se realizan por videollamada y la comunicación es fluida. Tenemos experiencia en campañas con segmentación geográfica específica para cada mercado."
         }
       },
       {

@@ -58,7 +58,7 @@ const faqs = [
   { question: "¿Puedo cancelar cuando quiera?", answer: "El plan mensual se puede cancelar en cualquier momento. El Pack de horas no tiene vencimiento pero no es reembolsable una vez adquirido." },
   { question: "¿Qué pasa si no pueden resolver el problema?", answer: "Si por alguna razón no podemos resolver el problema, te devolvemos el dinero o buscamos una solución alternativa. Garantizamos la resolución o reembolso." },
   { question: "¿Trabajan con cualquier plataforma?", answer: "Sí, trabajamos con WordPress, WooCommerce, Shopify, Next.js, React, PHP, y prácticamente cualquier tecnología web moderna." },
-  { question: "¿Trabajan con empresas de Argentina y Paraguay?", answer: "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Ofrecemos facturación en moneda local y entendemos las necesidades regionales." },
+  { question: "¿Trabajan con empresas de otros países?", answer: "Sí, trabajamos con empresas de todo el mundo. La comunicación es fluida gracias a herramientas digitales y nos adaptamos a las necesidades de cada cliente." },
   { question: "¿Cómo me mantengo informado del progreso?", answer: "Te mantenemos informado por email. Siempre sabés en qué estado está la resolución de tu problema." },
 ]
 
@@ -122,7 +122,7 @@ export default function SoporteTecnicoClient({ projects, testimonials }: Soporte
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 ¿Problemas con tu web? <span className="relative inline-block"><span className="relative z-10">Los resolvemos</span><span className="absolute bottom-1 left-0 w-full h-3 bg-[#00DEC7] -z-0 opacity-60" /></span>
-                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">en Argentina y Paraguay</span>
+                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">para todo el mundo</span>
               </h1>
               <p className="mt-6 text-base sm:text-lg text-gray-300 leading-relaxed">
                 Equipo de expertos disponible para <strong className="text-white">solucionar cualquier problema técnico</strong> de tu web. <strong className="text-white">Respuesta rápida</strong>, <strong className="text-white">soluciones efectivas</strong> y soporte multicanal.
@@ -217,7 +217,7 @@ export default function SoporteTecnicoClient({ projects, testimonials }: Soporte
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">Experiencia en<br />soporte técnico</h2>
-            <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">Resolvemos <span className="text-white">problemas técnicos</span> para empresas de <span className="text-white">Argentina y Paraguay</span>.</p>
+            <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">Resolvemos <span className="text-white">problemas técnicos</span> para empresas de <span className="text-white">todo el mundo</span>.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {stats.map((stat, index) => (<div key={stat.label}><span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">{stat.prefix}{counts[index]}{stat.suffix}</span><p className="mt-2 text-gray-400 text-sm">{stat.label}</p></div>))}

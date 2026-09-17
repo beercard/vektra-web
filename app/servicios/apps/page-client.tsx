@@ -211,7 +211,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
                 <span className="font-extrabold">Android</span> e{" "}
                 <span className="font-extrabold">iOS</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  en Argentina y Paraguay
+                  para todo el mundo
                 </span>
               </h1>
 
@@ -219,7 +219,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
                 Desarrollo aplicaciones móviles nativas e híbridas con{" "}
                 <strong className="text-white">React Native</strong> y{" "}
                 <strong className="text-white">Flutter</strong>.
-                Apps para empresas en <strong className="text-white">Argentina y Paraguay</strong>.
+                Apps para empresas de <strong className="text-white">todo el mundo</strong>.
               </p>
 
               <p className="text-gray-300">
@@ -309,8 +309,8 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">
-              Tu app completa en Argentina y Paraguay,<br />
-              lista para conquistar el mercado
+              Tu app completa, lista para<br />
+              conquistar el mercado global
             </h2>
             <p className="mt-6 text-black/80 text-base sm:text-lg">
               Desarrollamos tu <strong className="text-black">aplicación móvil de principio a fin</strong>. Desde el diseño hasta la publicación en tiendas, nos encargamos de todo para que vos te enfoques en tu negocio.
@@ -357,7 +357,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
           {/* CTA */}
           <div className="mt-16 text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black">
-              Consúltanos en Argentina y Paraguay <span className="font-normal">sin compromiso</span>
+              Consúltanos <span className="font-normal">sin compromiso</span>
             </h3>
             <p className="mt-2 text-black/70 max-w-xl mx-auto">
               Contanos tu idea y te asesoramos sobre la mejor solución técnica para tu app.
@@ -384,7 +384,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
         
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Objetivo para negocios en Argentina y Paraguay</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Objetivo para negocios de todo el mundo</h2>
             <p className="mt-6 text-white/90 text-lg md:text-xl leading-relaxed">
               <strong className="text-white font-bold">Convertir tu idea en una app exitosa</strong>. 4 pasos para desarrollar una aplicación móvil que{" "}
               <strong className="text-white font-bold">tus usuarios amen y recomienden</strong>.
@@ -413,7 +413,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
       {/* Portfolio Section */}
       <LatestWorks 
         projects={allProjects.filter(p => p.category === "apps")} 
-        title="Apps desarrolladas en Argentina y Paraguay" 
+        title="Apps desarrolladas para todo el mundo"
         subtitle="DESARROLLO DE APLICACIONES MÓVILES" 
         viewAllLink="/trabajos?category=apps"
       />
@@ -428,7 +428,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
             </h2>
             <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed">
               A lo largo de estos años como <span className="text-white">equipo de desarrollo de apps</span>, 
-              hemos trabajado con clientes en <span className="text-white">Argentina y Paraguay</span> que avalan nuestra experiencia y compromiso. 
+              hemos trabajado con clientes de <span className="text-white">todo el mundo</span> que avalan nuestra experiencia y compromiso.
               Los siguientes datos reflejan el <span className="text-white">crecimiento</span> y la confianza 
               que nuestros clientes han depositado en nosotros.
             </p>
@@ -454,7 +454,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
       <section className="relative py-20 lg:py-28 bg-black">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Preguntas frecuentes sobre apps en Argentina y Paraguay</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Preguntas frecuentes sobre apps móviles</h2>
             <p className="mt-4 text-gray-500 uppercase tracking-widest text-sm">DESARROLLO DE APPS MÓVILES</p>
           </div>
 
@@ -575,7 +575,7 @@ export default function AppsPageClient({ testimonials }: AppsPageClientProps) {
       <section className="py-20 lg:py-28 bg-[#00DEC7]">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black">Complementos para apps en Argentina y Paraguay</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-black">Complementos para tu app</h2>
             <p className="mt-4 text-black/60 uppercase tracking-widest text-sm">TAMBIÉN TE PUEDE INTERESAR</p>
           </div>
 
@@ -623,7 +623,7 @@ const marqueeItems = [
   { text: "Progressive Web Apps (PWA)", highlight: true },
   { text: "apps web que funcionan como nativas" },
   { text: "Apps para empresas", highlight: true },
-  { text: "soluciones a medida para tu negocio en Argentina y Paraguay" },
+  { text: "soluciones a medida para tu negocio en cualquier parte del mundo" },
   { text: "Integraciones API", highlight: true },
   { text: "conexión con tus sistemas existentes" },
 ]

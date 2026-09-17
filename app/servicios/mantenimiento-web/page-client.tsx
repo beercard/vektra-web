@@ -58,7 +58,7 @@ const faqs = [
   { question: "¿Trabajan solo con WordPress?", answer: "Principalmente WordPress y WooCommerce, pero también ofrecemos mantenimiento para webs con Next.js, React y otras tecnologías." },
   { question: "¿Qué pasa si necesito soporte urgente?", answer: "Los planes Profesional y Enterprise incluyen soporte prioritario. El plan Enterprise tiene cobertura 24/7 para emergencias." },
   { question: "¿Cómo sé qué actualizaciones se realizaron?", answer: "Enviamos reportes mensuales detallados con todas las actualizaciones, escaneos de seguridad y métricas de velocidad." },
-  { question: "¿Trabajan con empresas de Argentina y Paraguay?", answer: "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Ofrecemos facturación en moneda local." },
+  { question: "¿Trabajan con empresas de otros países?", answer: "Sí, trabajamos con empresas de todo el mundo. La comunicación es fluida gracias a herramientas digitales." },
   { question: "¿Puedo cancelar el servicio cuando quiera?", answer: "Sí, nuestros planes son mensuales sin permanencia. Podés cancelar en cualquier momento." },
 ]
 
@@ -122,7 +122,7 @@ export default function MantenimientoWebClient({ projects, testimonials }: Mante
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Tu web <span className="relative inline-block"><span className="relative z-10">siempre</span><span className="absolute bottom-1 left-0 w-full h-3 bg-[#00DEC7] -z-0 opacity-60" /></span> actualizada, <span className="font-extrabold">segura y rápida</span>
-                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">en Argentina y Paraguay</span>
+                <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">para todo el mundo</span>
               </h1>
               <p className="mt-6 text-base sm:text-lg text-gray-300 leading-relaxed">
                 Nos encargamos del <strong className="text-white">mantenimiento técnico</strong> de tu web. <strong className="text-white">Actualizaciones, seguridad, backups</strong> y <strong className="text-white">optimización de velocidad</strong> para que vos te enfoques en tu negocio.
@@ -217,7 +217,7 @@ export default function MantenimientoWebClient({ projects, testimonials }: Mante
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">Experiencia en<br />mantenimiento web</h2>
-            <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">Mantenemos <span className="text-white">sitios web</span> para empresas de <span className="text-white">Argentina y Paraguay</span>.</p>
+            <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">Mantenemos <span className="text-white">sitios web</span> para empresas de <span className="text-white">todo el mundo</span>.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {stats.map((stat, index) => (<div key={stat.label}><span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">{stat.prefix}{counts[index]}{stat.suffix}</span><p className="mt-2 text-gray-400 text-sm">{stat.label}</p></div>))}

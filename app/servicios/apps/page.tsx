@@ -5,20 +5,19 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Desarrollo de Apps Móviles en Argentina y Paraguay | Android, iOS y PWA | Vektra",
-  description: "Desarrollo de aplicaciones móviles nativas e híbridas para Android e iOS. React Native, Flutter y PWA para empresas en Argentina y Paraguay. Apps a medida con backend y panel de administración.",
+  title: "Desarrollo de Apps Móviles | Android, iOS y PWA | Vektra",
+  description: "Desarrollo de aplicaciones móviles nativas e híbridas para Android e iOS. React Native, Flutter y PWA para empresas de todo el mundo. Apps a medida con backend y panel de administración.",
   keywords: [
     // Keywords principales
-    "desarrollo de apps móviles argentina",
-    "desarrollo apps paraguay",
+    "desarrollo de apps móviles",
     "aplicaciones android ios",
     "apps móviles empresas",
     // Long tail keywords
-    "cuánto cuesta desarrollar una app móvil argentina",
+    "cuánto cuesta desarrollar una app móvil",
     "desarrollo app react native precio",
     "crear aplicación móvil para mi negocio",
-    "empresa desarrollo apps buenos aires",
-    "desarrollo flutter argentina",
+    "empresa desarrollo apps",
+    "desarrollo flutter",
     "app móvil con panel de administración",
     "desarrollo pwa progressive web app",
     "app delivery a medida",
@@ -26,12 +25,6 @@ export const metadata: Metadata = {
     "desarrollo app e-commerce móvil",
     "app con notificaciones push",
     "publicar app en google play y app store",
-    // Ciudades
-    "desarrollo apps buenos aires",
-    "desarrollo apps córdoba",
-    "desarrollo apps rosario",
-    "desarrollo apps asunción",
-    "desarrollo apps ciudad del este",
   ],
   openGraph: {
     title: "Desarrollo de Apps Móviles | Android, iOS y PWA | Vektra",
@@ -41,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Apps Móviles en Argentina y Paraguay | Vektra",
+    title: "Apps Móviles | Vektra",
     description: "Desarrollo de aplicaciones móviles nativas e híbridas para empresas.",
   },
   alternates: {
@@ -70,10 +63,7 @@ const serviceSchema = {
       "availableLanguage": ["Spanish"]
     }
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "Mobile App Development",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -151,10 +141,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "¿Trabajan con empresas en Argentina y Paraguay?",
+      "name": "¿Trabajan con empresas de otros países?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, trabajamos con clientes en toda Argentina y Paraguay. Las reuniones son por videollamada (Meet, Zoom) y la comunicación fluye perfectamente. Ya hemos desarrollado apps para empresas en Buenos Aires, Córdoba, Rosario, Resistencia, Asunción y Ciudad del Este."
+        "text": "Sí, trabajamos con clientes de todo el mundo. Las reuniones son por videollamada (Meet, Zoom) y la comunicación fluye perfectamente."
       }
     },
     {

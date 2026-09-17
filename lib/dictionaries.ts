@@ -29,7 +29,7 @@ export const dictionaries = {
         web: "desarrollo web",
         and: "y",
         ai: "agentes de IA",
-        location: "en Argentina y Paraguay"
+        location: "en todo el mundo"
       },
       description: {
         agency: "Agencia digital",
@@ -40,7 +40,7 @@ export const dictionaries = {
         apps: "apps móviles",
         and: "y",
         bots: "bots de IA",
-        for: "para empresas en Argentina y Paraguay."
+        for: "para empresas de todo el mundo."
       },
       objective: {
         label: "Nuestro objetivo:",
@@ -53,11 +53,11 @@ export const dictionaries = {
     },
     services: {
       title: "Servicios Digitales",
-      description: "Soluciones de desarrollo web, e-commerce, marketing digital y agentes IA para empresas y pymes en Argentina y Paraguay. Más visitas, más clientes y más ventas para tu negocio.",
+      description: "Soluciones de desarrollo web, e-commerce, marketing digital y agentes IA para empresas y pymes de todo el mundo. Más visitas, más clientes y más ventas para tu negocio.",
       items: {
         web: {
           title: "Diseño Web Profesional",
-          subtitle: "Páginas web a medida para empresas en Argentina y Paraguay que convierten visitas en clientes",
+          subtitle: "Páginas web a medida para empresas de todo el mundo que convierten visitas en clientes",
           description: "Desarrollo web con Next.js, React y WordPress. Diseño responsive, optimizado para SEO y velocidad de carga. Web corporativa, landing page, blog y rediseño web."
         },
         store: {
@@ -68,7 +68,7 @@ export const dictionaries = {
         marketing: {
           title: "Marketing Digital",
           subtitle: "Campañas de Google Ads, Meta Ads y TikTok Ads para generar más ventas y clientes para tu negocio",
-          description: "Gestión de publicidad online, posicionamiento SEO, Google Business Profile, email marketing y analítica web. Estrategias de marketing digital para pymes en Argentina y Paraguay."
+          description: "Gestión de publicidad online, posicionamiento SEO, Google Business Profile, email marketing y analítica web. Estrategias de marketing digital para pymes de todo el mundo."
         },
         ai: {
           title: "Chatbots y Agentes IA",
@@ -191,8 +191,8 @@ export const dictionaries = {
           answer: "Sí, ofrecemos servicios de marketing digital: Google Ads, Meta Ads, TikTok Ads, posicionamiento SEO, Google Business Profile y email marketing."
         },
         {
-          question: "¿Trabajas solo en Argentina o también en otros países?",
-          answer: "Trabajamos con clientes de toda Argentina y Paraguay principalmente, pero también atendemos clientes de otros países de Latinoamérica. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales."
+          question: "¿Trabajan solo de forma local o también con clientes de otros países?",
+          answer: "Trabajamos con clientes de todo el mundo. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales."
         },
         {
           question: "¿Puedes ayudarme a realizar infografías 3D de productos o realizar un trabajo de infoarquitectura 3D?",
@@ -267,7 +267,7 @@ export const dictionaries = {
         prefix: "A lo largo de estos años como",
         highlight1: "agencia de desarrollo web profesional",
         text1: ", hemos trabajado con clientes en",
-        highlight2: "Argentina y Paraguay",
+        highlight2: "todo el mundo",
         text2: "que avalan nuestra experiencia y compromiso. Los siguientes datos reflejan el",
         highlight3: "crecimiento",
         text3: "y la confianza que nuestros clientes han depositado en nosotros."
@@ -276,7 +276,7 @@ export const dictionaries = {
         { value: 10, prefix: "+", suffix: "", label: "Años de experiencia" },
         { value: 100, prefix: "+", suffix: "", label: "Proyectos completados" },
         { value: 45, prefix: "+", suffix: "", label: "Reseñas 5 estrellas" },
-        { value: 2, prefix: "", suffix: "", label: "Países (Argentina y Paraguay)" }
+        { value: 100, prefix: "", suffix: "%", label: "Clientes en todo el mundo" }
       ]
     },
     contactForm: {
@@ -345,7 +345,7 @@ export const dictionaries = {
         desc: "Google Ads y Meta Ads para aparecer en los",
         benefit: "primeros resultados"
       },
-      location: "Argentina y Paraguay"
+      location: "Todo el mundo"
     },
     cta: {
       title: "¿Listo para impulsar tu negocio?",
@@ -355,7 +355,7 @@ export const dictionaries = {
       response: "Respondemos en menos de 24 horas"
     },
     footer: {
-      description: "Agencia digital especializada en desarrollo web, aplicaciones, tiendas online y agentes de IA para empresas en Argentina y Paraguay.",
+      description: "Agencia digital especializada en desarrollo web, aplicaciones, tiendas online y agentes de IA para empresas de todo el mundo.",
       services: "Servicios",
       webSectors: "Web por sectores",
       tools: "Herramientas",
@@ -557,7 +557,7 @@ export const dictionaries = {
           answer: "Yes, we offer digital marketing services: Google Ads, Meta Ads, TikTok Ads, SEO positioning, Google Business Profile and email marketing."
         },
         {
-          question: "Do you work only in Argentina or also in other countries?",
+          question: "Do you only work locally or also with clients from other countries?",
           answer: "We work with clients from all over the world. Meetings are held by video call and communication is fluid thanks to digital tools."
         },
         {

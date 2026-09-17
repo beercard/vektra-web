@@ -52,26 +52,6 @@ const herramientas = [
   { name: "Calculadora de Ads", href: "/herramientas/calculadora-ads" },
 ]
 
-const ubicacionesArgentina = [
-  "Buenos Aires", "Resistencia", "Corrientes", "Córdoba", "Rosario", 
-  "Mendoza", "Tucumán", "Salta", "Santa Fe", "Mar del Plata"
-]
-
-const ubicacionesParaguay = [
-  "Asunción", "Ciudad del Este", "Encarnación", "San Lorenzo", "Luque"
-]
-
-const seoKeywords = [
-  "Desarrollo Web Argentina", "Diseño Web Paraguay", "Tienda Online Argentina",
-  "E-commerce Paraguay", "Apps Móviles Argentina", "Agentes IA", "Chatbots WhatsApp",
-  "Bots de Atención", "Marketing Digital Argentina", "SEO Argentina", "SEO Paraguay",
-  "Desarrollo Web Resistencia", "Desarrollo Web Asunción", "Páginas Web Profesionales",
-  "WordPress Argentina", "WooCommerce Paraguay", "Next.js", "React", "Node.js",
-  "Automatización de Procesos", "Inteligencia Artificial", "Machine Learning",
-  "Google Ads Argentina", "Meta Ads", "Publicidad Digital",
-  "Posicionamiento Web", "Landing Pages", "Sistemas Web", "Apps Empresariales"
-]
-
 const parseDate = (value?: string) => {
   if (!value) return null
   const [day, month, year] = value.split(".")

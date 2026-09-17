@@ -36,7 +36,7 @@ const stats = [
   { number: "+8", label: "Años de experiencia" },
   { number: "+150", label: "Proyectos completados" },
   { number: "+45", label: "Reseñas 5 estrellas" },
-  { number: "2", label: "Países atendidos" },
+  { number: "2", label: "Idiomas de atención" },
 ]
 
 const testimonials = [
@@ -102,11 +102,11 @@ const faqs = [
   },
   {
     question: "Trabajan con clientes de otros países?",
-    answer: "Sí, trabajamos principalmente con clientes de Argentina y Paraguay, pero también atendemos proyectos de otros países de Latinoamérica. La comunicación se realiza por videollamada y email.",
+    answer: "Sí, trabajamos con clientes de todo el mundo. La comunicación se realiza por videollamada y email.",
   },
   {
     question: "Qué formas de pago aceptan?",
-    answer: "Aceptamos transferencias bancarias en pesos argentinos y guaraníes, pagos con MercadoPago, PayPal para clientes internacionales, y también criptomonedas (USDT). Ofrecemos planes de pago en cuotas sin interés.",
+    answer: "Aceptamos transferencias bancarias internacionales (SWIFT), MercadoPago para clientes de Latinoamérica, PayPal, Wise y criptomonedas (USDT). Ofrecemos planes de pago en cuotas sin interés.",
   },
   {
     question: "Puedo ver ejemplos de trabajos anteriores?",
@@ -407,7 +407,7 @@ export default function ContactoClient() {
               respaldada por resultados
             </h2>
             <p className="mt-6 text-white/70 text-lg leading-relaxed">
-              A lo largo de estos años trabajando con clientes de Argentina y Paraguay, hemos construido una cartera de proyectos exitosos. Los siguientes datos reflejan el crecimiento y la confianza que nuestros clientes han depositado en nosotros.
+              A lo largo de estos años trabajando con clientes de todo el mundo, hemos construido una cartera de proyectos exitosos. Los siguientes datos reflejan el crecimiento y la confianza que nuestros clientes han depositado en nosotros.
             </p>
           </div>
 
@@ -593,7 +593,7 @@ export default function ContactoClient() {
               </div>
               <span className="text-white font-medium">Disponibles para nuevos proyectos</span>
             </div>
-            <span className="text-white/60 text-sm">Lunes a Viernes, 9:00 - 18:00 (Argentina)</span>
+            <span className="text-white/60 text-sm">Lunes a Viernes, 9:00 - 18:00 (GMT-3)</span>
           </div>
         </div>
       </section>

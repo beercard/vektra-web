@@ -153,7 +153,7 @@ function TrabajosContent({
             Nuestros Trabajos
           </h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Proyectos que hablan por sí solos. Descubrí cómo ayudamos a empresas de Argentina y Paraguay a crecer en el mundo digital.
+            Proyectos que hablan por sí solos. Descubrí cómo ayudamos a empresas de todo el mundo a crecer en el mundo digital.
           </p>
         </div>
       </section>

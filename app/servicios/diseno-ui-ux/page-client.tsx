@@ -119,7 +119,7 @@ const faqs = [
   { question: "¿Cómo es el proceso de trabajo?", answer: "Comenzamos con una reunión de discovery para entender tu negocio y usuarios. Luego pasamos por investigación, wireframes, diseño visual con revisiones iterativas, y finalizamos con el prototipo y handoff para desarrollo." },
   { question: "¿Puedo solicitar cambios durante el proyecto?", answer: "Sí, nuestro proceso incluye rondas de revisión en cada etapa. Trabajamos de forma iterativa, mostrándote avances y ajustando según tu feedback antes de pasar a la siguiente fase." },
   { question: "¿Qué recibo al finalizar el proyecto?", answer: "Recibes el archivo de Figma completo con todos los diseños, un prototipo interactivo, el Design System con componentes, guía de estilos, y especificaciones técnicas para el equipo de desarrollo." },
-  { question: "¿Trabajan con empresas de Argentina y Paraguay?", answer: "Sí, trabajamos principalmente con empresas de Argentina y Paraguay, aunque también tenemos clientes en otros países de Latinoamérica. Entendemos el mercado local y las necesidades de la región." },
+  { question: "¿Trabajan con empresas de otros países?", answer: "Sí, trabajamos con empresas de todo el mundo. Nos adaptamos a las necesidades y particularidades de cada mercado." },
   { question: "¿Ofrecen soporte post-entrega?", answer: "Sí, ofrecemos un período de soporte post-entrega para resolver dudas del equipo de desarrollo. También podemos hacer ajustes menores o acompañar la implementación si lo necesitás." },
 ]
 
@@ -251,7 +251,7 @@ export default function DisenoUIUXPageClient({ projects, testimonials }: DisenoU
                 {" "}y{" "}
                 <span className="font-extrabold">Experiencia de Usuario</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  en Argentina y Paraguay
+                  para todo el mundo
                 </span>
               </h1>
 
@@ -498,7 +498,7 @@ export default function DisenoUIUXPageClient({ projects, testimonials }: DisenoU
             </h2>
             <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">
               Diseñamos <span className="text-white">experiencias digitales</span> para empresas de{" "}
-              <span className="text-white">Argentina y Paraguay</span>. Los números reflejan la confianza de nuestros clientes.
+              <span className="text-white">todo el mundo</span>. Los números reflejan la confianza de nuestros clientes.
             </p>
           </div>
 

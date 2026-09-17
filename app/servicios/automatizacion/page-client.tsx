@@ -119,7 +119,7 @@ const faqs = [
   { question: "¿Puedo modificar las automatizaciones después?", answer: "Sí, las automatizaciones son flexibles y escalables. Te capacitamos para hacer cambios simples por tu cuenta, y estamos disponibles para modificaciones más complejas o nuevas integraciones." },
   { question: "¿Cuánto puedo ahorrar con automatización?", answer: "Depende de tus procesos, pero en promedio nuestros clientes ahorran entre 10-30 horas semanales de trabajo manual. Además reducen errores humanos y mejoran tiempos de respuesta." },
   { question: "¿Pueden conectar sistemas legacy o software antiguo?", answer: "En la mayoría de casos sí. Si el sistema tiene algún tipo de API o permite exportar/importar datos, podemos integrarlo. Evaluamos cada caso particular y proponemos la mejor solución." },
-  { question: "¿Trabajan con empresas de Argentina y Paraguay?", answer: "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Entendemos las herramientas locales como MercadoPago, Tienda Nube, sistemas de facturación AFIP/SET, etc." },
+  { question: "¿Trabajan con empresas de otros países?", answer: "Sí, trabajamos con empresas de todo el mundo. Nos adaptamos a las herramientas y sistemas de facturación locales de cada mercado." },
   { question: "¿Ofrecen soporte post-implementación?", answer: "Sí, todos nuestros planes incluyen un período de soporte. También ofrecemos planes de mantenimiento mensual para monitoreo continuo, actualizaciones y nuevas automatizaciones." },
 ]
 
@@ -250,7 +250,7 @@ export default function AutomatizacionPageClient({ projects, testimonials }: Aut
                 {" "}tu negocio{" "}
                 <span className="font-extrabold">y multiplicá tu tiempo</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  en Argentina y Paraguay
+                  para todo el mundo
                 </span>
               </h1>
 
@@ -495,7 +495,7 @@ export default function AutomatizacionPageClient({ projects, testimonials }: Aut
             </h2>
             <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">
               Automatizamos <span className="text-white">procesos de negocio</span> para empresas de{" "}
-              <span className="text-white">Argentina y Paraguay</span>. Los números reflejan la confianza de nuestros clientes.
+              <span className="text-white">todo el mundo</span>. Los números reflejan la confianza de nuestros clientes.
             </p>
           </div>
 

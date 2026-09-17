@@ -53,7 +53,7 @@ const buildContent = (title: string, category: string, description: string) => [
     heading: "Introducción",
     paragraphs: [
       description,
-      `En este artículo exploramos los puntos clave de ${title.toLowerCase()} con foco en ${category.toLowerCase()}, para que puedas aplicar estrategias efectivas en Argentina y Paraguay.`,
+      `En este artículo exploramos los puntos clave de ${title.toLowerCase()} con foco en ${category.toLowerCase()}, para que puedas aplicar estrategias efectivas sin importar en qué país te encuentres.`,
     ],
   },
   {
@@ -335,7 +335,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 15,
     title: "TikTok Ads: La nueva frontera del marketing digital",
-    description: "Cómo aprovechar TikTok para llegar a nuevas audiencias y generar ventas. Estrategias probadas para negocios en Argentina y Paraguay.",
+    description: "Cómo aprovechar TikTok para llegar a nuevas audiencias y generar ventas. Estrategias probadas para negocios de todo el mundo.",
     category: "Marketing digital",
     date: "10.12.2025",
     image: "/placeholder.svg?height=290&width=400",
@@ -345,7 +345,7 @@ export const blogPosts: BlogPost[] = [
     content: buildContent(
       "TikTok Ads: La nueva frontera del marketing digital",
       "Marketing digital",
-      "Cómo aprovechar TikTok para llegar a nuevas audiencias y generar ventas. Estrategias probadas para negocios en Argentina y Paraguay."
+      "Cómo aprovechar TikTok para llegar a nuevas audiencias y generar ventas. Estrategias probadas para negocios de todo el mundo."
     ),
   },
   {
@@ -398,7 +398,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Introducción: por qué WhatsApp Business API importa",
         paragraphs: [
-          "WhatsApp es el canal que más se usa para consultas, soporte y ventas en Argentina y Paraguay. Cuando el volumen crece, la app de WhatsApp Business ya no alcanza y empiezan las demoras.",
+          "WhatsApp es uno de los canales que más se usa para consultas, soporte y ventas en todo el mundo. Cuando el volumen crece, la app de WhatsApp Business ya no alcanza y empiezan las demoras.",
           "La API oficial te permite escalar conversaciones, sumar automatizaciones y medir resultados con claridad. Si querés ver la base técnica, la guía oficial está en la [WhatsApp Business Platform](https://developers.facebook.com/docs/whatsapp).",
         ],
       },

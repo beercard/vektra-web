@@ -327,7 +327,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 15,
     title: "TikTok Ads: The new frontier of digital marketing",
-    description: "How to leverage TikTok to reach new audiences and generate sales. Proven strategies for businesses in Argentina and Paraguay.",
+    description: "How to leverage TikTok to reach new audiences and generate sales. Proven strategies for businesses worldwide.",
     category: "Digital Marketing",
     date: "10.12.2025",
     image: "/placeholder.svg?height=290&width=400",
@@ -337,7 +337,7 @@ export const blogPosts: BlogPost[] = [
     content: buildContent(
       "TikTok Ads: The new frontier of digital marketing",
       "Digital Marketing",
-      "How to leverage TikTok to reach new audiences and generate sales. Proven strategies for businesses in Argentina and Paraguay."
+      "How to leverage TikTok to reach new audiences and generate sales. Proven strategies for businesses worldwide."
     ),
   },
   {
@@ -390,7 +390,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Introduction: why WhatsApp Business API matters",
         paragraphs: [
-          "WhatsApp is the most used channel for inquiries, support, and sales in Argentina and Paraguay. When volume grows, the WhatsApp Business app is no longer enough and delays begin.",
+          "WhatsApp is one of the most used channels for inquiries, support, and sales worldwide. When volume grows, the WhatsApp Business app is no longer enough and delays begin.",
           "The official API allows you to scale conversations, add automations, and measure results clearly. If you want to see the technical base, the official guide is at [WhatsApp Business Platform](https://developers.facebook.com/docs/whatsapp).",
         ],
       },

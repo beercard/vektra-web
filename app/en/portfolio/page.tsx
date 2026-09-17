@@ -3,7 +3,7 @@ import TrabajosPageEnClient from "./page-client"
 
 export const metadata: Metadata = {
   title: "Portfolio | Our Work & Success Stories",
-  description: "Discover our portfolio of web development, online stores, and mobile apps. Real success stories from companies in Argentina and Paraguay.",
+  description: "Discover our portfolio of web development, online stores, and mobile apps. Real success stories from companies worldwide.",
   keywords: [
     "web development portfolio",
     "marketing success stories",

@@ -5,12 +5,11 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Mantenimiento Web Profesional en Argentina y Paraguay | Vektra",
+  title: "Mantenimiento Web Profesional | Vektra",
   description: "Servicio de mantenimiento web profesional. Actualizaciones de WordPress, copias de seguridad diarias, seguridad anti-malware, optimización de velocidad y soporte técnico 24/7 para tu sitio web.",
   keywords: [
     // Keywords principales
-    "mantenimiento web argentina",
-    "mantenimiento web paraguay",
+    "mantenimiento web",
     "mantenimiento wordpress",
     "mantenimiento sitio web",
     // Long tail keywords
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
     "optimización velocidad wordpress",
     "soporte técnico web 24/7",
     "mantenimiento woocommerce",
-    "mantenimiento web pymes argentina",
+    "mantenimiento web pymes",
     "planes de mantenimiento web económicos",
     "backup automático sitio web",
     "protección contra hackers wordpress",
@@ -57,10 +56,7 @@ const serviceSchema = {
     "name": "Vektra Digital",
     "url": "https://vektra.digital"
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "Web Maintenance",
   "offers": [
     {

@@ -4,8 +4,8 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Vektra - Digital Agency Argentina and Paraguay",
-  description: "Vektra's privacy policy. Learn how we protect and treat your personal data in compliance with the legislation of Argentina and Paraguay.",
+  title: "Privacy Policy | Vektra - Digital Agency",
+  description: "Vektra's privacy policy. Learn how we protect and treat your personal data in compliance with Argentine data protection legislation.",
   robots: "noindex, follow",
 }
 
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
                 <li><strong>Activity:</strong> Web development, mobile applications, digital marketing, and artificial intelligence solutions</li>
                 <li><strong>Contact Email:</strong> info@vektra.digital</li>
                 <li><strong>Website:</strong> https://vektra.digital</li>
-                <li><strong>Area of operation:</strong> Argentina and Paraguay</li>
+                <li><strong>Area of operation:</strong> Clients worldwide</li>
               </ul>
             </div>
 
@@ -52,8 +52,8 @@ export default function PrivacyPolicyPage() {
               This privacy policy is governed by the following regulations:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li><strong>Argentina:</strong> Law 25.326 on Personal Data Protection and its Regulatory Decree 1558/2001, and provisions of the Agency for Access to Public Information (AAIP).</li>
-              <li><strong>Paraguay:</strong> Law 1682/2001 regulating private information, Law 6534/2020 on Credit Personal Data Protection, and constitutional provisions on privacy.</li>
+              <li><strong>Argentina:</strong> Law 25.326 on Personal Data Protection and its Regulatory Decree 1558/2001, and provisions of the Agency for Access to Public Information (AAIP), applicable as the legislation of Vektra's domicile.</li>
+              <li>For clients in other countries, we additionally apply relevant international data protection principles and standards according to their jurisdiction.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-black mb-4">3. Data We Collect</h2>
@@ -120,12 +120,12 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-2xl font-bold text-black mb-4">7. International Transfers</h2>
             <p className="text-gray-700 mb-8">
-              Some of our service providers may be located outside of Argentina and Paraguay. In these cases, we ensure that they have appropriate protection measures to guarantee the security of your personal data.
+              As we serve clients worldwide, some of our service providers may be located outside of Argentina. In these cases, we ensure that they have appropriate protection measures to guarantee the security of your personal data.
             </p>
 
             <h2 className="text-2xl font-bold text-black mb-4">8. Conservation Period</h2>
             <p className="text-gray-700 mb-8">
-              We will keep your personal data for the time necessary to fulfill the purposes described, and subsequently during the applicable legal prescription periods (generally 5 years for contractual obligations in Argentina and Paraguay).
+              We will keep your personal data for the time necessary to fulfill the purposes described, and subsequently during the applicable legal prescription periods (generally 5 years for contractual obligations under Argentine legislation).
             </p>
 
             <h2 className="text-2xl font-bold text-black mb-4">9. Rights of the Holder</h2>
@@ -178,7 +178,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
               <li><strong>Argentina:</strong> Agency for Access to Public Information (AAIP) - www.argentina.gob.ar/aaip</li>
-              <li><strong>Paraguay:</strong> Ombudsman&apos;s Office or competent authority on data protection</li>
+              <li>Clients in other countries may also file a complaint with the data protection authority corresponding to their country of residence.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-black mb-4">13. Modifications</h2>

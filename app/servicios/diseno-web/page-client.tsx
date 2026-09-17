@@ -61,7 +61,7 @@ const webStats = [
   { value: 10, prefix: "+", suffix: "", label: "Años de experiencia en desarrollo web" },
   { value: 80, prefix: "+", suffix: "", label: "Webs desarrolladas" },
   { value: 45, prefix: "+", suffix: "", label: "Reseñas 5 estrellas" },
-  { value: 2, prefix: "", suffix: "", label: "Países (Argentina y Paraguay)" },
+  { value: 100, prefix: "", suffix: "%", label: "Clientes en todo el mundo" },
 ]
 
 const webFaqs = [
@@ -72,7 +72,7 @@ const webFaqs = [
   { question: "Puedo editar y gestionar mi web una vez terminada?", answer: "Sí, te entregamos la web con un panel de administración intuitivo y te brindamos capacitación para que puedas actualizar contenido, imágenes y textos de forma autónoma." },
   { question: "Incluyes optimización SEO para Google?", answer: "Sí, todas las webs incluyen SEO On Page básico: títulos, descripciones, estructura de encabezados H1-H3, optimización de imágenes y envío del sitemap a Google para indexación." },
   { question: "Ofrecen mantenimiento web después de la entrega?", answer: "Sí, incluimos soporte técnico durante el primer mes. Luego ofrecemos planes de mantenimiento mensual que incluyen actualizaciones, copias de seguridad, control de seguridad y soporte continuo." },
-  { question: "Trabajan con clientes de Argentina y Paraguay?", answer: "Sí, trabajamos con clientes de toda Argentina y Paraguay. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email." },
+  { question: "Trabajan con clientes de otros países?", answer: "Sí, trabajamos con clientes de todo el mundo. Las reuniones se realizan por videollamada y la comunicación es fluida gracias a herramientas digitales como Zoom y email." },
 ]
 
 const complementos = [
@@ -191,12 +191,12 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
                 <span className="font-extrabold">React</span> y{" "}
                 <span className="font-extrabold">WordPress</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  en Argentina y Paraguay
+                  para todo el mundo
                 </span>
               </h1>
-              
+
               <p className="text-white/80 text-base sm:text-lg max-w-xl">
-                Dale visibilidad a tu negocio en <strong className="text-white">Argentina y Paraguay</strong> y aumenta tus clientes y ventas con una{" "}
+                Dale visibilidad a tu negocio en <strong className="text-white">todo el mundo</strong> y aumenta tus clientes y ventas con una{" "}
                 <strong className="text-white">página web profesional</strong>
               </p>
               
@@ -253,7 +253,7 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black leading-tight">
-              Nos encargamos de todo en Argentina y Paraguay,<br />preocúpate solo de tu negocio
+              Nos encargamos de todo en cualquier parte del mundo,<br />preocúpate solo de tu negocio
             </h2>
             <p className="mt-6 text-black/80 text-base sm:text-lg">
               Tendrás una <strong className="text-black">página web profesional</strong> que te permitirá dar{" "}
@@ -359,7 +359,7 @@ const DisenoWebClient = ({ projects, testimonials }: DisenoWebClientProps) => {
             </h2>
             <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed">
               A lo largo de estos años como <span className="text-white">equipo de desarrollo web profesional</span>, 
-              hemos trabajado con clientes en <span className="text-white">Argentina y Paraguay</span> que avalan nuestra experiencia y compromiso. 
+              hemos trabajado con clientes de <span className="text-white">todo el mundo</span> que avalan nuestra experiencia y compromiso.
               Los siguientes datos reflejan el <span className="text-white">crecimiento</span> y la confianza que nuestros clientes han depositado en nosotros.
             </p>
           </div>

@@ -60,7 +60,7 @@ const servicesIncluded = [
   },
   {
     title: "Multilenguaje",
-    description: "Bots que pueden comunicarse en español, inglés, portugués y otros idiomas. Ideal para negocios con clientes en Argentina, Paraguay y otros países.",
+    description: "Bots que pueden comunicarse en español, inglés, portugués y otros idiomas. Ideal para negocios con clientes en distintos países.",
   },
   {
     title: "Escalamiento humano",
@@ -156,14 +156,14 @@ const testimonials = [
 const faqs = [
   { question: "¿Qué es un agente de IA y cómo puede ayudar a mi negocio?", answer: "Un agente de IA es un programa inteligente que puede mantener conversaciones, responder preguntas y ejecutar tareas de forma autónoma. Puede atender clientes 24/7, tomar pedidos, agendar citas, resolver dudas frecuentes y más, liberando tiempo de tu equipo para tareas más importantes." },
   { question: "¿Cuál es la diferencia entre un chatbot tradicional y uno con IA?", answer: "Un chatbot tradicional funciona con reglas fijas y solo responde a palabras clave específicas. Un chatbot con IA (como los que usamos con ChatGPT) entiende el contexto, interpreta diferentes formas de preguntar lo mismo y da respuestas naturales y personalizadas, como si fuera una persona." },
-  { question: "¿Pueden hacer un bot para WhatsApp Business?", answer: "Sí, desarrollamos chatbots para WhatsApp Business usando la API oficial de Meta. El bot puede responder mensajes automáticamente, enviar catálogos, procesar pedidos, agendar citas y más. Funciona tanto en Argentina como en Paraguay y cualquier país." },
+  { question: "¿Pueden hacer un bot para WhatsApp Business?", answer: "Sí, desarrollamos chatbots para WhatsApp Business usando la API oficial de Meta. El bot puede responder mensajes automáticamente, enviar catálogos, procesar pedidos, agendar citas y más. Funciona en cualquier país." },
   { question: "¿Cuánto tiempo tarda en estar listo un chatbot?", answer: "Depende de la complejidad. Un bot básico para WhatsApp con respuestas a preguntas frecuentes puede estar listo en 1-2 semanas. Un agente de IA completo con integraciones a CRM, base de datos de productos y flujos complejos puede tardar 3-4 semanas." },
   { question: "¿Puedo entrenar al bot con información de mi negocio?", answer: "Absolutamente. Entrenamos al agente con tu base de conocimiento: productos, servicios, precios, políticas, FAQs, procedimientos internos. El bot responderá como un equipo experto en tu negocio, con la información que vos le proporciones." },
   { question: "¿El bot puede integrarse con mis sistemas actuales?", answer: "Sí, integramos con la mayoría de herramientas: Google Sheets, HubSpot, Salesforce, Notion, Trello, Slack, sistemas de facturación, ERPs y más. Si tu sistema tiene API, podemos conectarlo." },
   { question: "¿Qué pasa si el bot no puede resolver una consulta?", answer: "Configuramos escalamiento automático a agentes humanos. El bot detecta cuando una consulta es muy compleja o cuando el cliente lo solicita, y deriva la conversación a tu equipo con todo el contexto de lo hablado." },
   { question: "¿Cuánto cuesta mantener un bot funcionando?", answer: "El costo depende del volumen de mensajes y las integraciones. Usamos modelos de precios transparentes: un costo inicial de desarrollo y luego un mantenimiento mensual que incluye hosting, actualizaciones y soporte. Te damos un presupuesto personalizado." },
-  { question: "¿El bot funciona en varios idiomas?", answer: "Sí, nuestros bots pueden comunicarse en español, inglés, portugués y otros idiomas. Es ideal si tenés clientes en Argentina, Paraguay, Brasil u otros países de la región." },
-  { question: "¿Trabajan con empresas de Argentina y Paraguay?", answer: "Sí, trabajamos principalmente con empresas de Argentina y Paraguay. Entendemos el mercado local, los medios de pago (MercadoPago, transferencias), las plataformas de envío y las particularidades de cada país." },
+  { question: "¿El bot funciona en varios idiomas?", answer: "Sí, nuestros bots pueden comunicarse en español, inglés, portugués y otros idiomas. Es ideal si tenés clientes en distintos países." },
+  { question: "¿Trabajan con empresas de otros países?", answer: "Sí, trabajamos con empresas de todo el mundo. Nos adaptamos a los medios de pago, las plataformas de envío y las particularidades de cada mercado." },
 ]
 
 // Complementary services
@@ -297,7 +297,7 @@ export default function AgentesIAPageClient({ projects, testimonials }: AgentesI
                 {" "}y{" "}
                 <span className="font-extrabold">Chatbots</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  en Argentina y Paraguay
+                  para todo el mundo
                 </span>
               </h1>
 
@@ -540,7 +540,7 @@ export default function AgentesIAPageClient({ projects, testimonials }: AgentesI
             </h2>
             <p className="mt-4 text-gray-400 text-base lg:text-lg leading-relaxed">
               Desarrollamos <span className="text-white">agentes de IA y chatbots</span> para empresas de{" "}
-              <span className="text-white">Argentina y Paraguay</span>. Los números reflejan la confianza de nuestros clientes.
+              <span className="text-white">todo el mundo</span>. Los números reflejan la confianza de nuestros clientes.
             </p>
           </div>
 

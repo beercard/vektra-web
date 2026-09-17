@@ -5,12 +5,11 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Soporte Técnico Web Profesional en Argentina y Paraguay | Vektra",
+  title: "Soporte Técnico Web Profesional | Vektra",
   description: "Servicio de soporte técnico web profesional. Resolución de errores, asistencia remota, respuesta rápida garantizada y equipo de expertos disponible para tu sitio web.",
   keywords: [
     // Keywords principales
-    "soporte técnico web argentina",
-    "soporte técnico web paraguay",
+    "soporte técnico web",
     "soporte wordpress",
     "ayuda web profesional",
     // Long tail keywords
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
     "soporte web para empresas",
     "servicio técnico páginas web",
     "solucionar problemas wordpress",
-    "expertos en wordpress argentina",
+    "expertos en wordpress",
   ],
   openGraph: {
     title: "Soporte Técnico Web Profesional | Vektra Digital",
@@ -57,10 +56,7 @@ const serviceSchema = {
     "name": "Vektra Digital",
     "url": "https://vektra.digital"
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "Technical Support",
   "offers": [
     {

@@ -1,28 +1,21 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Tiendas Online en Argentina y Paraguay | WooCommerce, Shopify y Tiendanube",
-  description: "E-commerce profesional en Argentina y Paraguay con WooCommerce, Shopify y Tiendanube. Pagos con MercadoPago, envíos integrados y SEO para vender 24/7.",
+  title: "Tiendas Online | WooCommerce, Shopify y Tiendanube",
+  description: "E-commerce profesional para empresas de todo el mundo con WooCommerce, Shopify y Tiendanube. Pagos con MercadoPago, envíos integrados y SEO para vender 24/7.",
   keywords: [
-    "tienda online argentina",
-    "tienda online paraguay",
-    "ecommerce argentina",
-    "ecommerce paraguay",
-    "woocommerce argentina",
-    "shopify paraguay",
+    "tienda online",
+    "ecommerce",
+    "woocommerce",
+    "shopify",
     "tiendanube",
     "mercadopago",
     "pasarelas de pago",
     "envíos ecommerce",
-    "tienda online buenos aires",
-    "tienda online córdoba",
-    "tienda online rosario",
-    "tienda online asunción",
-    "tienda online ciudad del este",
   ],
   openGraph: {
-    title: "Tiendas Online en Argentina y Paraguay | Vektra",
-    description: "Tiendas online profesionales con WooCommerce, Shopify y Tiendanube para vender en Argentina y Paraguay.",
+    title: "Tiendas Online | Vektra",
+    description: "Tiendas online profesionales con WooCommerce, Shopify y Tiendanube para vender en todo el mundo.",
   },
 }
 
@@ -39,7 +32,7 @@ export default function TiendaOnlineLayout({
       "@type": "Organization",
       "name": "Vektra"
     },
-    "areaServed": ["Argentina", "Paraguay"],
+    "areaServed": "Worldwide",
     "description": "Desarrollo de tiendas online con WooCommerce, Shopify y Tiendanube.",
     "url": "https://vektra.digital/servicios/tienda-online"
   }
@@ -50,7 +43,7 @@ export default function TiendaOnlineLayout({
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "¿Cuánto cuesta crear una tienda online en Argentina?",
+        "name": "¿Cuánto cuesta crear una tienda online?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Los precios varían según la complejidad. Una tienda online básica con hasta 50 productos comienza desde $450.000 ARS. Tiendas más grandes con funcionalidades avanzadas tienen presupuestos personalizados. Contáctanos para una cotización sin compromiso."
@@ -61,7 +54,7 @@ export default function TiendaOnlineLayout({
         "name": "¿Qué plataforma usan para crear tiendas online?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Trabajamos con WooCommerce (WordPress) por su flexibilidad, Shopify para soluciones rápidas y escalables, y Tiendanube que es la plataforma líder en Argentina y Latinoamérica. Te asesoramos sobre la mejor opción según tu negocio, presupuesto y objetivos."
+          "text": "Trabajamos con WooCommerce (WordPress) por su flexibilidad, Shopify para soluciones rápidas y escalables, y Tiendanube que es la plataforma líder en Latinoamérica. Te asesoramos sobre la mejor opción según tu negocio, presupuesto y objetivos."
         }
       },
       {

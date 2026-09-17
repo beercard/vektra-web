@@ -119,7 +119,7 @@ const faqs = [
   { question: "What is the work process like?", answer: "We start with a discovery meeting to understand your business and users. Then we go through research, wireframes, visual design with iterative reviews, and finish with the prototype and handoff for development." },
   { question: "Can I request changes during the project?", answer: "Yes, our process includes review rounds at each stage. We work iteratively, showing you progress and adjusting based on your feedback before moving to the next phase." },
   { question: "What do I receive at the end of the project?", answer: "You receive the complete Figma file with all designs, an interactive prototype, the Design System with components, style guide, and technical specifications for the development team." },
-  { question: "Do you work with companies in Argentina and Paraguay?", answer: "Yes, we work mainly with companies in Argentina and Paraguay, although we also have clients in other Latin American countries. We understand the local market and regional needs." },
+  { question: "Do you work with companies in other countries?", answer: "Yes, we work with companies all over the world. We adapt to the needs and particularities of each market." },
   { question: "Do you offer post-delivery support?", answer: "Yes, we offer a post-delivery support period to resolve questions from the development team. We can also make minor adjustments or accompany the implementation if needed." },
 ]
 
@@ -265,7 +265,7 @@ export default function UIUXDesignClient({ projects, testimonials }: UIUXDesignP
                 {" "}and{" "}
                 <span className="font-extrabold">User Experience</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  in Argentina and Paraguay
+                  worldwide
                 </span>
               </h1>
 

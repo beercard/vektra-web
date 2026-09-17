@@ -119,7 +119,7 @@ const faqs = [
   { question: "Can I modify the automations later?", answer: "Yes, automations are flexible and scalable. We train you to make simple changes on your own, and we are available for more complex modifications or new integrations." },
   { question: "How much can I save with automation?", answer: "It depends on your processes, but on average our clients save between 10-30 hours of manual work per week. Additionally, they reduce human errors and improve response times." },
   { question: "Can you connect legacy systems or old software?", answer: "In most cases, yes. If the system has any type of API or allows data export/import, we can integrate it. We evaluate each particular case and propose the best solution." },
-  { question: "Do you work with companies in Argentina and Paraguay?", answer: "Yes, we work mainly with companies in Argentina and Paraguay. We understand local tools like MercadoPago, Tienda Nube, AFIP/SET invoicing systems, etc." },
+  { question: "Do you work with companies in other countries?", answer: "Yes, we work with companies all over the world. We adapt to the local tools and invoicing systems of each market." },
   { question: "Do you offer post-implementation support?", answer: "Yes, all our plans include a support period. We also offer monthly maintenance plans for continuous monitoring, updates, and new automations." },
 ]
 
@@ -250,7 +250,7 @@ export default function AutomationPageClient({ projects, testimonials }: Automat
                 {" "}your business{" "}
                 <span className="font-extrabold">and multiply your time</span>
                 <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">
-                  in Argentina and Paraguay
+                  worldwide
                 </span>
               </h1>
 

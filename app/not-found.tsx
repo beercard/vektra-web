@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Página no encontrada | Vektra",
-  description: "La página que buscás no existe o fue movida. Explorá nuestros servicios de desarrollo web, marketing digital y agentes IA en Argentina y Paraguay.",
+  description: "La página que buscás no existe o fue movida. Explorá nuestros servicios de desarrollo web, marketing digital y agentes IA para empresas de todo el mundo.",
   robots: {
     index: false,
     follow: true,

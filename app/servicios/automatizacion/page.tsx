@@ -5,24 +5,24 @@ import { readStorage } from "@/lib/storage"
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Automatización de Procesos Empresariales en Argentina y Paraguay | Vektra",
-  description: "Servicios de automatización de procesos empresariales. Workflows automatizados, integración de sistemas, bots y asistentes con Make, Zapier y desarrollo a medida.",
+  title: "Automatización de Procesos Empresariales | Vektra",
+  description: "Servicios de automatización de procesos empresariales para empresas de todo el mundo. Workflows automatizados, integración de sistemas, bots y asistentes con Make, Zapier y desarrollo a medida.",
   keywords: [
     // Keywords principales
-    "automatización procesos argentina",
-    "automatización empresas paraguay",
+    "automatización procesos",
+    "automatización empresas",
     "automatización workflows",
     "integración de sistemas",
     // Long tail keywords
     "automatización de tareas repetitivas",
     "integración crm email marketing",
-    "automatización zapier make argentina",
+    "automatización zapier make",
     "automatización procesos empresariales",
     "bots para empresas",
     "automatización facturación",
     "integración apis sistemas",
     "automatización sin código",
-    "rpa argentina",
+    "rpa",
     "automatización pymes",
     "workflows automatizados n8n",
     "transformación digital empresas",
@@ -57,10 +57,7 @@ const serviceSchema = {
     "name": "Vektra Digital",
     "url": "https://vektra.digital"
   },
-  "areaServed": [
-    { "@type": "Country", "name": "Argentina" },
-    { "@type": "Country", "name": "Paraguay" }
-  ],
+  "areaServed": "Worldwide",
   "serviceType": "Business Process Automation",
   "offers": [
     {
