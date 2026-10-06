@@ -37,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/precios`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/sobre-nosotros`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -56,6 +62,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/servicios/automatizacion",
     "/servicios/mantenimiento-web",
     "/servicios/soporte-tecnico",
+    "/servicios/erp",
+    "/servicios/crm",
+    "/servicios/alquileres",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
