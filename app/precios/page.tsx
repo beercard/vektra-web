@@ -4,9 +4,9 @@ import { faqsPrecios } from "./preguntas"
 import { PLANES_ERP, URL_ERP, URL_ERP_REGISTRO } from "@/lib/productos-vektra"
 
 export const metadata: Metadata = {
-  title: "Precios de Vektra ERP, CRM y Hotel | Planes en pesos",
+  title: "Precios de Vektra ERP, CRM y Alquileres | Planes en pesos",
   description:
-    "Precios de Vektra ERP: plan Gratis y planes Inicial, Pyme y Empresa en pesos, por mes más IVA, con pago anual de 10 meses. Vektra CRM y Vektra Hotel con precio de lanzamiento para la lista de espera y 20 % de descuento al combinar productos.",
+    "Precios de Vektra ERP: plan Gratis y planes Inicial, Pyme y Empresa en pesos, por mes más IVA, con pago anual de 10 meses. Vektra CRM y Vektra Alquileres con precio de lanzamiento para la lista de espera y 20 % de descuento al combinar productos.",
   keywords: [
     // Keywords principales
     "precio erp pymes",
@@ -17,19 +17,19 @@ export const metadata: Metadata = {
     "erp en pesos argentinos",
     "plan gratis facturación arca",
     "precio crm con whatsapp",
-    "precio sistema hotelero",
+    "precio sistema para alquileres temporarios",
     "erp con pago anual",
   ],
   openGraph: {
-    title: "Precios de Vektra ERP, CRM y Hotel",
-    description: "Plan Gratis y planes en pesos para Vektra ERP. CRM y Hotel con precio de lanzamiento para la lista de espera.",
+    title: "Precios de Vektra ERP, CRM y Alquileres",
+    description: "Plan Gratis y planes en pesos para Vektra ERP. CRM y Alquileres con precio de lanzamiento para la lista de espera.",
     type: "website",
     locale: "es_AR",
   },
   twitter: {
     card: "summary_large_image",
     title: "Precios | Vektra",
-    description: "Planes de Vektra ERP en pesos y lista de espera de Vektra CRM y Vektra Hotel.",
+    description: "Planes de Vektra ERP en pesos y lista de espera de Vektra CRM y Vektra Alquileres.",
   },
   alternates: {
     canonical: "https://vektra.digital/precios",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
 }
 
-/** Solo el ERP lleva ofertas: CRM y Hotel no tienen precio publicado y no se declaran como productos con oferta. */
+/** Solo el ERP lleva ofertas: CRM y Alquileres no tienen precio publicado y no se declaran como productos con oferta. */
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",

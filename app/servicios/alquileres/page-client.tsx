@@ -1,27 +1,27 @@
 "use client"
 
-import { CalendarDays, Globe, Hotel, Inbox, MessageCircle, Receipt, SprayCan, Tags, Users } from "lucide-react"
+import { CalendarDays, Globe, House, Inbox, MessageCircle, Receipt, SprayCan, Tags, Users } from "lucide-react"
 
 import { ProductoVektra, type ProductoVektraData } from "@/components/sections/producto-vektra"
-import { DESCUENTO_COMBO, URL_HOTEL } from "@/lib/productos-vektra"
-import { faqsHotel } from "./preguntas"
+import { DESCUENTO_COMBO, URL_ALQUILERES } from "@/lib/productos-vektra"
+import { faqsAlquileres } from "./preguntas"
 
 const data: ProductoVektraData = {
-  icono: Hotel,
-  rotulo: "Vektra Hotel",
+  icono: House,
+  rotulo: "Vektra Alquileres",
   estado: { texto: "Próximamente · lista de espera", disponible: false },
-  h1: { antes: "Todos tus alquileres temporarios en", destacado: "un solo calendario", despues: "departamentos, casas y cabañas" },
+  h1: { antes: "Todos tus alquileres temporarios en", destacado: "un solo calendario", despues: "en Argentina y Paraguay" },
   bajada: (
     <>
-      Estamos preparando Vektra Hotel para administrar <strong className="text-white">alquileres temporarios</strong>: las reservas de{" "}
+      Estamos preparando Vektra Alquileres para administrar <strong className="text-white">alquileres temporarios</strong> en Argentina y Paraguay: las reservas de{" "}
       <strong className="text-white">todas las plataformas</strong> y las directas en un calendario, las{" "}
-      <strong className="text-white">limpiezas</strong> entre estadías, los <strong className="text-white">propietarios</strong> y la
+      <strong className="text-white">limpiezas</strong> entre estadías, los <strong className="text-white">propietarios</strong>, los cobros y la
       facturación electrónica con Vektra ERP.
     </>
   ),
   aviso:
-    "Vektra Hotel está en preparación y no tiene fecha de salida: lo que describimos acá es el plan, no algo que puedas usar hoy. Mientras tanto, Vektra ERP ya factura tus alquileres con ARCA.",
-  ctaPrincipal: { texto: "Sumate a la lista de espera", href: URL_HOTEL },
+    "Vektra Alquileres está en preparación y no tiene fecha de salida: lo que describimos acá es el plan, no algo que puedas usar hoy. Mientras tanto, en Argentina Vektra ERP ya factura tus alquileres con ARCA.",
+  ctaPrincipal: { texto: "Sumate a la lista de espera", href: URL_ALQUILERES },
   ctaSecundario: { texto: "Contanos cómo trabajás", href: "/contacto" },
   heroTarjetas: [
     { icono: CalendarDays, titulo: "Calendario", detalle: "de todas las plataformas" },
@@ -31,20 +31,20 @@ const data: ProductoVektraData = {
   ],
   marquee: [
     { text: "Calendario unificado", highlight: true },
-    { text: "Airbnb, Booking y reservas directas" },
+    { text: "Airbnb, Booking y Google Calendar" },
     { text: "Limpieza entre estadías", highlight: true },
     { text: "cada salida con su tarea" },
     { text: "Liquidación a propietarios", highlight: true },
     { text: "para administradoras" },
-    { text: "Facturación ARCA", highlight: true },
-    { text: "a través de Vektra ERP" },
+    { text: "Argentina y Paraguay", highlight: true },
+    { text: "cobros y facturación locales" },
   ],
   beneficios: {
     titulo: "Lo que estamos construyendo",
     bajada: (
       <>
         Un sistema pensado para <strong className="text-black">anfitriones y administradoras</strong> de alquileres temporarios en
-        Argentina, con la facturación y los cobros de un ERP que ya funciona.
+        Argentina y Paraguay, con la facturación y los cobros de un ERP que ya funciona.
       </>
     ),
     items: [
@@ -54,7 +54,7 @@ const data: ProductoVektraData = {
       },
       {
         title: "Pensado para no reservar dos veces",
-        description: "Sincronización de calendarios con las plataformas para que, cuando una unidad se ocupa en una, quede bloqueada en las demás.",
+        description: "Sincronización de calendarios por iCal con las plataformas para que, cuando una unidad se ocupa en una, quede bloqueada en las demás.",
       },
       {
         title: "Reservas directas",
@@ -75,8 +75,8 @@ const data: ProductoVektraData = {
     ],
   },
   funciones: {
-    titulo: "Qué va a hacer Vektra Hotel",
-    bajada: "Todo lo que sigue está planificado. Lo único disponible hoy es la facturación y la gestión de Vektra ERP.",
+    titulo: "Qué va a hacer Vektra Alquileres",
+    bajada: "Todo lo que sigue está planificado. Lo único disponible hoy es la facturación y la gestión de Vektra ERP, en Argentina.",
     conEstados: true,
     etiquetaHoy: "Hoy con Vektra ERP",
     grupos: [
@@ -85,8 +85,9 @@ const data: ProductoVektraData = {
         titulo: "Calendario y disponibilidad",
         items: [
           { texto: "Calendario unificado por unidad con las reservas de todas las plataformas", estado: "proximamente" },
-          { texto: "Sincronización de calendarios con las plataformas", estado: "proximamente" },
-          { texto: "Bloqueos por mantenimiento o uso del propietario", estado: "proximamente" },
+          { texto: "Sincronización de calendarios por iCal con Airbnb, Booking y otras plataformas", estado: "proximamente" },
+          { texto: "Sincronización con Google Calendar", estado: "proximamente" },
+          { texto: "Conexión directa con las plataformas: en nuestra hoja de ruta", estado: "proximamente" },
         ],
       },
       {
@@ -129,10 +130,11 @@ const data: ProductoVektraData = {
         icono: Receipt,
         titulo: "Cobros y facturación",
         items: [
-          { texto: "Facturación electrónica ARCA de tus alquileres", estado: "hoy" },
-          { texto: "Links de pago, caja, bancos e impuestos", estado: "hoy" },
+          { texto: "Argentina: facturación electrónica ARCA de tus alquileres", estado: "hoy" },
+          { texto: "Argentina: links de pago con Mercado Pago, caja, bancos e impuestos", estado: "hoy" },
+          { texto: "Paraguay: cobros con medios de pago locales", estado: "proximamente" },
+          { texto: "Paraguay: facturación electrónica", estado: "proximamente" },
           { texto: "Factura de cada estadía sin volver a cargar datos", estado: "proximamente" },
-          { texto: "Seña de las reservas directas con los links de pago del ERP", estado: "proximamente" },
         ],
       },
     ],
@@ -162,13 +164,13 @@ const data: ProductoVektraData = {
         step: "03",
         title: "Cobrá, facturá",
         subtitle: "y liquidá",
-        description: "Registrás los cobros, facturás con Vektra ERP y, si administrás de terceros, liquidás a cada propietario.",
+        description: "Registrás los cobros, facturás con Vektra ERP en Argentina y, si administrás de terceros, liquidás a cada propietario.",
       },
     ],
   },
   paraQuien: {
-    titulo: "¿Para quién es Vektra Hotel?",
-    bajada: "Para quienes alquilan por temporada y hoy se organizan con planillas, grupos de WhatsApp y varios calendarios sueltos.",
+    titulo: "¿Para quién es Vektra Alquileres?",
+    bajada: "Para quienes alquilan por temporada en Argentina y Paraguay y hoy se organizan con planillas, grupos de WhatsApp y varios calendarios sueltos.",
     items: [
       { titulo: "Anfitriones con pocas unidades", texto: "Uno o varios departamentos publicados en más de una plataforma, sin cruzar calendarios a mano." },
       { titulo: "Administradoras de alquileres", texto: "Propiedades de varios dueños, con comisión, gastos y una liquidación clara para cada uno." },
@@ -180,13 +182,13 @@ const data: ProductoVektraData = {
   },
   precio: {
     titulo: "Precio de lanzamiento: sumate a la lista de espera",
-    texto: "Vektra Hotel todavía no tiene precio publicado. Quienes se anotan reciben primero el precio de lanzamiento, en pesos.",
+    texto: "Vektra Alquileres todavía no tiene precio publicado. Quienes se anotan reciben primero el precio de lanzamiento.",
     detalle: `${DESCUENTO_COMBO} % de descuento al combinarlo con otro producto de Vektra.`,
   },
-  faqs: faqsHotel,
-  faqSubtitulo: "Vektra Hotel",
+  faqs: faqsAlquileres,
+  faqSubtitulo: "Vektra Alquileres",
   cierre: {
-    titulo: "Contanos cómo trabajás y armamos Vektra Hotel con vos",
+    titulo: "Contanos cómo trabajás y armamos Vektra Alquileres con vos",
     bajada: "Anotate en la lista de espera: vamos a priorizar lo que más nos pidan y los primeros de la lista lo prueban antes.",
   },
   complementos: [
@@ -207,13 +209,13 @@ const data: ProductoVektraData = {
     {
       title: "Precios",
       subtitle: "Planes y combos",
-      features: ["Planes de Vektra ERP", "Precio de lanzamiento de CRM y Hotel", `${DESCUENTO_COMBO} % al combinar productos`, "Pago en pesos"],
+      features: ["Planes de Vektra ERP", "Precio de lanzamiento de CRM y Alquileres", `${DESCUENTO_COMBO} % al combinar productos`, "Pago en moneda local"],
       href: "/precios",
       icon: Tags,
     },
   ],
 }
 
-export default function HotelPageClient() {
+export default function AlquileresPageClient() {
   return <ProductoVektra data={data} />
 }

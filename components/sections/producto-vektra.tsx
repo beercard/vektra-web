@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Check, Clock, Minus, Plus, type LucideIcon } from "lucide-react"
 
 /**
- * Plantilla de las páginas de producto propio de Vektra (ERP, CRM y Hotel) dentro de /servicios.
+ * Plantilla de las páginas de producto propio de Vektra (ERP, CRM y Alquileres) dentro de /servicios.
  * Repite el lenguaje visual de las páginas de servicios (hero oscuro con marquee, bloque cian con checks,
  * pasos numerados en negro, preguntas frecuentes y complementos), pero sin portfolio ni testimonios de agencia:
  * son productos de software y cada afirmación tiene que poder sostenerse con lo que el producto hace hoy.

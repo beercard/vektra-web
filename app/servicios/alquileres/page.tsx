@@ -1,41 +1,42 @@
 import type { Metadata } from "next"
-import HotelPageClient from "./page-client"
-import { faqsHotel } from "./preguntas"
+import AlquileresPageClient from "./page-client"
+import { faqsAlquileres } from "./preguntas"
 
 export const metadata: Metadata = {
-  title: "Vektra Hotel | Sistema para alquileres temporarios (próximamente)",
+  title: "Vektra Alquileres | Sistema para alquileres temporarios en Argentina y Paraguay",
   description:
-    "Estamos preparando Vektra Hotel para administrar alquileres temporarios: calendario unificado de reservas de Airbnb, Booking y reservas directas, limpiezas, mensajes a huéspedes, liquidación a propietarios y facturación ARCA con Vektra ERP. Sumate a la lista de espera.",
+    "Estamos preparando Vektra Alquileres: calendario unificado con sincronización iCal con Airbnb, Booking y otras plataformas y con Google Calendar, reservas directas, limpiezas, mensajes a huéspedes, liquidación a propietarios, cobros y facturación ARCA con Vektra ERP. Sumate a la lista de espera.",
   keywords: [
     // Keywords principales
     "sistema para alquileres temporarios",
     "software para alquiler temporario",
-    "gestión de propiedades airbnb",
+    "gestión de alquileres temporarios",
     // Long tail keywords
     "calendario unificado airbnb y booking",
-    "sincronización de calendarios de alquiler",
+    "sincronización de calendarios ical",
+    "alquileres temporarios con google calendar",
     "sistema para administradoras de alquileres",
     "liquidación a propietarios",
     "limpieza entre estadías",
-    "reservas directas sin comisión",
+    "alquileres temporarios paraguay",
     "facturación de alquileres temporarios arca",
   ],
   openGraph: {
-    title: "Vektra Hotel | Todos tus alquileres temporarios en un solo calendario",
+    title: "Vektra Alquileres | Todos tus alquileres temporarios en un solo calendario",
     description:
-      "Reservas de todas las plataformas, limpiezas, huéspedes y propietarios, con la facturación de Vektra ERP. Próximamente: sumate a la lista de espera.",
+      "Reservas de todas las plataformas, limpiezas, huéspedes y propietarios, en Argentina y Paraguay. Próximamente: sumate a la lista de espera.",
     type: "website",
     locale: "es_AR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vektra Hotel | Lista de espera",
-    description: "Sistema para administrar alquileres temporarios con facturación ARCA de Vektra ERP.",
+    title: "Vektra Alquileres | Lista de espera",
+    description: "Sistema para administrar alquileres temporarios en Argentina y Paraguay.",
   },
   alternates: {
-    canonical: "https://vektra.digital/servicios/hotel",
+    canonical: "https://vektra.digital/servicios/alquileres",
     languages: {
-      es: "https://vektra.digital/servicios/hotel",
+      es: "https://vektra.digital/servicios/alquileres",
     },
   },
 }
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Vektra Hotel",
+  "name": "Vektra Alquileres",
   "description":
-    "Sistema en preparación para administrar alquileres temporarios (departamentos, casas y cabañas): calendario unificado con sincronización de calendarios de las plataformas, reservas directas, mensajes a huéspedes, limpieza entre estadías, liquidación a propietarios, cobros y facturación electrónica ARCA a través de Vektra ERP. Lista de espera abierta.",
+    "Sistema en preparación para administrar alquileres temporarios (departamentos, casas y cabañas) en Argentina y Paraguay: calendario unificado con sincronización de calendarios por iCal con las plataformas y con Google Calendar, reservas directas, mensajes a huéspedes, limpieza entre estadías, liquidación a propietarios, cobros y facturación electrónica ARCA a través de Vektra ERP en Argentina. Lista de espera abierta.",
   "url": "https://hotel.vektra.digital",
   "provider": {
     "@type": "Organization",
@@ -59,14 +60,17 @@ const serviceSchema = {
       "availableLanguage": ["Spanish"],
     },
   },
-  "areaServed": "AR",
+  "areaServed": [
+    { "@type": "Country", "name": "Argentina" },
+    { "@type": "Country", "name": "Paraguay" },
+  ],
   "serviceType": "Software de gestión de alquileres temporarios",
 }
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqsHotel.map((faq) => ({
+  "mainEntity": faqsAlquileres.map((faq) => ({
     "@type": "Question",
     "name": faq.question,
     "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
@@ -79,17 +83,17 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vektra.digital" },
     { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://vektra.digital/servicios" },
-    { "@type": "ListItem", "position": 3, "name": "Vektra Hotel", "item": "https://vektra.digital/servicios/hotel" },
+    { "@type": "ListItem", "position": 3, "name": "Vektra Alquileres", "item": "https://vektra.digital/servicios/alquileres" },
   ],
 }
 
-export default function HotelPage() {
+export default function AlquileresPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <HotelPageClient />
+      <AlquileresPageClient />
     </>
   )
 }

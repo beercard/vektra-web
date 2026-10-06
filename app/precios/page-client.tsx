@@ -2,7 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react"
 import Link from "next/link"
-import { ArrowRight, Check, Clock, Hotel, Inbox, Minus, Plus, Receipt, Sparkles } from "lucide-react"
+import { ArrowRight, Check, Clock, House, Inbox, Minus, Plus, Receipt, Sparkles } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -16,14 +16,14 @@ import {
   URL_CRM,
   URL_ERP,
   URL_ERP_REGISTRO,
-  URL_HOTEL,
+  URL_ALQUILERES,
   formatearPesos,
   precioAnual,
 } from "@/lib/productos-vektra"
 import { faqsPrecios } from "./preguntas"
 
-type Pestana = "erp" | "crm" | "hotel"
-const PESTANAS: Pestana[] = ["erp", "crm", "hotel"]
+type Pestana = "erp" | "crm" | "alquileres"
+const PESTANAS: Pestana[] = ["erp", "crm", "alquileres"]
 
 const suscribirHash = (aviso: () => void) => {
   window.addEventListener("hashchange", aviso)
@@ -65,33 +65,36 @@ const listaDeEspera = {
       "Conexión con Vektra ERP para facturar y cobrar",
     ],
   },
-  hotel: {
-    nombre: "Vektra Hotel",
-    icono: Hotel,
-    href: URL_HOTEL,
-    servicio: "/servicios/hotel",
+  alquileres: {
+    nombre: "Vektra Alquileres",
+    icono: House,
+    href: URL_ALQUILERES,
+    servicio: "/servicios/alquileres",
     modelo: [
       { titulo: "Según tus unidades", texto: "Pensamos que el precio dependa de la cantidad de departamentos, casas o cabañas que gestionás." },
-      { titulo: "En pesos y sin permanencia", texto: "Pago mensual en pesos argentinos y baja cuando quieras. Lo confirmamos al lanzar." },
+      { titulo: "Argentina y Paraguay", texto: "Pago mensual en moneda local y baja cuando quieras. Lo confirmamos al lanzar." },
       {
         titulo: "Facturación por el ERP",
-        texto: "La factura electrónica sale de Vektra ERP, que tiene su propio plan Gratis y planes pagos.",
+        texto: "En Argentina la factura electrónica sale de Vektra ERP, que tiene su propio plan Gratis y planes pagos. En Paraguay, más adelante.",
       },
     ],
     incluye: [
-      "Calendario unificado con sincronización de calendarios de las plataformas",
+      "Calendario unificado con sincronización iCal con Airbnb, Booking y otras plataformas",
+      "Sincronización con Google Calendar",
       "Reservas directas con cobro de la seña",
       "Mensajes a huéspedes y limpieza entre estadías",
       "Liquidación a propietarios para administradoras",
-      "Cobros y facturación ARCA a través de Vektra ERP",
+      "Cobros con Mercado Pago en Argentina y medios locales en Paraguay",
+      "Facturación ARCA vía Vektra ERP en Argentina; Paraguay, próximamente",
+      "Conexión directa con las plataformas: en nuestra hoja de ruta",
     ],
   },
 } as const
 
 const combos = [
   { nombre: "ERP + CRM", texto: "Vendés en el CRM, facturás y cobrás en el ERP, con los mismos clientes.", iconos: [Receipt, Inbox] },
-  { nombre: "ERP + Hotel", texto: "Tus alquileres temporarios y, detrás, la facturación ARCA, la caja y los impuestos.", iconos: [Receipt, Hotel] },
-  { nombre: "CRM + Hotel", texto: "Las consultas de futuros huéspedes con seguimiento y las reservas en un solo calendario.", iconos: [Inbox, Hotel] },
+  { nombre: "ERP + Alquileres", texto: "Tus alquileres temporarios y, detrás, la facturación ARCA, la caja y los impuestos.", iconos: [Receipt, House] },
+  { nombre: "CRM + Alquileres", texto: "Las consultas de futuros huéspedes con seguimiento y las reservas en un solo calendario.", iconos: [Inbox, House] },
 ]
 
 function Limite({ children }: { children: React.ReactNode }) {
@@ -127,11 +130,11 @@ export default function PreciosPageClient() {
                 <span className="relative z-10">claros y en pesos</span>
                 <span className="absolute bottom-1 left-0 w-full h-3 bg-[#00DEC7] -z-0 opacity-60" />
               </span>
-              <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">Vektra ERP, Vektra CRM y Vektra Hotel</span>
+              <span className="block text-white/80 text-lg sm:text-xl md:text-2xl font-semibold mt-3">Vektra ERP, Vektra CRM y Vektra Alquileres</span>
             </h1>
             <p className="mt-6 text-base sm:text-lg text-gray-300 leading-relaxed">
               <strong className="text-white">Vektra ERP</strong> tiene un plan Gratis y planes pagos con precio publicado.{" "}
-              <strong className="text-white">Vektra CRM</strong> y <strong className="text-white">Vektra Hotel</strong> están en
+              <strong className="text-white">Vektra CRM</strong> y <strong className="text-white">Vektra Alquileres</strong> están en
               preparación: sumate a la lista de espera y recibí primero el precio de lanzamiento.
             </p>
           </div>
@@ -159,7 +162,7 @@ export default function PreciosPageClient() {
                 [
                   { valor: "erp", nombre: "Vektra ERP", icono: Receipt },
                   { valor: "crm", nombre: "Vektra CRM", icono: Inbox },
-                  { valor: "hotel", nombre: "Vektra Hotel", icono: Hotel },
+                  { valor: "alquileres", nombre: "Vektra Alquileres", icono: House },
                 ] as const
               ).map((t) => (
                 <TabsTrigger
@@ -313,8 +316,8 @@ export default function PreciosPageClient() {
               </div>
             </TabsContent>
 
-            {/* CRM y Hotel */}
-            {(["crm", "hotel"] as const).map((id) => {
+            {/* CRM y Alquileres */}
+            {(["crm", "alquileres"] as const).map((id) => {
               const p = listaDeEspera[id]
               return (
                 <TabsContent key={id} value={id} forceMount className="data-[state=inactive]:hidden">
@@ -330,7 +333,7 @@ export default function PreciosPageClient() {
                       </h2>
                       <div className="mt-6 rounded-2xl bg-[#00DEC7] p-7">
                         <p className="text-2xl md:text-3xl font-bold text-black leading-tight">Precio de lanzamiento</p>
-                        <p className="mt-2 text-black/80 text-lg">Sumate a la lista de espera y recibilo primero, en pesos.</p>
+                        <p className="mt-2 text-black/80 text-lg">Sumate a la lista de espera y recibilo antes que nadie.</p>
                         <p className="mt-3 text-sm text-black/70">
                           Todavía no tiene precio publicado y no vamos a anunciar una cifra que después cambie.
                         </p>
@@ -394,7 +397,7 @@ export default function PreciosPageClient() {
             </h2>
             <p className="mt-6 text-black/80 text-lg">
               Al contratar <strong className="text-black">dos productos de Vektra</strong> tenés {DESCUENTO_COMBO} % de descuento. Los precios
-              finales de cada combo se publican cuando CRM y Hotel salgan a la venta.
+              finales de cada combo se publican cuando CRM y Alquileres salgan a la venta.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

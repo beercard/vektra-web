@@ -1,6 +1,6 @@
 "use client"
 
-import { Bot, Columns3, Hotel, Inbox, ListChecks, Receipt, Tags, Zap } from "lucide-react"
+import { Bot, Columns3, House, Inbox, ListChecks, Receipt, Tags, Zap } from "lucide-react"
 
 import { ProductoVektra, type ProductoVektraData } from "@/components/sections/producto-vektra"
 import { DESCUENTO_COMBO, URL_CRM } from "@/lib/productos-vektra"
@@ -205,16 +205,16 @@ const data: ProductoVektraData = {
       icon: Receipt,
     },
     {
-      title: "Vektra Hotel",
+      title: "Vektra Alquileres",
       subtitle: "Próximamente · lista de espera",
-      features: ["Alquileres temporarios", "Calendario de todas las plataformas", "Limpiezas y propietarios", "Facturación ARCA con Vektra ERP"],
-      href: "/servicios/hotel",
-      icon: Hotel,
+      features: ["Alquileres temporarios", "Argentina y Paraguay", "Calendario de todas las plataformas", "Limpiezas y propietarios"],
+      href: "/servicios/alquileres",
+      icon: House,
     },
     {
       title: "Precios",
       subtitle: "Planes y combos",
-      features: ["Planes de Vektra ERP", "Precio de lanzamiento de CRM y Hotel", `${DESCUENTO_COMBO} % al combinar productos`, "Pago en pesos"],
+      features: ["Planes de Vektra ERP", "Precio de lanzamiento de CRM y Alquileres", `${DESCUENTO_COMBO} % al combinar productos`, "Pago en pesos"],
       href: "/precios",
       icon: Tags,
     },

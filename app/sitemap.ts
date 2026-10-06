@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/servicios/soporte-tecnico",
     "/servicios/erp",
     "/servicios/crm",
-    "/servicios/hotel",
+    "/servicios/alquileres",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

@@ -1,15 +1,17 @@
 /**
- * Datos comerciales de los productos propios de Vektra (ERP, CRM y Hotel) que usan /precios y /servicios/{erp,crm,hotel}.
+ * Datos comerciales de los productos propios de Vektra (ERP, CRM y Alquileres) que usan /precios y
+ * /servicios/{erp,crm,alquileres}.
  *
  * Fuente de verdad: el repositorio del ERP (`src/lib/planes.ts` y `src/components/sitio/productos.ts`). Si cambia un
- * precio, un límite o lo que incluye un plan allá, se actualiza acá: este sitio no inventa cifras. El CRM y el Hotel
+ * precio, un límite o lo que incluye un plan allá, se actualiza acá: este sitio no inventa cifras. El CRM y Alquileres
  * todavía no tienen precio publicado, por eso no figuran montos ni ofertas para ellos.
  */
 
 export const URL_ERP = "https://erp.vektra.digital"
 export const URL_ERP_REGISTRO = "https://erp.vektra.digital/registro"
 export const URL_CRM = "https://crm.vektra.digital"
-export const URL_HOTEL = "https://hotel.vektra.digital"
+/** Vektra Alquileres (antes Vektra Hotel): la lista de espera sigue en el subdominio hotel por ahora. */
+export const URL_ALQUILERES = "https://hotel.vektra.digital"
 
 /** Días de prueba gratis del ERP (plan Inicial más la aplicación del rubro). */
 export const DIAS_DE_PRUEBA = 15

@@ -24,13 +24,13 @@ export const faqsPrecios = [
     answer: "Sí: los precios de lista están en pesos y se ajustan cada trimestre. Lo que ves en esta página es la lista vigente.",
   },
   {
-    question: "¿Cuánto cuestan Vektra CRM y Vektra Hotel?",
+    question: "¿Cuánto cuestan Vektra CRM y Vektra Alquileres?",
     answer:
-      "Todavía no tienen precio publicado: están en preparación y no vamos a anunciar una cifra que después cambie. Quienes se suman a la lista de espera reciben primero el precio de lanzamiento, en pesos.",
+      "Todavía no tienen precio publicado: están en preparación y no vamos a anunciar una cifra que después cambie. Quienes se suman a la lista de espera reciben primero el precio de lanzamiento (Vektra Alquileres, en moneda local de Argentina o Paraguay).",
   },
   {
     question: "¿Cómo funcionan los combos?",
-    answer: `Al contratar dos productos de Vektra tenés ${DESCUENTO_COMBO} % de descuento. Los precios finales de cada combo se publican cuando CRM y Hotel salgan a la venta.`,
+    answer: `Al contratar dos productos de Vektra tenés ${DESCUENTO_COMBO} % de descuento. Los precios finales de cada combo se publican cuando CRM y Alquileres salgan a la venta.`,
   },
   {
     question: "¿Cuánto cuesta el asistente con IA?",
