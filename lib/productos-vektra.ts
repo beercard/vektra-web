@@ -11,7 +11,7 @@ export const URL_ERP = "https://erp.vektra.digital"
 export const URL_ERP_REGISTRO = "https://erp.vektra.digital/registro"
 export const URL_CRM = "https://crm.vektra.digital"
 /** Vektra Alquileres (antes Vektra Hotel): la lista de espera sigue en el subdominio hotel por ahora. */
-export const URL_ALQUILERES = "https://hotel.vektra.digital"
+export const URL_ALQUILERES = "https://alquileres.vektra.digital"
 
 /** Días de prueba gratis del ERP (plan Inicial más la aplicación del rubro). */
 export const DIAS_DE_PRUEBA = 15
