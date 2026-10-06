@@ -126,6 +126,14 @@ export function Footer({ dict }: FooterProps) {
     { name: isEn ? "ROI Calculator" : "Calculadora de ROI", href: isEn ? "/en/tools/roi-calculator" : "/herramientas/calculadora-roi" },
   ]
 
+  // Productos propios de Vektra: solo tienen páginas en español, por eso el enlace es el mismo en ambos idiomas.
+  const softwareLinks = [
+    { name: "Vektra ERP", href: "/servicios/erp" },
+    { name: "Vektra CRM", href: "/servicios/crm" },
+    { name: "Vektra Alquileres", href: "/servicios/alquileres" },
+    { name: isEn ? "Pricing" : "Precios", href: "/precios" },
+  ]
+
   return (
     <footer className="bg-black text-white" itemScope itemType="https://schema.org/Organization">
       {/* Main Footer */}
@@ -218,6 +226,17 @@ export function Footer({ dict }: FooterProps) {
             <h3 className="font-bold text-base mb-4">{t.footer.tools}</h3>
             <ul className="space-y-2">
               {toolsLinks.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-[#00DEC7] transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="font-bold text-base mb-4 mt-8">{isEn ? "Management software" : "Software de gestión"}</h3>
+            <ul className="space-y-2">
+              {softwareLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="text-sm text-gray-400 hover:text-[#00DEC7] transition-colors">
                     {link.name}
