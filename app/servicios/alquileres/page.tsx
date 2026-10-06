@@ -47,7 +47,7 @@ const serviceSchema = {
   "name": "Vektra Alquileres",
   "description":
     "Sistema en preparación para administrar alquileres temporarios (departamentos, casas y cabañas) en Argentina y Paraguay: calendario unificado con sincronización de calendarios por iCal con las plataformas y con Google Calendar, reservas directas, mensajes a huéspedes, limpieza entre estadías, liquidación a propietarios, cobros y facturación electrónica ARCA a través de Vektra ERP en Argentina. Lista de espera abierta.",
-  "url": "https://hotel.vektra.digital",
+  "url": "https://alquileres.vektra.digital",
   "provider": {
     "@type": "Organization",
     "name": "Vektra Digital",
