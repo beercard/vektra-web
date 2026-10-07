@@ -55,6 +55,17 @@ export function Header({ dict, lang }: HeaderProps) {
         { name: t.header.support, href: currentLang === "en" ? "/en/services/technical-support" : "/servicios/soporte-tecnico" },
       ],
     },
+    // Productos propios de Vektra: solo tienen páginas en español, por eso el enlace es el mismo en ambos idiomas.
+    {
+      name: "Software",
+      href: "/precios",
+      children: [
+        { name: "Vektra ERP", href: "/servicios/erp" },
+        { name: "Vektra CRM", href: "/servicios/crm" },
+        { name: "Vektra Alquileres", href: "/servicios/alquileres" },
+        { name: currentLang === "en" ? "Pricing" : "Precios", href: "/precios" },
+      ],
+    },
     { name: t.header.work, href: currentLang === "en" ? "/en/portfolio" : "/trabajos" },
     { name: t.header.about, href: currentLang === "en" ? "/en/about-us" : "/sobre-nosotros" },
     { name: t.header.blog, href: currentLang === "en" ? "/en/blog" : "/blog" },
